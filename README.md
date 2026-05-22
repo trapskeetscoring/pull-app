@@ -9,9 +9,6 @@ The live site is served by GitHub Pages from this repository:
 - Support: <https://pull-app.github.io/site/support.html>
 - Privacy Policy: <https://pull-app.github.io/site/privacy.html>
 
-> Replace the URLs above with the actual GitHub Pages URL once the repo is
-> renamed or published under its final org/repo path.
-
 ## What is Pull!?
 
 Pull! is a complete scoring and management app for trap and skeet shooting
