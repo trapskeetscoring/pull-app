@@ -1,4 +1,4 @@
-# Pull! — Marketing Site
+# Pull!
 
 The public landing, support, and privacy pages for **Pull!**, a trap & skeet
 league scoring app for iOS and iPadOS.
