@@ -5,9 +5,9 @@ league scoring app for iOS and iPadOS.
 
 The live site is served by GitHub Pages from this repository:
 
-- Home: <https://pull-app.github.io/site/>
-- Support: <https://pull-app.github.io/site/support.html>
-- Privacy Policy: <https://pull-app.github.io/site/privacy.html>
+- Home: <https://trapskeetscoring.github.io/pull-app>
+- Support: <https://trapskeetscoring.github.io/pull-app/support.md>
+- Privacy Policy: <https://trapskeetscoring.github.io/pull-app/privacy.md>
 
 ## What is Pull!?
 
