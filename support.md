@@ -5,6 +5,8 @@ title: Pull! Support
 
 # Pull! Support
 
+_Updated on September 3, 2026_
+
 Thanks for using Pull!.
 
 ## Contact

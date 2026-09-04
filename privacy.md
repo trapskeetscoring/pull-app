@@ -5,7 +5,7 @@ title: Pull! Privacy Policy
 
 # Privacy Policy for Pull!
 
-**Last updated: September 2026**
+_Updated on September 3, 2026_
 
 ## Overview
 

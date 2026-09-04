@@ -7,6 +7,8 @@ title: Pull!
 
 **Trap & Skeet League Scoring**
 
+_Updated on September 3, 2026_
+
 Pull! is a complete scoring and management app for trap and skeet shooting leagues — built for league secretaries and team captains who want to leave the paper spreadsheets behind.
 
 ## Features

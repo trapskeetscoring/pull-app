@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Last reviewed: 2026-09-03_
+_Updated on September 3, 2026_
 
 This guide is for league secretaries and captains. It walks through every workflow in the app from initial setup through the end of a season.
 
