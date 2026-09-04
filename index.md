@@ -25,5 +25,6 @@ Coming soon to the App Store.
 
 ## Links
 
+- [User Guide](user-guide.html)
 - [Support](support.html)
 - [Privacy Policy](privacy.html)
