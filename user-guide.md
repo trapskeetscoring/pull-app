@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on September 3, 2026_
+_Updated on September 5, 2026_
 
 This guide is for league secretaries and captains. It walks through every workflow in the app from initial setup through the end of a season.
 
@@ -20,9 +20,10 @@ This guide is for league secretaries and captains. It walks through every workfl
 5. Roster Changes
 6. Schedule Management
 7. Reports and Export
-8. Sharing a League Across Devices
-9. Notifications
-10. Troubleshooting
+8. League Fees
+9. Sharing a League Across Devices
+10. Notifications
+11. Troubleshooting
 
 ---
 
@@ -213,7 +214,43 @@ To import a previously exported JSON file, tap the gear icon on the main Leagues
 
 ---
 
-## 8. Sharing a League Across Devices
+## 8. League Fees
+
+Everything in this section is secretary-only. The **Finance** section does not appear at all for
+captains or view-only participants.
+
+### Setting the rates
+
+Two rates live in **"…" → League Settings → Fees**: **Member Fee** for club members and **Guest Fee**
+for everyone else. Each member's **Club Member** toggle, on their Status section, decides which of
+the two rates applies to them.
+
+### Recording a payment
+
+Open the member from their team roster and turn on **Fee Paid** in the **Status** section. Only the
+secretary can set it — a captain sees the toggle disabled, and unlike the other member fields it is
+not something a captain can submit for approval. Collecting the money is the secretary's record.
+
+### The Finance screen
+
+From the league screen, tap **Finance → View**. Each team shows:
+
+- how its roster splits between club members and guests,
+- **collected / billed** — how much of that team's season fees have come in,
+- and what is still **due**, or *Paid in full* once it all has.
+
+Underneath, **League Totals** sums Billed, Collected and Due across every team.
+
+Two things worth knowing about how those numbers are built:
+
+- **Billing follows the current roster.** A member who moves off a team stops counting toward that
+  team's total, and a substitute who never joins a roster is never billed.
+- **Changing a rate re-prices the whole season immediately**, including teams that have already
+  paid. Set the rates before the season starts.
+
+---
+
+## 9. Sharing a League Across Devices
 
 The app uses iCloud to share leagues between devices. All participants must be signed into iCloud.
 
@@ -339,7 +376,7 @@ does not make somebody a secretary.
 A "Can make changes" collaborator who claims a **captain** identity can submit sheets and roster
 requests for their own team, but cannot edit directly or approve anything. One who claims a
 **non-captain** identity, or claims none at all, ends up effectively view-only. To give someone
-full secretary powers, add them to **"…" → Settings → Backup Secretaries** as well.
+full secretary powers, add them to **"…" → League Settings → Backup Secretaries** as well.
 
 ### Accepting a share
 
@@ -359,7 +396,7 @@ Troubleshooting section.
 
 ---
 
-## 9. Notifications
+## 10. Notifications
 
 The app sends a system notification banner to alert you to events that need your attention while the app is in the background. You'll see notifications for four event types:
 
@@ -392,7 +429,7 @@ A freshly accepted share **does not** flood you with notifications for historica
 
 ---
 
-## 10. Troubleshooting
+## 11. Troubleshooting
 
 ### Red cloud icon / sync not working
 
