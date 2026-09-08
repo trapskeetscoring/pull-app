@@ -144,15 +144,35 @@ close that sheet without generating, the setting reverts — the schedule and th
 | **Valid Scores** | How many of a team's shooters count toward the team total **each round**. The highest N are kept; the rest are dropped. Can never exceed Roster Size. |
 | **Tiebreakers** | How many of the *dropped* shooters are compared to break a tie. Can never exceed Roster Size − Valid Scores. |
 | **Cap Scores at Max** | Clamps a handicap-adjusted round score at Max Round Score. On by default. |
-| **Allow Dummy Score** | When a team is short-handed, duplicates its lowest counting score to fill the missing slot. On by default for Skeet. |
-| **Allow Proxy Score** | **Not yet implemented.** The toggle is saved but nothing reads it. |
+| **Allow Dummy Score** | When a team is short-handed, repeats its lowest counting score to fill one missing slot. See below. On by default for Skeet. |
+
+#### Allow Dummy Score, explained
+
+**Valid Scores** says how many shooters count toward the team total each round — say 4. If only 3
+of the team shot that round, the team is a score short and would lose to a full team on arithmetic
+alone, regardless of how well those 3 shot.
+
+**Allow Dummy Score** covers that gap. The team's *lowest counting score* for the round is repeated
+once to fill the empty slot. So a team shooting 24, 22, 21 with Valid Scores of 4 is totalled as
+**24 + 22 + 21 + 21 = 88** — the 21 counted twice.
+
+Three things to know:
+
+- It fills **exactly one** slot. If two shooters are missing, the team is still a score short. This
+  is deliberate: the more shooters missing, the less a repeated score represents the team.
+- It uses the **lowest** counting score, never the highest — it softens a shortage, it does not
+  reward one.
+- The repeated score is not credited to anyone. It belongs to the team total only and never touches
+  a shooter's own record or average.
+
+Turn it **off** if you want a short-handed team to carry the full penalty of being short.
 
 ### Handicap
 
 | Setting | What it does |
 |---|---|
 | **Handicap Type** | **None** or **Avg**. |
-| **Factor** | Percentage of the gap to the perfect score awarded as strokes. Default 90%. |
+| **Factor** | Percentage of the gap to the perfect score awarded as clays. Default 90%. |
 | **Rounds in Average** | How many of the shooter's most recent rounds feed the average. Default 8. |
 | **Use Starting Average** | Seeds a shooter with no history from the **Starting Average** on their member record. |
 
@@ -160,7 +180,7 @@ The handicap formula is:
 
 > **handicap = Factor% × (Max Round Score − handicap average)**
 
-So a 90% league with a max of 25 gives a shooter averaging 20 a handicap of 0.9 × 5 = **4.5** strokes
+So a 90% league with a max of 25 gives a shooter averaging 20 a handicap of 0.9 × 5 = **4.5** clays
 per round. Their 20 scores as 24.5. With **Cap Scores at Max** on, no adjusted score exceeds 25.
 
 Two things to know before week 1:
@@ -528,7 +548,7 @@ without reading it, but every number on the reports comes from here.
 
 1. **The raw score** is what the shooter broke — 0 to Max Round Score, per round.
 2. **The handicap is added.** With Handicap Type set to Avg, each shooter gets
-   `Factor% × (Max Round Score − their handicap average)` strokes per round. With **Cap Scores at
+   `Factor% × (Max Round Score − their handicap average)` clays per round. With **Cap Scores at
    Max** on, the result is clamped at Max Round Score.
 3. **The team keeps its best scores.** For each round, the highest **Valid Scores** adjusted scores
    count toward the team total and the rest are dropped. On reports the dropped ones appear in red
