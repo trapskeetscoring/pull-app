@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on September 8, 2026_
+_Updated on September 21, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -22,18 +22,17 @@ season from a league you already ran, jump to [Section 5 — Starting a New Seas
 3. [Teams, Members and Substitutes](#3-teams-members-and-substitutes)
 4. [Building the Schedule](#4-building-the-schedule)
 5. [Starting a New Season](#5-starting-a-new-season)
-6. [Captain PIN Setup](#6-captain-pin-setup)
-7. [Identity — Claiming Your Role](#7-identity--claiming-your-role)
-8. [How Scoring Works](#8-how-scoring-works)
-9. [Running a Match Week](#9-running-a-match-week)
-10. [Corrections and Fixing Mistakes](#10-corrections-and-fixing-mistakes)
-11. [Roster Changes](#11-roster-changes)
-12. [Schedule Management](#12-schedule-management)
-13. [Reports and Export](#13-reports-and-export)
-14. [League Fees](#14-league-fees)
-15. [Sharing a League Across Devices](#15-sharing-a-league-across-devices)
-16. [Notifications](#16-notifications)
-17. [Troubleshooting](#17-troubleshooting)
+6. [Identity — Claiming Your Role](#6-identity--claiming-your-role)
+7. [How Scoring Works](#7-how-scoring-works)
+8. [Running a Match Week](#8-running-a-match-week)
+9. [Corrections and Fixing Mistakes](#9-corrections-and-fixing-mistakes)
+10. [Roster Changes](#10-roster-changes)
+11. [Schedule Management](#11-schedule-management)
+12. [Reports and Export](#12-reports-and-export)
+13. [League Fees](#13-league-fees)
+14. [Sharing a League Across Devices](#14-sharing-a-league-across-devices)
+15. [Notifications](#15-notifications)
+16. [Troubleshooting](#16-troubleshooting)
 
 ---
 
@@ -47,17 +46,29 @@ this order avoids all of them:
 1. **Create the league** and pick the discipline.
 2. **Set the rules** — especially Match Type, Roster Size, Valid Scores, handicap, and the fee rates.
 3. **Add teams and members**, and mark captains.
-4. **Set captain PINs.**
-5. **Generate or import the schedule.**
-6. **Share the league** with captains.
-7. **Enter the first week's scores.**
+4. **Generate or import the schedule.**
+5. **Share the league** with captains.
+6. **Enter the first week's scores.**
 
-Step 7 is the point of no return for several settings. See
+Step 6 is the point of no return for several settings. See
 [What locks when](#what-locks-when-scores-exist) below.
 
 ### Create a league
 
-1. Open the app. On the Leagues screen, tap the gear icon (top right) and choose **New League**.
+On a fresh install the Leagues screen is empty and offers the three ways in directly:
+
+- **Create a League** — start a season from scratch. This is the one below.
+- **Import a League** — load a `.json` or `.csv` export, from a backup or from last season.
+- **Try the Demo** — a complete sample league to look around in, kept apart from your own data.
+
+It also says that a league somebody has **shared** with you appears here on its own, once you have
+accepted the invitation and are signed in to iCloud — there is nothing to tap for that one.
+
+Once you have at least one league, those actions move to the gear icon at the top right.
+
+To create:
+
+1. Tap **Create a League** — or, if you already have leagues, the gear icon and **New League**.
 2. Enter a league name and choose a discipline — **Trap** or **Skeet**.
 3. Tap **Create**.
 
@@ -97,8 +108,9 @@ Anyone can hide a league on their own device; unlike deleting, it is not restric
 
 ### Trying the app without touching your data
 
-**Demo Mode**, on the Leagues screen's gear menu, loads a complete sample league — teams, rosters, a
-generated schedule, and a season of scores — so you can explore every screen safely.
+**Demo Mode** loads a complete sample league — teams, rosters, a generated schedule, and a season of
+scores — so you can explore every screen safely. It is **Try the Demo** on the empty Leagues screen,
+and afterwards it lives on that screen's gear menu.
 
 Demo data is kept in a **separate file** from your real leagues and never reaches iCloud. Leaving
 demo mode deletes it and returns you to your own leagues. Nothing you do in demo mode can affect a
@@ -213,27 +225,28 @@ league on 8 sites with 2 flights fills exactly, with nobody sitting out.
 
 | Setting | What it does |
 |---|---|
-| **Max Season Banks** | Intended cap on banks per season. **Set to 0 to turn banking off entirely.** |
-| **Max Weekly Banks** | Intended cap on banks in one week. |
+| **Max Season Banks** | How many bank scores **one team** may use across the whole season. **Set to 0 to turn banking off entirely.** |
+| **Max Weekly Banks** | How many bank scores **one team** may use in any single week. |
 | **Allow Substitutes** | Whether substitutes may be used at all. |
 
-> **Both bank caps are currently unenforced.** They are saved and exported, but nothing checks them
-> when a bank is used. The only limit actually in force is the natural one: each earlier score can
-> be banked exactly once. If you need banking switched off, set **Max Season Banks to 0** — that
-> genuinely disables the feature.
+> **Both caps count a whole team, not a member.** A team of five with Max Weekly Banks of 2 can bank
+> two of its shooters in a week, whoever they are. When a limit is reached the Bank switch stops
+> being available and says which limit stopped it — *weekly limit* or *season limit* — and a bank
+> already switched on can always be switched back off. A third limit is natural rather than
+> configured: each earlier score can be banked exactly once.
 
 ### Fees & Display
 
 | Setting | What it does |
 |---|---|
 | **Member Fee** / **Guest Fee** | Season fee for club members and for everyone else. |
-| **Show Roster Categories** | Displays classification/sex groupings on roster screens. |
+| **Show Roster Categories** | Splits the targets figures into **Club Members** and **Guests** — on the Results tab and at the end of the Roster PDF. (Until 10 September this setting did nothing at all.) |
 | **Improvement Rounds** | How many early rounds form the baseline for the improvement score. |
 
 ### Access
 
 **Backup Secretaries** — owner-only. Members promoted here get full secretary editing power on a
-shared league. See [Section 15](#what-each-role-can-do).
+shared league. See [Section 14](#what-each-role-can-do).
 
 ### What locks when scores exist
 
@@ -284,8 +297,7 @@ A substitute:
 
 - can shoot for any team, in any week, in place of an absent rostered member;
 - keeps their own scoring record, and their rounds count toward their own average;
-- **cannot claim an identity** and so cannot be a captain or a backup secretary;
-- does not have a PIN.
+- **cannot claim an identity** and so cannot be a captain or a backup secretary.
 
 Promoting a sub onto a team roster is simply adding them to the team — their history stays with them.
 
@@ -293,7 +305,7 @@ Promoting a sub onto a team roster is simply adding them to the team — their h
 
 Removing a member from a team leaves their slot vacant and moves them to the substitutes pool. **It
 does not change any week that has already been scored**, and it does not delete their scores — see
-[Section 10](#what-happens-to-past-weeks) for exactly why.
+[Section 9](#what-happens-to-past-weeks) for exactly why.
 
 There is currently no way to delete a member from the league entirely. Benching them into the
 substitutes pool is the supported route.
@@ -306,7 +318,7 @@ You have two ways to get a season into the app: let it build one, or import one 
 
 ### Option A — Generate a schedule
 
-From the league screen, tap **Generate Schedule** in the Schedule section. Enter a start date, choose
+From the league screen, tap **Generate Schedule** in the League Info section. Enter a start date, choose
 whether to **Use Bye Weeks**, and tap **Generate**. The sheet shows the league settings it is about
 to use — weeks, teams, flights, sites, starting site, match type — so you can check them first.
 
@@ -421,7 +433,7 @@ From the league's **"…"** menu, tap **Copy League**. Give the new league a nam
 
 - Every team, with its name, display number, captain, and roster.
 - Every member, with their name, contact details, captain and club-member flags, classification,
-  starting average, and **PIN**. Captains do not need new PINs.
+  starting average, and classification.
 - The substitutes pool.
 - The backup-secretary list.
 - The complete rule set — every setting from Section 2.
@@ -462,53 +474,12 @@ rules, an empty scoring record, and everyone marked unpaid ready to collect agai
 2. Open **Settings** and check Match Type, Roster Size, Valid Scores, handicap, fees, and bank
    settings.
 3. Fix the roster — remove anyone who has not returned, add newcomers, update captains.
-4. Set PINs for any new captains. Returning captains keep theirs.
-5. Generate or import the schedule.
-6. Share the league with this season's captains.
+4. Generate or import the schedule.
+5. Share the league with this season's captains.
 
 ---
 
-## 6. Captain PIN Setup
-
-PINs let captains and members verify their identity on any device without a login account. The
-secretary (league owner) manages PINs.
-
-### Why PINs matter
-
-Anyone who picks up a device with the app installed can, without PINs, tap any name and act as that
-person. Once PINs are set, the identity picker challenges the user before granting access.
-
-### Setting captain PINs (secretary)
-
-If any captain on the league lacks a PIN, an orange banner appears at the top of the league screen
-titled **"Set Captain PINs"** with a count of how many captains still need one. Tap it to open the
-Captain PIN Setup screen, which lists every captain with a Set/Reset button next to each name.
-
-- **Set PIN** — enter a 4-digit PIN for the captain. The app shows the PIN on the success screen;
-  share it with the captain in person or by phone.
-- **Reset PIN** — works the same way. Use this if a captain forgets their PIN.
-
-The banner is dismissible per session; it will reappear on the next app launch until all captains
-have PINs.
-
-### Setting member PINs
-
-Any member (not just captains) can have a PIN. PIN management lives in the member's detail screen
-under **Security**. The rules for who can set a PIN:
-
-- Secretary: can set or reset any member's PIN.
-- Captain: can set or reset PINs for members on their own team.
-- Member: can change their own PIN after entering their current one.
-- Substitutes: do not have PINs and cannot claim an identity.
-
-### Lockout
-
-After 5 wrong PIN attempts the account is locked for 60 seconds. The lock timer counts down on
-screen and persists if you close and reopen the sheet.
-
----
-
-## 7. Identity — Claiming Your Role
+## 6. Identity — Claiming Your Role
 
 "Identity" is the way each device knows who is using it. It is a per-device, per-league setting.
 
@@ -516,15 +487,23 @@ screen and persists if you close and reopen the sheet.
 
 1. From the league screen, tap the identity row (shows your current name, or "Not Set").
 2. Tap your name in the list.
-3. If your name has a PIN, enter it on the keypad.
 
-Once set, your name appears in the identity header at the top of most screens. The app uses this to
-route scorekeeper assignments to the right captain and to gate editing rights.
-
-If your name shows an orange chip labelled **No PIN**, it means you can be claimed without a PIN.
-Ask the secretary to set one.
+That is the whole of it. Your name then appears in the identity header at the top of most screens,
+and the app uses it to route scorekeeper assignments to the right captain and to decide what you can
+edit.
 
 Substitutes do not appear in the identity picker.
+
+Usually you will not have to do even that. If the secretary has identified you (below), your name
+is already set the first time the app syncs after you accept the invitation.
+
+> **Why there is no PIN.** The app used to ask for a 4-digit PIN here. PINs were removed in
+> September 2026: the secretary had to invent one for everybody, pass it on, and a copy of every
+> PIN ended up on every participant's device — a poor way to protect a four-digit number. The
+> replacement is the invitation itself, which iCloud has already checked. A member nobody has been
+> identified as can still be picked by anyone with access to the league, which is the same trust you
+> extend by inviting them; a member who **has** been identified can only be used by that person's
+> own device.
 
 ### Secretary / Captain mode toggle
 
@@ -539,7 +518,7 @@ anyone.
 
 ---
 
-## 8. How Scoring Works
+## 7. How Scoring Works
 
 This section explains what the app does with a score once it is entered. You can run a season
 without reading it, but every number on the reports comes from here.
@@ -669,7 +648,7 @@ the standings will not show a phantom result against the team you have not typed
 
 ---
 
-## 9. Running a Match Week
+## 8. Running a Match Week
 
 ### The life of a week
 
@@ -683,7 +662,7 @@ A week moves through these states, and it is worth knowing where the boundaries 
 4. **Scored** — all scores in. Reports and standings include it.
 
 Step 3 is the one that matters most and is invisible while it happens. See
-[Section 10](#what-happens-to-past-weeks).
+[Section 9](#what-happens-to-past-weeks).
 
 ### The scorekeeper banner
 
@@ -701,12 +680,13 @@ The sheet walks through the round in three stages:
 score (they sit out and use a saved score), swap in a substitute, or mark a slot vacant.
 
 **Rotation entry** — the app steps through each rotation (station) one at a time. Tap each cell to
-record whether the shot hit or missed. Use the keyboard toolbar's Next button to advance through
-cells quickly. You do not have to fill every station before moving on; the app saves your progress
-as you go and will let you go back.
+record whether the shot hit or missed. You do not have to fill every station before moving on; the
+app saves your progress as you go and will let you go back. If you switch the sheet to **Totals
+Only**, each shooter's round total is typed on the app's own number pad, which carries **Back** and
+**Next** beside the digits.
 
 **Review** — a summary grid showing all shots for all shooters. Check the totals, then tap
-**Submit**. A PIN challenge appears if you have a PIN set.
+**Submit**. The sheet is sent to the secretary under the identity this device has claimed.
 
 If you need to stop mid-sheet, tap **Close** — the draft is saved and will be waiting the next time
 you open the assignment.
@@ -728,16 +708,54 @@ section. They open it, review the sheet, and either:
 
 The secretary can enter or edit scores directly without going through the captain submission flow.
 From the league screen, scroll to the **Scoring Data** section and tap **View / Edit Match Data**.
-Pick the week, then work down each team.
 
-For each shooter you can type the round scores, switch in a substitute, or toggle **Bank**. Every
-change saves immediately — there is no submit button and nothing is lost if you close the screen.
+**It opens where the typing stopped.** The screen lands on the earliest week that still has a team
+with no scores, and on that team — not on the next empty week — so a night entered for some teams
+and not others keeps you in it. Any single score counts a team as started, because a shooter who did
+not turn up is recorded by having no score at all; a team would otherwise read as unfinished for the
+rest of the season. Use the week selector to go anywhere else.
+
+The screen is laid out **a section per round** — every shooter's round 1, then every shooter's round
+2 — because that is the order a paper scoresheet reads in. For each shooter you can type the round
+scores, switch in a substitute, or toggle **Bank**; the substitute picker and the bank switch appear
+under the name in round 1 only, since both belong to the shooter's whole night rather than to one
+round.
+
+**Scores are typed on the app's own number pad**, not the system keyboard. Tap a score box to select
+it, then type; **Back** and **Next** sit beside the digits, so moving down a round's column of
+shooters never means looking away from the keys. The first digit you type replaces what is there, so
+correcting a score is retype rather than delete-then-type, and a number too large for the round
+starts again rather than being trimmed to something nobody shot.
+
+**To change the shooting order, tap Reorder.** Round 1's rows grow drag handles; move a shooter and
+every round follows, because a squad shoots one order for the whole night. Tap **Done** to go back to
+typing. The two modes are separate because a list cannot offer drag handles and live score boxes at
+the same time, and entering Reorder clears the selected box — the positions have moved, so the
+cursor would otherwise be pointing at a different shooter than the one you left it on.
+
+Two things worth knowing about it. The captain stays in the first slot whatever you drag, and
+**the change applies to the team's standing line-up as well as to this week** — so re-dragging an
+old week's sheet to match the paper also reorders the current one. Empty slots stay at the bottom.
+
+Every change saves immediately — there is no submit button and nothing is lost if you close the
+screen.
 
 Direct entry bypasses the pending-sheet approval queue entirely. If you are running the league from
 paper, this is the screen you will spend the season in.
 
 A team's week can also be edited from **Team Detail**, which shows one team at a time — useful when
 you are correcting a single team rather than entering a whole night.
+
+### Starting average for a new member
+
+When **Use Starting Average** is on, a member can be given an average to stand in for history they do
+not have yet, so they have a handicap on their first night. Set it when creating them, or afterwards
+from the member's **Edit** sheet → **Starting Average**.
+
+Two things worth knowing. Fractions are kept — 21.5 is spread across the week's rounds rather than
+rounded down. And the starting average does not stop counting the moment a real score arrives: it
+sits in the averaging window alongside their own rounds and is the first thing dropped once they have
+shot enough of their own.
 
 ### Totals-only mode
 
@@ -748,7 +766,7 @@ available for those rounds.
 
 ---
 
-## 10. Corrections and Fixing Mistakes
+## 9. Corrections and Fixing Mistakes
 
 ### What happens to past weeks
 
@@ -784,6 +802,25 @@ credited — the team total, the standings and both shooters' averages all follo
 Note the reverse: switching the substitute back off leaves the slot empty, because the rostered
 member's score was removed when you made the correction. Retype it.
 
+### A week was approved too early
+
+Approving a sheet posts its scores, and until you can hand it back the only ways out are retyping
+the week yourself or clearing it — neither of which gives the scorekeeper their sheet back.
+
+Open **Pending Score Sheets**, tap the approved sheet, and choose **Return to Scorekeeper**. You can
+add a note. Three things happen together:
+
+- That team's scores for the week are **removed**, and any bank reservations they consumed are
+  released. The scores go because a week showing numbers whose sheet is back in somebody else's
+  hands is a disagreement nothing on screen explains — and a resubmission would overwrite them
+  silently anyway.
+- The sheet reopens for the scorekeeper **with their grid exactly as they left it**, so a correction
+  is an edit rather than a re-entry.
+- They are asked to keep score again, and their banner comes back.
+
+Only that team is affected — including any substitutes who shot for it — and the week's frozen
+roster is kept, so re-scoring it still scores against the line-up that actually shot that night.
+
 ### A bank was used by mistake
 
 Switch the **Bank** toggle off for that shooter. The banked entry is removed and the earlier score it
@@ -791,9 +828,26 @@ consumed is released, so it can be banked again for a different week.
 
 ### A whole week needs redoing
 
-There is no per-week clear. Retype the scores you need to change, or — as a last resort — use
-**Clear Scores** in the league's **"…"** menu, which wipes the *entire* season's scoring. That is
-the same action that unlocks Match Type, Roster Size and Regenerate Schedule.
+**Clear Scores** in the league's **"…"** menu, then **Clear Specific Week…**, then pick the week.
+That week goes back to un-played: every shooter's scores for it, its substitute records, any
+forfeited rounds, **and its score sheets**. Every other week is untouched, and so is the roster the
+week was scored against — so re-entering it scores against the line-up that actually shot that
+night, not today's.
+
+The score sheets going is what lets the week be scored again by the people who scored it. A
+submitted or approved sheet is what closes a captain's *"You're scorekeeping"* banner, and the
+banner is the only door into the sheet — so a week cleared with its sheets left behind could only
+ever be re-entered by the secretary, by hand.
+
+A week whose sheet was **submitted but never approved** can be cleared too, even though it shows no
+scores: the submission is work to clear, and it has already closed the captain's banner. A captain's
+unfinished **draft** does not count — it blocks nothing and it is theirs.
+
+The same menu also offers **Clear All Scores**, which wipes the *entire* season's scoring. That is
+the drastic one, and it is also what unlocks Match Type, Roster Size, Regenerate Schedule and Clear
+Schedule.
+
+For a handful of wrong numbers, neither is needed — just retype them.
 
 ### A member left after the season started
 
@@ -805,7 +859,7 @@ handicap builds from their own rounds, and they inherit nothing from the person 
 
 ---
 
-## 11. Roster Changes
+## 10. Roster Changes
 
 ### Secretary — direct edits
 
@@ -825,18 +879,19 @@ acts. Re-submitting a change replaces the previous pending request.
 
 ### Secretary — approving or rejecting roster changes
 
-A count badge appears on the **Pending Roster Changes** row in the League Members section of the
+A count badge appears on the **Pending Roster Changes** row in the League Info section of the
 league screen. Tap it to see the inbox. Each entry shows the current value vs. the proposed value for
 every changed field. Tap **Approve** to write the changes to the member record, or **Reject** with an
 optional note to send it back.
 
 ---
 
-## 12. Schedule Management
+## 11. Schedule Management
 
 Everything in this section is secretary-only. The actions live in the **"…"** menu at the top right
-of the schedule view — **Assign Scorekeepers**, **Cancel Week**, **Regenerate Schedule**, and
-**Import Schedule**. A captain or view-only collaborator opens the same screen with no menu at all.
+of the schedule view — **Assign Scorekeepers**, **Cancel Week**, **Regenerate Schedule**,
+**Import Schedule** and **Clear Schedule**. A captain or view-only collaborator opens the same screen
+with no menu at all.
 
 **Cancel Week** opens one sheet where you pick the week and then the action — **Move to End of
 Schedule** or **Skip Week (No Matches)**. Only weeks that are neither already cancelled nor already
@@ -847,6 +902,14 @@ played can be selected.
 Open the **"…"** menu, tap **Cancel Week**, choose the week, and choose **Skip Week (No Matches)**.
 The week's date and week number are preserved; the match is simply flagged as cancelled and skipped
 in all scoring and report calculations.
+
+### Putting a cancelled week back
+
+Page to the cancelled week, open the **"…"** menu, and tap **Uncancel Week**. The week returns to the
+schedule exactly as it was — same date, same week number, same matchups.
+
+If the week already had scores when it was cancelled, they were never deleted, only ignored; putting
+the week back makes them count again. So a week cancelled by mistake is fully recoverable.
 
 ### Moving a week to the end
 
@@ -867,6 +930,39 @@ number, so a new schedule would leave each one attached to a different week's ma
 you genuinely need to start the season over, use **Clear Scores** in the league's **"…"** menu first;
 then Regenerate becomes available again.
 
+### Moving the season start date
+
+**Schedule settings → Season Start → First Match.** Changing it moves every week by the same amount,
+keeping the gaps between them and their week numbers — so a week you had already pushed to the end
+stays at the end.
+
+It is available only while the season has **no scores at all**. Once anyone has shot, the dates are
+fixed: moving a week that has already been played makes no sense, and moving only the remaining weeks
+could put one before a week that has been shot, which would scramble every report. To move a single
+week mid-season, use **Cancel Week → Move to End of Schedule** instead.
+
+### Per-week handicap adjustment
+
+**Schedule view → the week → Handicap Adjustment.** Adds the same number of clays to *every*
+member's handicap for that one week — for a night when conditions had the whole field shooting below
+its average.
+
+Secretary-only, and shown only when the league uses average-based handicapping, since that is the
+only mode that reads it. Once the week has scores the adjustment is fixed, because changing it then
+would restate handicaps that have already been applied.
+
+### Clearing the schedule
+
+**Clear Schedule** removes every week, matchup and bye, leaving the league ready to generate or
+import a new season. Teams, members and settings are untouched.
+
+It is the way back to an empty schedule, which **Generate** needs — Generate only appears while there
+is no schedule, and Regenerate replaces one season with another rather than clearing.
+
+Like Regenerate, it is **unavailable once any score has been recorded**, for the same reason: scores
+are stored against a week number, and removing the weeks would leave each score attached to nothing.
+Use **Clear Scores** first if you genuinely need to start over.
+
 ### Changing the match type
 
 **Team vs Team** and **League Ranking** weeks are built differently — a head-to-head week pairs teams
@@ -882,7 +978,7 @@ reason Regenerate is barred.
 
 ---
 
-## 13. Reports and Export
+## 12. Reports and Export
 
 Tap **Reports** from the league screen to see the full report suite. All reports are available as an
 on-screen view and as a shareable PDF. Pick the week at the top; the choice carries between report
@@ -892,14 +988,37 @@ tabs.
 the team's handicap-adjusted score for it. A team that did not play shows **BYE**. Both scoring modes
 use the same table; only the source of the points differs.
 
+Rank is its own column and is written as a place — **1st**, **2nd**, **3rd**. Teams level on season
+points share the higher place and are marked **T-**, so two teams tied for second both read
+**T-2nd** and the next team is **4th**.
+
+On a phone the table **scrolls sideways** and the rank column stays put, so a row is still
+identifiable once the team name has scrolled away. Nothing is left out: the week's points, the
+season total and the weekly score are all there, a swipe to the left.
+
 **Results** — the selected week in detail. In Team vs Team mode, one block per pairing with the
 match points each round was worth. In League Ranking mode, one block per team with its rank points.
 Scores that did not count toward the team total — those below the Valid Scores cutoff — are shown in
 red with a strikethrough, so you can see at a glance which were dropped. A shooter whose scores were
 dropped in every round also has their name struck through.
 
+Each team's block ends with its **round totals** and then the **match total**, in the same columns
+as the shooters above them, so a total reads straight down the column it totals. Both are given as
+**raw / handicap** — the scores as shot, then the handicap-adjusted figures the match was decided
+on. The raw figure is the raw scores of *the shooters whose adjusted scores counted*, which once
+handicaps differ is not the same as the highest raw scores on the team. In Team vs Team mode the
+points take the raw column instead, since a match is settled on the adjusted figures and the points
+beside them are what the row is there to show.
+
+On a phone this card scrolls sideways as one piece, names and all.
+
 **Roster / Member Stats** — per-member averages, handicaps, rounds shot, bank usage, and improvement
-scores.
+scores. The PDF ends each week with a **Targets** summary: clays thrown, clays broken and accuracy
+for that week and for the season to date, plus how many bank scores the league has used. Turn on
+**Show Roster Categories** in Settings to split those figures into club members and guests. The same
+numbers appear on screen at the foot of the **Results** tab. Before the season starts it lists every member of every team with the figures still at zero,
+so you can print team sheets as soon as the rosters are entered; once play begins it shows the
+members who have shot.
 
 **Leaders** — top individual performances by category.
 
@@ -907,12 +1026,48 @@ scores.
 
 ### Exporting
 
-Each report has a share button that produces a PDF. The **"…"** menu offers **Export All**, which
-bundles every report for the selected week.
+Each report has a share button that produces a PDF of that report **for the week you are looking
+at**. The **"…"** menu's **Export** list also holds one report with no tab of its own:
 
-> If you use **Export All**, do it from a report tab rather than the Schedule tab. The Schedule tab
-> is not tied to a week, so the week used for the other reports in the bundle may not be the one you
-> expect.
+> **All Members** — every member of the league on one line, with each round of every week across the
+> page and each round's season average at the end. Substitutes are listed alongside rostered members,
+> in surname order, because this is the sheet you read down to find a person rather than a team. A
+> week still to be shot is blank, a cancelled week gets no column at all, and a **B** beside a figure
+> (in red) means a bank score — an earlier week replayed, not shot that night. It is **landscape**
+> and it is wider than a phone, which is why it is a sheet you export and print rather than one you
+> scroll: a season with more weeks than fit the page continues on the next page.
+
+The **"…"** menu also offers **Export All**, which produces the whole set at once — Standings,
+Results, Roster, All Members, Leaders and Schedule — as six PDFs you share together.
+
+> **Export All ignores the week selector.** It is a season archive, not a snapshot: **Standings**,
+> **Results** and **Roster** each contain *every* week that has scores — one week per page, **newest
+> week first**, so each PDF opens on the week just played and the history runs backwards behind it.
+> **All Members** and **Leaders** are each a single table through the latest of those weeks, being
+> cumulative by nature, and
+> **Schedule** is the whole season as always. So it does not matter which tab you run it from, and
+> you do not need to visit each week first. Before the first night, when there is nothing to
+> archive, Export All gives you the **Roster** and the **Schedule** — the two sheets worth having on
+> paper at that point.
+
+To export a single week instead — a results sheet to post after league night, say — pick the week and
+use that report's own share button.
+
+### What the files are called
+
+Every exported report is named for the league, the report and **the week it covers**:
+
+```
+Fall_WNT_2026_Standings_Through_Week_3.pdf
+```
+
+The week is the one printed inside, counted the way the app displays it, so a file cannot disagree
+with its own contents. Export All uses the latest week in the bundle, and the **Schedule** carries
+the suffix too even though it is a whole-season sheet — the six files of one export are filed and
+sent on as a set, and one of them not sorting with the others is the confusion this avoids.
+
+Spaces and anything awkward in the league name become underscores, so the files are safe to put in a
+shared folder or attach to an email without being renamed on the way.
 
 ### Exporting and importing data
 
@@ -925,11 +1080,22 @@ To import a previously exported JSON file, tap the gear icon on the main Leagues
 **Import League**. The importer also accepts JSON files from the older Java-based scoring app —
 members, teams, rosters, schedule, and scoring history are carried over.
 
+**Read the result message.** It reports how many leagues actually landed, and names anything it
+skipped:
+
+- *"a league of that name is already here"* — rename it in the file, or rename the one on the device.
+- *"already on this device under a different name"* — the file is a copy of a league you already
+  have, and the two are the same league as far as the app is concerned. Delete the copy on the device
+  first, or import into a fresh install.
+
+A JSON export carries no credentials of any kind — there are none in the app to carry. It restores
+every member, team, score and week.
+
 ---
 
-## 14. League Fees
+## 13. League Fees
 
-Everything in this section is secretary-only. The **Finance** section does not appear at all for
+Everything in this section is secretary-only. The **Finances** row does not appear at all for
 captains or view-only participants.
 
 ### Setting the rates
@@ -949,7 +1115,7 @@ slate. A copy made with *Keep league data* on preserves who had paid, because it
 
 ### The Finance screen
 
-From the league screen, tap **Finance → View**. Each team shows:
+From the league screen, tap **League Info → Finances**. Each team shows:
 
 - how its roster splits between club members and guests,
 - **collected / billed** — how much of that team's season fees have come in,
@@ -957,16 +1123,31 @@ From the league screen, tap **Finance → View**. Each team shows:
 
 Underneath, **League Totals** sums Billed, Collected and Due across every team.
 
-Two things worth knowing about how those numbers are built:
+**The fee belongs to the roster slot, for the season — not to whoever shoots on the night.** That
+single idea explains the rest of this section.
 
+- **Substitutes are never billed.** A sub is standing in for a rostered member whose seat has already
+  been paid for, so billing them would charge the club twice for one place on the team. They appear
+  in no Finance row, and there is no way to bill one from inside the app — deliberately.
 - **Billing follows the current roster.** A member who moves off a team stops counting toward that
-  team's total, and a substitute who never joins a roster is never billed.
+  team's billed total.
 - **Changing a rate re-prices the whole season immediately**, including teams that have already
   paid. Set the rates before the season starts.
 
+#### One case the screen gets wrong
+
+If a **paid** member leaves a team mid-season and somebody takes their slot, the seat is billed
+again and the payment already made against it disappears from the team's Collected figure. The
+screen will show money outstanding on a seat the club has in fact been paid for, and their own
+member record still reads **Fee Paid**.
+
+Until that is settled, check the departing member's record before chasing the replacement for money.
+It is logged as a known issue rather than fixed, because what *should* happen — carry the payment to
+the seat, refund it, or bill the newcomer in full — is a club decision rather than an app one.
+
 ---
 
-## 15. Sharing a League Across Devices
+## 14. Sharing a League Across Devices
 
 The app uses iCloud to share leagues between devices. All participants must be signed into iCloud.
 
@@ -996,19 +1177,73 @@ person needs in place before they can *do* anything.
 
 **Spectators (View only)** need nothing. They accept the invitation and can read the league.
 
-**Captains and backup secretaries** must exist in the league as a member and have a **PIN**, because
-acting in a role means claiming an identity and that is PIN-confirmed. The PIN does not have to be
-set before you share — it lives on the member record and syncs like everything else, so you can set
-it afterwards and it will reach them. Until it does, their name shows an orange **"no PIN"** badge in
-the identity picker and tapping it gives a "PIN Required" message.
+**Captains and backup secretaries** must exist in the league as a member, because acting in a role
+means claiming an identity and an identity is a member. There is nothing to hand out. Once they
+accept the invitation, open **Who Has Joined** on the league screen and confirm which member each
+person is — their device then knows who they are on its next sync, with nothing for them to type.
 
-Setting PINs first is still the smoother order, for two reasons:
+### Who Has Joined — identifying the people who accepted
 
-- **A captain cannot set their own first PIN.** Setting one requires an identity, and claiming an
-  identity requires a PIN, so the first one always comes from you.
-- **The PIN has to reach them out of band.** The app shows it on the success screen after you set it;
-  you pass it on in person or by phone. Doing that in the same conversation as the invitation saves a
-  round trip.
+The row appears on the league screen for the league's owner. It lists everyone who has **accepted**
+the invitation and has not yet been matched to a member. An invitation that has been sent but not
+accepted does not appear: until somebody accepts, iCloud has nothing to identify them by.
+
+**They pick first, you confirm.** Ask each person to open the league on their own device and tap
+their own name under **My Identity**. That appears at the top of this screen as *"Says they are Dave
+Ellis"* with a **Confirm** button. Until somebody has picked, they show lower down as joined but not
+yet identified, and there is nothing to confirm — the app deliberately cannot identify somebody who
+has not said who they are.
+
+**Accepted Invite / Not Identified** lists the email address or phone number each invitation was sent
+to, and nothing else — not a name. An address need have nothing to do with its owner's name, and the
+app does not guess which member an iCloud account belongs to; that comes from the person picking
+their own name. Once you identify somebody they move to the **Identified** list, with their address
+shown beside their name, and they leave this one.
+
+**Identify yourself too.** The list only shows people who *accepted* an invitation, and you sent it
+rather than accepting one — so the screen offers you a **You** section at the top, already suggesting
+whichever member this device is acting as. Tap it. Until you do, your own name is the one member
+nobody has claimed, which means anyone on the share can select it; and if you open the league on a
+second device of your own, that device can pick your name too.
+
+Each request shows when it was made, and can be **Rejected** instead of confirmed. Reject one you do
+not recognise: a request from a device that has since been signed out or reinstalled belongs to
+nobody, and confirming it would link the member to a device that no longer exists.
+
+Rejecting reaches the device that asked — it stops acting as that member, is told it was not
+confirmed, and stops asking. Nobody is silenced by it: if they really are that member they pick
+their name again, which sends a fresh request for you to confirm.
+
+Once identified:
+
+- their device claims that identity by itself, the next time it syncs;
+- **no other device can claim that member**, which is what stops somebody picking a name that is not
+  theirs and acquiring the powers that go with it;
+- the **Identified** list at the bottom of the same screen shows who is matched, with **Unlink** for
+  someone who has changed their Apple ID or was matched to the wrong person. **Unlinking stops that
+  device acting as the member** — on its next sync it drops the identity and shows an alert saying
+  so, which is the point if you linked the wrong person. It also clears their request from
+  **Asking to be identified**, so unlinking cannot be undone by accident with the next tap; if they
+  really are that member, they pick their name again and you confirm it again. Unlinking does not
+  remove their access to the league; that is **Share → their row → Remove**.
+
+If you identify a member as somebody whose device was *already* acting as them, that device stops
+acting as them on its next sync and shows an alert saying so. Nothing is lost — scores stay with the
+league — but tell them, because from their side the scorekeeper banner and their assignments will
+have disappeared.
+
+If a member changes their Apple ID, or signs out of iCloud, their device stops acting as them rather
+than continuing under the previous account.
+
+**Choosing "Not Set" does not unlink you.** The link is the secretary's record: your device stops
+acting as that member, but it stays linked to you, so nobody else can take your name and you can pick
+it again without asking. If you want the link itself removed — you have changed phones, or you are
+leaving the league — ask the secretary to Unlink you.
+
+**One device each, for now.** Identifying somebody links the device they claimed from. If the same
+person also uses an iPad, confirming that second device moves the link to it and the first stops
+acting as them. They re-accept on the new account and you identify them
+again.
 
 ### Sharing as the secretary
 
@@ -1089,10 +1324,24 @@ the copier's own account. It takes nothing away from the original.
 1. Tap the invitation link on your iPhone and accept it. It must be opened by the Apple ID it was
    sent to.
 2. The league appears in your Leagues list after the next sync — usually 10–30 seconds.
-3. Open the league, tap **"…" → My Identity**, tap your own name, and enter your PIN.
+3. Open the league, tap **"…" → My Identity**, and tap your own name.
 
 Until step 3 is done the app does not know who you are, so a captain will not see the scorekeeper
 banner or receive scorekeeping assignments.
+
+### Leaving a league someone shared with you
+
+Swipe the league in your Leagues list and tap **Delete**. For a league you were invited to, this
+removes *you* from it — the secretary's copy and everybody else's are untouched.
+
+It needs a connection, because the removal has to reach iCloud before the league can leave your
+list. You will see a brief "Removing…" while it does. If it cannot be completed, the league **stays
+in your list** and the app tells you so, rather than hiding a league you still have access to —
+which would otherwise reappear on its own the next time anything in it changed. Connect and try
+again.
+
+Leaving does not notify the secretary. If you were a captain, tell them, so they can reassign your
+scorekeeping duties.
 
 ### Sync timing
 
@@ -1104,7 +1353,7 @@ Every edit saves and syncs immediately — there is no separate "save" step anyw
 
 ---
 
-## 16. Notifications
+## 15. Notifications
 
 The app sends a system notification banner to alert you to events that need your attention while the
 app is in the background. You'll see notifications for these event types:
@@ -1148,7 +1397,7 @@ changes that occur after you've joined are surfaced.
 
 ---
 
-## 17. Troubleshooting
+## 16. Troubleshooting
 
 ### Red cloud icon / sync not working
 
@@ -1162,9 +1411,29 @@ error badge), try:
 3. Check that you are signed into iCloud in iOS Settings → your name → iCloud.
 4. Check your network connection.
 5. If the error persists, close and reopen the app.
+6. If something you *know* is on iCloud still has not arrived, tap **Re-read Everything from
+   iCloud** — see below for why that is a different thing from Sync Now.
 
 The icon covers uploads as well as downloads. A red icon can mean *your* latest change has not
 reached anyone else yet — worth checking before a match night rather than after.
+
+### Sync Now and Re-read Everything are not the same
+
+Both live on the **iCloud Sync** screen, and the difference matters in exactly the situation that
+sends you there.
+
+**Sync Now** is the ordinary exchange: it sends anything this device has not sent yet, then collects
+whatever has changed since the last time it looked.
+
+**Re-read Everything from iCloud** starts over and reads every league from the beginning, not only
+what changed. It is slower, and it is the one to reach for when something you are certain is on
+iCloud will not come down.
+
+The reason it exists: iCloud hands out each change **once**. If this device asked for changes and
+could not use what came back, that change has been spent — and from then on Sync Now truthfully
+reports nothing new, which looks exactly like nothing being wrong. Re-read is the only thing that
+can contradict it. It costs a full download and nothing else: nothing is deleted, nothing you have
+done is at risk, and any work of yours still waiting to go up goes up as usual.
 
 ### "League Data Could Not Be Opened" on launch
 
@@ -1192,6 +1461,9 @@ After tapping a share link, the league may take 10–30 seconds to appear. If it
 a minute, force a fetch: on the Leagues screen tap the **gear** in the top right, choose **iCloud
 Sync**, then **Sync Now**. (Backgrounding the app and reopening it also triggers a sync.)
 
+Still nothing? Tap **Re-read Everything from iCloud** on that same screen. A share that arrived while
+the app could not yet make sense of it is precisely the case Sync Now cannot recover on its own.
+
 If it still doesn't appear, have the secretary re-open **"…" → Share** and check the participant list
 at the top of that screen. If your name isn't listed, the invitation was never accepted under the
 Apple ID you're signed into — the link has to be opened by the account it was sent to.
@@ -1203,10 +1475,8 @@ Almost always one of three things, in order of likelihood:
 1. **They were shared as "View only".** iCloud blocks the write itself, so no amount of in-app
    permission fixes it. The secretary opens **"…" → Share**, taps their row in the participant list,
    and switches them to **Can make changes**.
-2. **They haven't claimed their identity.** "…" → My Identity → their name → PIN. Without this the
-   app doesn't know who they are and the scorekeeper banner never appears.
-3. **They have no PIN yet.** Their name shows an orange "no PIN" badge in the identity picker. The
-   secretary sets one from the "Set Captain PINs" banner.
+2. **They haven't claimed their identity.** "…" → My Identity → their name. Without this the app
+   doesn't know who they are and the scorekeeper banner never appears.
 
 ### "View-Only Access" alert on open
 

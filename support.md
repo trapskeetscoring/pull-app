@@ -5,7 +5,7 @@ title: Pull! Support
 
 # Pull! Support
 
-_Updated on September 3, 2026_
+_Updated on September 21, 2026_
 
 Thanks for using Pull!.
 
@@ -21,7 +21,7 @@ We typically respond within 1–2 business days.
 
 ### Do I need an account to use Pull!?
 
-No. There is no account or sign-up. Each device has its own identity, and league members can optionally protect their identity with a 4-digit PIN.
+No. There is no account or sign-up. When a league is shared with you, you choose which member you are and the league's secretary confirms it — so a name on a device is one somebody has vouched for, rather than one anybody can assert.
 
 ### Does Pull! work without iCloud?
 
@@ -33,17 +33,23 @@ From the league screen, tap the **"…"** button in the top right and choose **S
 
 ### Can I export my data?
 
-Yes, in two places. **Reports** produces PDFs of standings, results, leaders, and the schedule. For the raw season data, use the **"…"** menu on the league screen → **Export**, which offers CSV and JSON.
+Yes, in two places. **Reports** produces PDFs of standings, results, rosters, leaders, the schedule, and an all-members grid. For the raw season data, use the **"…"** menu on the league screen → **Export**, which offers CSV and JSON.
+
+JSON is the complete one — every team, member, score, week and setting, and the file the app can import back. CSV covers scores and rosters and is the one to open in a spreadsheet.
 
 ### How are scores corrected after submission?
 
-The league secretary can edit any approved score directly. Captains submit score sheets that the secretary reviews and approves — a full audit trail is preserved.
+The league secretary can edit any approved score directly, from **View / Edit Match Data** on the league screen. Captains submit score sheets that the secretary reviews and approves — a full audit trail is preserved.
+
+If a sheet was approved too early, the secretary can open it under **Pending Score Sheets** and choose **Return to Scorekeeper**. That removes the week's scores for that team and gives the sheet back to the person who kept score, with their grid as they left it, so the fix is an edit rather than a re-entry.
 
 ### My league isn't showing on my other device — what's wrong?
 
 Confirm both devices are signed into the same iCloud account and that iCloud Drive is enabled.
 
 A cloud icon appears at the top left of the Leagues list only when something needs attention — no icon means sync is healthy. For details and a manual sync, tap the **gear** on the Leagues list and choose **iCloud Sync**; if anything has failed, a **Last Sync Error** row there gives the actual reason, and **Sync Now** on the same screen forces a fetch. It lives on the Leagues list rather than inside a league so that it is still reachable when you have just accepted a share invitation and have no league to open yet.
+
+If Sync Now reports nothing and the league still has not arrived, use **Re-read Everything from iCloud** on that same screen. iCloud hands out each change once, so a change this device asked for but could not use is spent — after that Sync Now truthfully says there is nothing new, which looks the same as nothing being wrong. Re-read starts over and reads everything again. It costs a download and nothing else.
 
 Note that a sync problem can mean *your* latest change has not reached anyone else, not just that theirs has not reached you — worth checking before a match night rather than after.
 
