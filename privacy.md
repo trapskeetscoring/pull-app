@@ -5,7 +5,7 @@ title: Pull! Privacy Policy
 
 # Privacy Policy for Pull!
 
-_Updated on September 21, 2026_
+_Updated on October 4, 2026_
 
 ## Overview
 
@@ -87,8 +87,11 @@ data to a third party, it would be entirely opt-in, and this policy will be upda
 
 ## Exporting and Sharing Files
 
-You can export a league as PDF, CSV, or JSON and send it wherever you choose. Once a file leaves the
-app, it is governed by whatever service you send it through, not by this policy.
+Anyone on a league can save or send its reports as PDF files, which carry members' names and scores.
+Exporting the whole league as CSV or JSON — which includes members' email addresses, phone numbers
+and fee status — and copying a league are available only to the league's secretary and backup
+secretaries. A JSON export does not include the links between members and their devices. Once a file
+leaves the app, it is governed by whatever service you send it through, not by this policy.
 
 ## Data Retention and Deletion
 

@@ -426,7 +426,7 @@ assignments and nothing else — it works on a week that already has scores, too
 Most clubs run the same league again with mostly the same people. **Copy League** does that in one
 step.
 
-From the league's **"…"** menu, tap **Copy League**. Give the new league a name — it pre-fills with
+From the league's **"…"** menu, tap **Copy** (it is there only in Secretary mode). Give the new league a name — it pre-fills with
 `-COPY`, which you will want to change to something like *WNT Fall 2026* — and choose whether to
 **Keep league data**.
 
@@ -471,7 +471,7 @@ rules, an empty scoring record, and everyone marked unpaid ready to collect agai
 
 ### Recommended new-season sequence
 
-1. **Copy League**, data off, new name.
+1. **Copy**, data off, new name.
 2. Open **Settings** and check Match Type, Roster Size, Valid Scores, handicap, fees, and bank
    settings.
 3. Fix the roster — remove anyone who has not returned, add newcomers, update captains.
@@ -1085,8 +1085,19 @@ shared folder or attach to an email without being renamed on the way.
 
 ### Exporting and importing data
 
-From the league screen's toolbar (gear menu), choose **Export**. You can export as JSON (full data
-round-trip) or CSV (scores and rosters). The export sheet lets you share the file via AirDrop, Mail,
+From the league screen's **"…"** menu, choose **Export**. You can export as JSON (full data
+round-trip) or CSV (scores and rosters).
+
+**Copy and Export are the secretary's.** They appear only in Secretary mode — the owner and backup
+secretaries — because an export is the whole league, every member's email, phone and fee status
+included, and a copy is a working league owned by whoever made it. Everyone on the share can still
+save and send the PDF reports, which carry names and scores only. This is not a lock on the data:
+everyone on the share holds the league on their device, which is how the app works at all. It just
+stops the contact list being one tap from a file anyone can forward.
+
+A JSON export leaves out the links between members and their devices. A league restored from one
+comes back with every member unlinked, and you confirm their devices again in **Who Has Joined** —
+the file may have travelled anywhere, and a link should not be re-made from a copy of one. The export sheet lets you share the file via AirDrop, Mail,
 Files, or any other destination. Taking a JSON export before a risky change — or at the end of a
 season — is the simplest backup there is.
 
