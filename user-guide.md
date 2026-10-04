@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on September 21, 2026_
+_Updated on October 4, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -414,9 +414,10 @@ From the schedule view's **"…"** menu, tap **Assign Scorekeepers** and pick a 
 sheet. The app proposes the natural site pairing — the two teams sharing a field across flights keep
 score for each other — and you can override it.
 
-Once saved, each named captain gets a notification and sees the orange **"You're scorekeeping"**
-banner on their league screen. If a week already has scorers, the same menu slot becomes **Remove
-Scorers**.
+Once saved, each named captain gets a notification and sees a **"You're scorekeeping"** banner on
+their league screen. While some teams still have no scorekeeper the menu offers **Assign Remaining
+Scorekeepers**; once anyone is assigned it also offers **Remove Scorers**, which clears that week's
+assignments and nothing else — it works on a week that already has scores, too.
 
 ---
 
@@ -485,8 +486,11 @@ rules, an empty scoring record, and everyone marked unpaid ready to collect agai
 
 ### Claiming your identity
 
-1. From the league screen, tap the identity row (shows your current name, or "Not Set").
+1. On the league screen, tap **"…"** (top right) → **My Identity**.
 2. Tap your name in the list.
+
+The line above the league's name shows who this device is acting as — your name, or **Identity Not
+Set**.
 
 That is the whole of it. Your name then appears in the identity header at the top of most screens,
 and the app uses it to route scorekeeper assignments to the right captain and to decide what you can
@@ -567,12 +571,14 @@ A **bank** lets a shooter who misses a week reuse one of their **earlier** weeks
 - Switching a bank back off releases the source score, so it becomes available again.
 
 The **Bank** toggle sits next to each shooter on the score-entry screen. It is disabled when that
-shooter has no bank left to spend, with "none available" shown beside it. Each member's remaining
+shooter has no bank left to spend, with "none available" shown beside it. Once a shooter is banked,
+their rounds show the copied score in an orange dashed box marked **Bank**, which cannot be typed in —
+the keypad's Next and Back skip it. To change a banked week, switch the bank off. Each member's remaining
 and used banks appear on their member card and in the Member Stats report.
 
 > Banking is on by default. To turn it off for the league, set **Max Season Banks to 0** in
-> Settings → Banks & Substitutes. Note that the Max Season Banks and Max Weekly Banks *limits* are
-> not yet enforced — see [Section 2](#banks--substitutes).
+> Settings → Banks & Substitutes. Both limits are enforced per team — see
+> [Section 2](#banks--substitutes).
 
 ### Substitutes in scoring
 
@@ -666,9 +672,13 @@ Step 3 is the one that matters most and is invisible while it happens. See
 
 ### The scorekeeper banner
 
-A captain who has been assigned a scorekeeper role for the upcoming week will see an orange banner
-on the league screen titled **"You're scorekeeping"** with the team name and week. Tap it to open the
-scorekeeper sheet for your team and week.
+A captain who has been assigned a scorekeeper role for the upcoming week will see a banner on the
+league screen titled **"You're scorekeeping"** with the team name and week. The team named is the one
+you are keeping score **for** — never your own. Tap it to open the scorekeeper sheet.
+
+The banner goes away once that team's week is done: when you submit the sheet, or when the secretary
+enters that team's scores by hand instead. If the secretary later clears those scores, the job comes
+back to you.
 
 The banner disappears once the sheet is submitted or approved.
 
@@ -807,8 +817,11 @@ member's score was removed when you made the correction. Retype it.
 Approving a sheet posts its scores, and until you can hand it back the only ways out are retyping
 the week yourself or clearing it — neither of which gives the scorekeeper their sheet back.
 
-Open **Pending Score Sheets**, tap the approved sheet, and choose **Return to Scorekeeper**. You can
-add a note. Three things happen together:
+An approved sheet is no longer in **Pending Score Sheets** — that list holds only sheets waiting for
+you. Reach it through the scores instead: **Scoring Data** → **View / Edit** → that week → page to the
+team → **Shot-by-Shot Detail**, then scroll down and tap **Return to Scorekeeper**. The screen that
+opens is titled **Reject Sheet**; add a note and tap **Reject** — that is the return. Three things
+happen together:
 
 - That team's scores for the week are **removed**, and any bank reservations they consumed are
   released. The scores go because a week showing numbers whose sheet is back in somebody else's
@@ -835,7 +848,8 @@ week was scored against — so re-entering it scores against the line-up that ac
 night, not today's.
 
 The score sheets going is what lets the week be scored again by the people who scored it. A
-submitted or approved sheet is what closes a captain's *"You're scorekeeping"* banner, and the
+submitted or approved sheet — or scores the secretary entered by hand — is what closes a captain's
+*"You're scorekeeping"* banner, and the
 banner is the only door into the sheet — so a week cleared with its sheets left behind could only
 ever be re-entered by the secretary, by hand.
 
@@ -1203,8 +1217,9 @@ shown beside their name, and they leave this one.
 **Identify yourself too.** The list only shows people who *accepted* an invitation, and you sent it
 rather than accepting one — so the screen offers you a **You** section at the top, already suggesting
 whichever member this device is acting as. Tap it. Until you do, your own name is the one member
-nobody has claimed, which means anyone on the share can select it; and if you open the league on a
-second device of your own, that device can pick your name too.
+nobody has claimed, which means anyone on the share can select it. Your **own** other devices can pick
+your name either way — every device that owns the league is you — so identifying yourself on one does
+not lock out the others.
 
 Each request shows when it was made, and can be **Rejected** instead of confirmed. Reject one you do
 not recognise: a request from a device that has since been signed out or reinstalled belongs to
@@ -1217,8 +1232,9 @@ their name again, which sends a fresh request for you to confirm.
 Once identified:
 
 - their device claims that identity by itself, the next time it syncs;
-- **no other device can claim that member**, which is what stops somebody picking a name that is not
-  theirs and acquiring the powers that go with it;
+- **no other device can simply claim that member**, which is what stops somebody picking a name that
+  is not theirs and acquiring the powers that go with it. A device that tries is refused, and can only
+  ask you to add it (see *More than one device* below);
 - the **Identified** list at the bottom of the same screen shows who is matched, with **Unlink** for
   someone who has changed their Apple ID or was matched to the wrong person. **Unlinking stops that
   device acting as the member** — on its next sync it drops the identity and shows an alert saying
@@ -1240,10 +1256,15 @@ acting as that member, but it stays linked to you, so nobody else can take your 
 it again without asking. If you want the link itself removed — you have changed phones, or you are
 leaving the league — ask the secretary to Unlink you.
 
-**One device each, for now.** Identifying somebody links the device they claimed from. If the same
-person also uses an iPad, confirming that second device moves the link to it and the first stops
-acting as them. They re-accept on the new account and you identify them
-again.
+**More than one device.** A member can be linked to several devices — a captain's phone and iPad,
+say. When they pick their name on the second device, it tells them the name is already linked to
+another device and offers **Ask the Secretary**. That device does **not** act as them yet. Their
+request appears here like any other, with one extra line: *"Same invitation, so this is likely their
+second device"* when it came from the invitation you sent that person, or a warning naming the
+address when it came from a different one — that is the request to be suspicious of. Confirm it and
+the second device takes the name on its next sync; the first keeps its link. Each device then has its
+own row and its own **Unlink**, labelled *Linked device 1*, *Linked device 2* (the app cannot tell
+you which is the phone and which the iPad).
 
 ### Sharing as the secretary
 
