@@ -690,7 +690,9 @@ The sheet walks through the round in three stages:
 score (they sit out and use a saved score), swap in a substitute, or mark a slot vacant.
 
 **Rotation entry** — the app steps through each rotation (station) one at a time. Tap each cell to
-record whether the shot hit or missed. You do not have to fill every station before moving on; the
+record whether the shot hit or missed: once for a hit, twice for a miss, a third time to clear it. The
+large number at the right of each shooter's row is their hits **at this station** — the number to call
+out as the squad rotates, so nobody has to count ticks — and **Rd** beneath it is their round so far. You do not have to fill every station before moving on; the
 app saves your progress as you go and will let you go back. If you switch the sheet to **Totals
 Only**, each shooter's round total is typed on the app's own number pad, which carries **Back** and
 **Next** beside the digits.
