@@ -5,7 +5,7 @@ title: Pull! Support
 
 # Pull! Support
 
-_Updated on October 10, 2026_
+_Updated on October 30, 2026_
 
 Thanks for using Pull!.
 
@@ -38,11 +38,11 @@ text sizes you can set in iOS — see **Text size and VoiceOver** in the user gu
 
 ### How do I share a league with my team?
 
-From the league screen, tap the **"…"** button in the top right and choose **Share**. Both you and each recipient must be signed into iCloud. You can set each collaborator to read-only or read-write, and only the person who created the league can invite or stop sharing.
+From the league screen, tap the **"…"** button in the top right and choose **Sharing → Share**. Both you and each recipient must be signed into iCloud. You can set each collaborator to read-only or read-write, and only the person who created the league can invite or stop sharing.
 
 ### Can I export my data?
 
-Yes, in two places. **Reports** produces PDFs of standings, results, rosters, leaders, the schedule, and an all-members grid. For the raw season data, use the **"…"** menu on the league screen → **Export League**, which offers CSV and JSON.
+Yes, in two places. **Reports** produces PDFs of standings, results, rosters, leaders, the schedule, and an all-members grid. For the raw season data, use the **"…"** menu on the league screen → **Season → Export League**, which offers CSV and JSON.
 
 JSON is the complete one — every team, member, score, week and setting, and the file the app can import back. CSV covers scores and rosters and is the one to open in a spreadsheet.
 
