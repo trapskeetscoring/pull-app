@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on October 10, 2026_
+_Updated on October 30, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -259,7 +259,7 @@ league on 8 sites with 2 flights fills exactly, with nobody sitting out.
 |---|---|
 | **Member Fee** / **Guest Fee** | Season fee for club members and for everyone else. |
 | **Show Roster Categories** | Splits the targets figures into **Club Members** and **Guests** — on the Results tab and at the end of the Roster PDF. |
-| **Improvement Rounds** | How many early rounds form the baseline for the improvement score. |
+| **Improvement Rounds** | How many opening rounds **Most Improved** and **Biggest Slump** measure a shooter's finishing average against. Default 4. |
 
 ### Access
 
@@ -296,6 +296,8 @@ what appears on reports as "Team 3". You can type the roster in on the same scre
 
 1. In **League Info**, tap **Rosters** (it shows how many teams you have, e.g. *Rosters (8/10)*).
    It opens the first team; **Previous** / **Next** page through the others.
+   Captains and backup secretaries who have picked their name also get **Your Team: <name>** just
+   above it, which opens their own team.
 2. While the team has an open slot, tap **Add Member**, then either pick someone from **Available
    Substitutes** or tap **Create New Member**.
 3. Repeat for each team.
@@ -332,6 +334,11 @@ A substitute:
 - **cannot claim an identity** and so cannot be a captain or a backup secretary.
 
 Promoting a sub onto a team roster is simply adding them to the team — their history stays with them.
+
+**Deleting a sub** added by mistake, or one who never came: open them and tap **Delete Substitute**
+(secretary only). It is offered only for somebody the season has no record of — no scores, no week
+covered, not in a played week's lineup, not on a score sheet — so nothing already printed changes.
+To delete someone on a team, remove them from the team first; they move to the pool.
 
 ### Removing someone mid-season
 
@@ -466,59 +473,60 @@ assignments and nothing else — it works on a week that already has scores, too
 
 ## 5. Starting a New Season
 
-Most clubs run the same league again with mostly the same people. **Copy League** does that in one
-step.
+Most clubs run the same league again with mostly the same people. **Start Next Season** does that
+in one step, and keeps each shooter's history linked from one season to the next.
 
-From the league's **"…"** menu, tap **Copy** (it is there only in Secretary mode). Give the new league a name — it pre-fills with
-`-COPY`, which you will want to change to something like *WNT Fall 2026* — and choose whether to
-**Keep league data**.
+From the league's **"…"** menu, tap **Season → Start Next Season** (it is there only in Secretary mode, and
+not for a tournament). The name pre-fills with the year moved on — *Fall WNT 2026* becomes
+*Fall WNT 2027*.
 
-### What the copy always brings over
+### Choosing who comes back
 
-- Every team, with its name, display number, captain, and roster.
-- Every member, with their name, contact details, captain and club-member flags, classification,
-  sex, and starting average.
-- The substitutes pool.
-- The backup-secretary list.
-- The complete rule set — every setting from Section 2.
+Every team's roster is listed, then the substitutes, all ticked. **Untick anyone who is not
+returning.** Somebody left behind is taken off their team, the substitutes pool and the
+backup-secretary list; if that was a team's captain, choose a new one afterwards.
 
-### What "Keep league data" controls
+Beside each returning shooter is their **classification**. Check it: a shooter who has become a
+Senior over the winter is changed here, and the change applies to the new season only — last
+season keeps what it recorded.
 
-| | Keep league data **off** (new season) | Keep league data **on** (duplicate) |
-|---|---|---|
-| Scores | Cleared | Copied |
-| Schedule | **Removed** — you build a new one | Copied as-is |
-| Weekly substitute records | Cleared | Copied |
-| Per-week rosters | Cleared | Copied |
-| Fee Paid | **Reset to unpaid** | Copied |
-| Score sheets, roster-change requests, captain messages | Cleared | Copied |
-| Scorekeeper assignments | Cleared (they belong to the schedule) | Copied |
+**Start From This Season's Averages** (on by default) gives everyone coming back who shot at least
+four rounds this season's average as their starting average, and turns on Use Starting Average, so
+their handicap has something to work from on the first night.
 
-For a new season you want **off**. That is the setting that gives you the same people, the same
-rules, an empty scoring record, and everyone marked unpaid ready to collect again.
+### What carries over, and what does not
 
-### Nuances worth knowing before you copy
+| Carries over | Starts fresh |
+|---|---|
+| Every team — name, number, captain, roster (less anyone leaving) | Scores |
+| Every returning member — name, contact details, flags, sex, classification | The schedule — you build a new one |
+| The substitutes pool and backup-secretary list | Fee Paid — everyone starts **unpaid** |
+| The complete rule set — every setting from Section 2 | Score sheets, roster-change requests, captain messages |
+| | Weekly substitute records, per-week rosters, scorekeeper assignments |
 
-- **You will need a new schedule.** With data off, the copy has no schedule at all. Generate one, or
-  import the one you have already published ([Section 4](#option-b--import-a-schedule)).
-- **Check Use Starting Average first.** If it is on in the season you are copying, every member's
-  Starting Average carries across and keeps feeding their handicap average until they have shot
-  enough rounds of their own. If those figures are now a season out of date, either turn the
-  setting off or update them — each member's **Edit** screen has the figure under **Has Starting
-  Average**.
-- **The copy is private and unshared.** It does not inherit the previous season's iCloud share, so
+### Nuances worth knowing
+
+- **You will need a new schedule.** The new season has none. Generate one, or import the one you
+  have already published ([Section 4](#option-b--import-a-schedule)).
+- **The new season is private and unshared.** It does not inherit the previous season's iCloud share, so
   captains will not see it until you share the new league and they accept. That is deliberate — you
   almost never want last season's participant list applied silently to this season.
 - **Linked devices are not copied.** Once you share the new league, everyone picks their name again
   and you confirm them on **Who Has Joined**.
 - **Names must be unique.** The copy is refused if a league with that name already exists.
 
+### Copy is for an exact duplicate
+
+**Copy** in the same menu makes an exact duplicate of the league — scores, schedule, fees paid and
+all — named with `-COPY`. Use it for a backup, or a copy to try something on without touching the
+real season; use Start Next Season for a new season.
+
 ### Recommended new-season sequence
 
-1. **Copy**, data off, new name.
+1. **Start Next Season** — untick leavers, check classifications.
 2. Open **Settings** and check Match Type, Roster Size, Valid Scores, handicap, fees, and bank
    settings.
-3. Fix the roster — remove anyone who has not returned, add newcomers, update captains.
+3. Add newcomers and update captains.
 4. Generate or import the schedule.
 5. Share the league with this season's captains.
 
@@ -556,7 +564,18 @@ That is the whole of it. Your name then appears in the identity header at the to
 and the app uses it to route scorekeeper assignments to the right captain and to decide what you can
 edit.
 
-Substitutes do not appear in the identity picker.
+**Only captains and backup secretaries pick a name.** Those are the only roles a name gives you
+anything for — scorekeeping, score sheets, edit requests, the secretary's tools — so the picker lists
+only them. Everyone else reads the league without picking one, and the secretary has sixteen
+confirmations to make in a sixteen-team league rather than eighty. Substitutes are never listed.
+
+**A name is only kept while you hold the role.** If you stop being a captain or a backup secretary —
+replaced as captain, taken off the backup-secretary list, or moved to the substitutes — the
+secretary's next save unlinks your devices, and yours shows an **Identity Changed** alert. Made
+captain later, you pick your name and the secretary confirms it, like any captain.
+
+There is no acting captain: if a captain cannot make a night, whoever stands in keeps score on paper
+and the secretary enters it.
 
 The secretary cannot identify you before you ask — the link is made from your device's request. So
 after accepting an invitation, open the league and pick your name; it is the one step only you can
@@ -650,6 +669,14 @@ their rounds show the copied score in an orange dashed box marked **Bank**, whic
 the keypad's Next and Back skip it. To change a banked week, switch the bank off. Each member's remaining
 and used banks appear on their member card and in the Member Stats report.
 
+**Who Should Bank?** On a team's screen, under **Team Scores**, this works out who should bank when
+more shooters are out than there are subs to cover them. Tick who isn't coming and set how many
+subs are available. The shooters whose bank plus that week's handicap scores highest are told to
+**use bank**, and the rest **sub**. If the team's bank limits leave anyone with neither, they're
+shown as **not covered**. When there are enough subs for everyone, nobody needs a bank. The screen
+saves nothing: you still switch the banks on when scores are entered. It only appears in leagues
+with banking on.
+
 > Banking is on by default. To turn it off for the league, set **Max Season Banks to 0** in
 > Settings → Banks & Substitutes. Both limits are enforced per team — see
 > [Section 2](#banks--substitutes).
@@ -720,11 +747,9 @@ Leaving the row blank is what records the absence:
 The same applies when a rostered member is out and no substitute could be found. Blank is the
 answer; there is no button to press.
 
-On a **captain's score sheet** it is different, for now: the sheet will not submit while any
-shooter's shots are missing. Mark the shooter who did not turn up **DNF** and leave all their shots
-empty — a shooter with no shots recorded is still treated as absent when the sheet is approved, not
-as a zero. In **Totals Only** there is currently no way to leave a shooter out, so enter that team's
-week by hand instead (see *Direct entry by the secretary*).
+On a **captain's score sheet**, tap the shooter's name in Round 1's setup and choose **Absent**.
+They drop out of the rotation (and out of Totals Only), the sheet submits without them, and approval
+records nothing for them — the same as leaving them blank here.
 
 ### Half-entered weeks
 
@@ -761,14 +786,35 @@ you are keeping score **for** — never your own. Tap it to open the scorekeeper
 
 The banner goes away once that team's week is done: when you submit the sheet, or when the secretary
 enters that team's scores by hand instead. If the secretary later clears those scores, the job comes
-back to you.
+back to you. **A sheet you have already started keeps its banner** even after the secretary enters
+scores, so your work is never stranded; the banner says the secretary has scores in, and if you
+submit, approving your sheet replaces their scores for the shooters and rounds it holds.
+
+**Sheets on This Device.** Every sheet you start stays on this device until you submit it. To see
+them, open **Sheets on This Device** under Scoring Data (it shows only when there is one). Tap one to
+carry on with it, or swipe left and tap **Delete** to throw it away. Nobody else ever sees these, and
+a sheet sent back to you by the secretary is not listed: it has its banner.
 
 ### Filling in the scorekeeper sheet
 
 The sheet walks through the round in three stages:
 
 **Pre-round setup** — confirm the roster for this round. You can mark a shooter as banking their
-score (they sit out and use a saved score), or swap in a substitute.
+score (they sit out and use a saved score), swap in a substitute with **Sub**, or tap their name
+and choose **Absent** for somebody who did not turn up. If the person
+standing in is not in the sub list, choose **New Sub** and type their full name: they are added to
+the league's substitutes when the secretary approves the sheet, and their scores go to them. If
+two sheets name the same newcomer for different teams, the second cannot be approved: the review
+screen says the person is already shooting for another team, and the secretary rejects it or enters
+that team's week by hand.
+
+**To match the squad's order on the paper, tap Reorder** on Round 1's setup, drag the shooters, then
+tap **Done**. Every round follows. Do it before the first shot: the order sets which station each
+shooter starts at, so it locks once a shot is recorded. If you notice too late, **⋯ → Clear Scores**
+empties the sheet (subs and banks too) and unlocks it. The order is for this sheet only: approving
+it records the scores and **does not change the team's roster**. The secretary's review screen says
+when the sheet was shot in a different order, so they can change the roster themselves if the team
+wants it kept.
 
 **Rotation entry** — the app steps through each rotation (station) one at a time. Tap each cell to
 record whether the shot hit or missed: once for a hit, twice for a miss, a third time to clear it. The
@@ -786,10 +832,10 @@ Only**, each shooter's round total is typed on the app's own number pad, which c
 If you need to stop mid-sheet, tap **Close** — the draft is saved and will be waiting the next time
 you open the assignment.
 
-A shooter who did not turn up: mark them **DNF** and record none of their shots — do not record
-misses. A shooter with no shots recorded is treated as absent and gets no score for the week. A
-shooter who genuinely missed every target is different: record the misses, and a real zero is
-stored.
+A shooter who did not turn up: tap their name in Round 1's setup and choose **Absent** — do not
+record misses. They sit out every round, take no sub or bank, and get no score for the week; choose
+**Shooting** to undo it before any of their shots are recorded. A shooter who genuinely missed every
+target is different: record the misses, and a real zero is stored.
 
 ### What happens after you submit
 
@@ -834,15 +880,16 @@ shooters never means looking away from the keys. The first digit you type replac
 correcting a score is retype rather than delete-then-type, and a number too large for the round
 starts again rather than being trimmed to something nobody shot.
 
-**To change the shooting order, tap Reorder.** Round 1's rows grow drag handles; move a shooter and
+**To match the order on the paper, tap Reorder.** Round 1's rows grow drag handles; move a shooter and
 every round follows, because a squad shoots one order for the whole night. Tap **Done** to go back to
 typing. The two modes are separate because a list cannot offer drag handles and live score boxes at
 the same time, and entering Reorder clears the selected box — the positions have moved, so the
 cursor would otherwise be pointing at a different shooter than the one you left it on.
 
-Two things worth knowing about it. The captain stays in the first slot whatever you drag, and
-**the change applies to the team's standing line-up as well as to this week** — so re-dragging an
-old week's sheet to match the paper also reorders the current one. Empty slots stay at the bottom.
+**Reorder changes only what you see.** It is there so the screen matches the paper on a night when
+subs have the squad standing in a different order; the team's shooting order is not changed, and
+the next week (or the next time you open Match Data) starts from the roster again. To change the
+team's order for good, use **Edit** on the team.
 
 Every change is saved on this device immediately — there is no submit button and nothing is lost if
 you close the screen. Typed scores reach your other devices once you pause typing for a few seconds,
@@ -988,8 +1035,8 @@ open a member, tap **Edit** and turn on **Captain**. All changes take effect imm
 
 ### Captain — submitting changes for approval
 
-Captains can enter Edit mode on their own team. They can reorder the roster directly (changes take
-effect immediately). To edit a member's fields (name, email, phone, club member, classification,
+Captains can enter Edit mode on their own team. The roster order is the secretary's to change; a
+captain matches the night's shooting order on the scoresheet instead. To edit a member's fields (name, email, phone, club member, classification,
 sex), tap the
 member's name and tap **Edit**. Changes are staged; when you tap **Submit**, a pending change request
 is sent to the secretary.
@@ -1157,9 +1204,14 @@ the substitutes who have shot.
 
 ### Exporting
 
-Tap **"…" → Export Reports** and choose a report — **Standings**, **Results**, **Roster**,
-**Leaders** or **Schedule** — to get a PDF of it **for the week you are looking at**. The same list
-also holds one report with no tab of its own:
+Tap the **share button** at the top of Reports to open **Export Reports**: a list of every report
+the app can export, each with a switch and the name its file will be given. Turn off what you do not
+need this time — the **Schedule** rarely changes once it is posted — and tap **Export** to share the
+rest together.
+
+The list holds **Standings**, **Results**, **Roster**, **All Members**, **Leaders**, **Awards** and
+**Schedule**. Awards starts switched off, and appears only where the Awards tab does. One report has
+no tab of its own:
 
 > **All Members** — every member of the league on one line, with each round of every week across the
 > page and each round's season average at the end. Substitutes are listed alongside rostered members,
@@ -1169,21 +1221,23 @@ also holds one report with no tab of its own:
 > and it is wider than a phone, which is why it is a sheet you export and print rather than one you
 > scroll: a season with more weeks than fit the page continues on the next page.
 
-**All**, at the top of the same **Export Reports** list, produces the whole set at once — Standings,
-Results, Roster, All Members, Leaders and Schedule — as six PDFs you share together.
+> **An export is the whole season, whichever week you are looking at.** **Standings**, **Results**
+> and **Roster** each contain *every* week that has scores — one week per page, **newest week
+> first**, so each PDF opens on the week just played and the history runs backwards behind it.
+> **All Members**, **Leaders** and **Awards** are each a single table through the latest of those
+> weeks, and **Schedule** is the whole season as always. Before the first night, when there is
+> nothing to archive, the list offers only the **Roster** and the **Schedule** — the two sheets worth
+> having on paper at that point.
 
-> **All ignores the week selector.** It is a season archive, not a snapshot: **Standings**,
-> **Results** and **Roster** each contain *every* week that has scores — one week per page, **newest
-> week first**, so each PDF opens on the week just played and the history runs backwards behind it.
-> **All Members** and **Leaders** are each a single table through the latest of those weeks, being
-> cumulative by nature, and
-> **Schedule** is the whole season as always. So it does not matter which tab you run it from, and
-> you do not need to visit each week first. Before the first night, when there is nothing to
-> archive, **All** gives you the **Roster** and the **Schedule** — the two sheets worth having on
-> paper at that point.
+**Naming the files.** Under each report is the name its file will have. Leave it blank for the dated
+name shown in grey, or type your own — `standings`, say, if your club's website expects that name
+every week. `.pdf` is added for you. Two reports cannot share a name.
 
-To export a single week instead — a results sheet to post after league night, say — pick the week and
-choose that report from **Export Reports**.
+**The secretary's choices are kept.** On the secretary's and backup secretaries' devices — in
+Secretary or Captain mode — the switches and names you set are saved with the league and reach the
+other secretary devices, so they are set once for the season. **Restore Defaults** at the bottom of
+the list puts them all back. A captain can change them for one export, and nothing they change is
+kept.
 
 ### What the files are called
 
@@ -1194,9 +1248,14 @@ Fall_WNT_2026_Standings_Through_Week_3.pdf
 ```
 
 The week is the one printed inside, counted the way the app displays it, so a file cannot disagree
-with its own contents. **All** uses the latest week in the bundle, and the **Schedule** carries
-the suffix too even though it is a whole-season sheet — the six files of one export are filed and
+with its own contents. An export uses the latest week it covers, and the **Schedule** carries
+the suffix too even though it is a whole-season sheet — the files of one export are filed and
 sent on as a set, and one of them not sorting with the others is the confusion this avoids.
+
+**Once the season's last night has been shot**, the reports covering it say so: the files end in
+`_Final` (`Fall_WNT_2026_Standings_Final.pdf`) and the sheets are titled **Final Standings**,
+**Final Rosters** and so on, even when the last night was a week moved to the end of the schedule.
+A results sheet keeps its week, since it covers one night.
 
 Spaces in the league name become underscores and any other awkward characters are dropped, so the
 files are safe to put in a
@@ -1204,8 +1263,10 @@ shared folder or attach to an email without being renamed on the way.
 
 ### Exporting and importing data
 
-From the league screen's **"…"** menu, choose **Export League**. You can export as JSON (full data
-round-trip) or CSV (scores and rosters).
+From the league screen's **"…"** menu, choose **Season → Export League**. You can export as JSON or CSV.
+Both carry the whole league — rules, schedule, teams, rosters, members and every score. Only the JSON
+carries the requests as well: captains' score sheets, member edits and device link requests. Use JSON
+for a backup, and CSV when you want to open the season in a spreadsheet.
 
 **Copy and Export League are the secretary's.** They appear only in Secretary mode — the owner and backup
 secretaries — because an export is the whole league, every member's email, phone and fee status
@@ -1214,9 +1275,17 @@ save and send the PDF reports, which carry names and scores only. This is not a 
 everyone on the share holds the league on their device, which is how the app works at all. It just
 stops the contact list being one tap from a file anyone can forward.
 
-A JSON export leaves out the links between members and their devices. A league restored from one
-comes back with every member unlinked, and you confirm their devices again in **Who Has Joined** —
-the file may have travelled anywhere, and a link should not be re-made from a copy of one. The export sheet lets you share the file via AirDrop, Mail,
+**An imported league is a new league, not the old one returned.** Restoring from an export —
+after deleting the league, say — gives you a league that nobody else has yet:
+
+- **It is private and unshared.** The old league's iCloud share does not carry over, so share the
+  imported league again and have everyone accept the new invitation.
+- **Every member comes back unlinked.** Neither export format carries the links between members and
+  their devices — the file may have travelled anywhere, and a link should not be re-made from a copy
+  of one. Each captain picks their name again under **My Identity** once they have accepted, and you
+  confirm them on **Who Has Joined** — and yourself under **You**.
+
+The export sheet lets you share the file via AirDrop, Mail,
 Files, or any other destination. Taking a JSON export before a risky change — or at the end of a
 season — is the simplest backup there is.
 
@@ -1254,8 +1323,8 @@ Open the member from their team roster and turn on **Fee Paid** in the **Status*
 secretary can set it — a captain sees the toggle disabled, and unlike the other member fields it is
 not something a captain can submit for approval. Collecting the money is the secretary's record.
 
-A league copied for a new season starts with everyone **unpaid**, so you are collecting from a clean
-slate. A copy made with *Keep league data* on preserves who had paid, because it is the same season.
+A new season made with **Start Next Season** starts with everyone **unpaid**, so you are collecting
+from a clean slate. A **Copy** preserves who had paid, because it is the same season.
 
 ### The Finance screen
 
@@ -1265,7 +1334,12 @@ From the league screen, tap **League Info → Finances**. Each team shows:
 - **collected / billed** — how much of that team's season fees have come in,
 - and what is still **due**, or *Paid in full* once it all has.
 
-Underneath, **League Totals** sums Billed, Collected and Due across every team.
+Underneath, **League Totals** sums Billed, Collected and Due across every team, and **Shooters**
+counts the people: everyone rostered (club members and guests) and the substitutes.
+
+**Tap a team to mark who has paid.** Each member has a **Paid** switch, with their rate beside
+their name; **Mark All Paid** and **Mark All Unpaid** do the whole team at once, and **Roster** opens
+the team. **Fee Paid** on a member's own screen is the same switch.
 
 **The fee belongs to the roster slot, for the season — not to whoever shoots on the night.** That
 single idea explains the rest of this section.
@@ -1319,7 +1393,8 @@ that will still be running the league next season.
 Sharing itself has no prerequisites — you can invite anyone at any time. What matters is what each
 person needs in place before they can *do* anything.
 
-**Spectators (View only)** need nothing. They accept the invitation and can read the league.
+**Members and spectators (View only)** need nothing. Give them the **member link** (below) — one QR
+code or link for the whole club — and they can read the league. They never pick a name.
 
 **Captains and backup secretaries** must exist in the league as a member, because acting in a role
 means claiming an identity and an identity is a member. There is nothing to hand out. Once they
@@ -1339,11 +1414,27 @@ yet identified, and there is nothing to confirm — the app deliberately cannot 
 has not said who they are.
 
 **Accepted Invite / Not Identified** lists the email address or phone number each invitation was sent
-to (or *An iCloud account* when iCloud does not say), marked **View only** for a read-only
-participant — and never a name. An address need have nothing to do with its owner's name, and the
+to (or *An iCloud account* when iCloud does not say) — and never a name. Only people who can make
+changes are listed: members who joined by the member link, or were invited View only, never pick a
+name, so they are not waiting for anything here. An address need have nothing to do with its owner's name, and the
 app does not guess which member an iCloud account belongs to; that comes from the person picking
 their own name. Once you identify somebody they move to the **Identified** list, with their address
 shown beside their name, and they leave this one.
+
+**Why Apple's list shows a name and this one does not.** Apple's sharing screen shows the name on
+each person's Apple ID. Pull! deliberately does not: it is Apple's idea of whose account that is,
+and next to a member's name it would read as the same claim. So this screen knows people only by the
+address you invited, and that has two consequences for anyone who joined by the **member link**
+instead of an invitation:
+
+- While they are **View and Download Only**, they are not on this screen at all, even though Apple's
+  list shows them by name.
+- If you give one of them **Edit** (a captain who scanned the code), they appear here as
+  *An iCloud account*. You confirm them from the name they pick, as anyone else. But with no address
+  to match on, that row does not leave **Accepted Invite / Not Identified** once they are
+  identified.
+
+That is why captains are invited by address. See *Sharing as the secretary*.
 
 **Identify yourself too.** The list only shows people who *accepted* an invitation, and you sent it
 rather than accepting one — so the screen offers you a **You** section at the top, already suggesting
@@ -1372,7 +1463,10 @@ Once identified:
   so, which is the point if you linked the wrong person. It also clears their request from
   **Asking to be identified**, so unlinking cannot be undone by accident with the next tap; if they
   really are that member, they pick their name again and you confirm it again. Unlinking does not
-  remove their access to the league; that is **Share → their row → Remove**.
+  remove their access to the league; that is **Share → their row → Remove Participant**.
+- **Removing someone from the share does not unlink them.** The link is kept in the league, so their
+  row in **Identified** then reads *"No longer in the share with Can make changes"* — tap **Unlink**
+  if they have left.
 
 If you identify a member as somebody whose device was *already* acting as them, that device stops
 acting as them on its next sync and shows an alert saying so. Nothing is lost — scores stay with the
@@ -1400,48 +1494,87 @@ tell you which is the phone and which the iPad).
 
 ### Sharing as the secretary
 
-**Share is owner-only.** It appears in the menu only while you are acting as owner — if you have
-switched to Captain mode with the role picker, switch back first or you will not see it.
+**Share and Member Link are owner-only.** They appear under **"…" → Sharing** only while you are
+acting as owner. If you have switched to Captain mode with the role picker, switch back first or you
+will not see them.
 
-1. From the league screen, tap the **"…"** button in the top-right and choose **Share**.
-2. The item briefly reads **"Preparing Share…"** while the app creates the share in iCloud.
-3. Apple's sharing screen appears, showing the league name at the top and three things:
+There are two ways in, and each suits a different group of people:
 
-   | What you see | What it does |
-   |---|---|
-   | A list of participants — initially just a person icon and **(owner)**, which is you | Tap anyone here to see or change their access. It stays a single row until somebody accepts an invite |
-   | **Share With More People** | Opens the iOS send options — Messages, Mail, Copy Link, AirDrop |
-   | **Share Options** | Sets the access level people get when they join, and who is allowed to invite others |
-
-#### Set Share Options *before* you invite anyone
-
-The permission in Share Options is the default applied to people **as they join**, so choose it first
-and send the invitation second.
-
-| Setting | Choose | Why |
+| | Captains and backup secretaries | Everyone else |
 |---|---|---|
-| Permission | **Can make changes** for a captain or backup secretary; **View only** for a spectator | "View only" is enforced by iCloud itself, not just hidden in the app. A view-only captain physically cannot submit a score sheet |
-| Adding people | **Only you can add people** | Keeps the participant list under your control |
+| How they join | A personal invitation, sent to their Apple ID's email or phone | The **member link**: one link or QR code for the whole club |
+| What they can do | **Edit**: pick their name under My Identity, and submit score sheets and roster changes | **View only**, enforced by iCloud |
+| Listed under Participants | Yes, with their address | Yes, as **View and Download Only** |
+| Listed under Who Has Joined | Yes, by address | No (unless you give them Edit) |
+| See email, phone and fees | Their own team's (a backup secretary, everyone's) | No |
+| How you remove them | Tap their row under Participants | The same |
 
-"Only you can add people" is more than tidiness: the backup-secretary list lives inside the league
-record, so anyone with write access is trusted to a degree by design. You want to be the one deciding
-who gets in.
+#### Do it in this order
 
-Then tap **Share With More People** and send the invitation.
+**Turn the member link on first, then invite the captains.** This is not a preference. On iOS 26,
+inviting from Apple's sharing screen can create a *one-time link* on the share, and once one exists
+iCloud refuses Pull!'s own change to the share. The Member Link screen then says "Could not reach
+iCloud", with a message about one-time links. If that happens before anybody has joined, use
+**Stop Sharing** on Apple's sharing screen and start again from step 1. That removes only the share:
+the league stays on your devices.
 
-#### Inviting a mix of captains and spectators
+1. **Turn on the member link.** From the league screen, tap **"…" → Sharing → Member Link**, then
+   **Turn On Member Link**. The screen shows the league's QR code.
+2. **Invite each captain.** Tap **"…" → Sharing → Share**. Apple's sharing screen opens, showing the
+   league name, **Participants** (just you, as **Owner**, at first), **Sharing Options** and
+   **Stop Sharing**.
+   1. Tap **Add Participant**, enter the captain's Apple ID email or phone number, and send the
+      invitation by Messages or Mail.
+   2. **Do not tap Copy Link** on that screen. It creates the one-time link described above.
+3. **Give each captain Edit.** While the member link is on, a new participant joins view only, and a
+   view-only captain cannot submit a score sheet. Once a captain has accepted, they appear under
+   **Participants**. Tap their row and choose **Edit**.
+4. **Give everyone else the link.** Show the QR code at the range, or tap **Send Link** on the
+   Member Link screen to text, email or post it.
 
-Share Options applies to everyone joining through that invitation, so send them in two passes:
+**Leave Sharing Options alone.** **Who Can Access** reads **Anyone with the Link** once the member
+link is on, and **People You Choose** before that. Switch it with the Member Link screen, never from
+here. If you change **New Participants Can** and iOS asks how to apply it, choose
+**New Participants Only**. **Change for All Participants** would make every captain view only.
 
-1. Set Permission to **Can make changes**, invite the captains.
-2. Change Permission to **View only**, invite the spectators.
+#### What a member sees
+
+Anyone who scans the code or taps the link **with Pull! installed** gets the league, view only:
+schedule, substitutes, teams, rosters, scores and reports. Without the app the link does nothing
+useful. Link members never pick a name, never appear in **Who Has Joined**, and never see anyone's
+email, phone or fees. Each one is listed under **Participants** on Apple's sharing screen as
+**View and Download Only**, so you can remove them one at a time there.
+
+**A captain who already joined by the link** does not need an invitation: tap their row under
+**Participants** and choose **Edit**. They then appear on **Who Has Joined** as *An iCloud account*
+rather than by address, because they joined without one. That costs three things the invitation
+gives you. You have to recognise them from the name they picked. Their *An iCloud account* row stays
+under **Accepted Invite / Not Identified** after you confirm them. And if they later add a second
+device, the request cannot tell you whether it came from the same person. **Invite captains by
+address**; use this only for a captain who has already used the link.
+
+#### What a captain does
+
+1. Installs Pull!, then opens the invitation on the iPhone or iPad signed into the Apple ID it was
+   sent to, and accepts it.
+2. Waits for the league to appear in their Leagues list, usually 10–30 seconds.
+3. Opens the league, taps **"…" → My Identity**, and taps their own name. Only captains and backup
+   secretaries are listed, so put them on a team as captain before inviting them.
+4. You confirm them on **Who Has Joined**. Until you do, their header reads **— unconfirmed**.
+
+#### Turning the link off
+
+**Stop Link Sharing**, on the Member Link screen, stops new members joining. It removes nobody who
+has already joined; remove those one at a time under **Participants**. The link stays the same while the league is shared, so a printed code keeps working. **Stop
+Sharing** on Apple's screen ends everything: every captain and member loses the league, the old link
+stops working for good, and turning the link on again gives a new one.
 
 #### Changing someone's access later
 
-Re-open **"…" → Share**. Once people have accepted, the participant list at the top has a row per
-person showing their name and access level. Tap a row to change that individual's permission or
-remove them. That list is also the quickest way to confirm an invitation actually landed — check it
-before assuming something is wrong with the app.
+Re-open **"…" → Sharing → Share**. Each invited person has a row under **Participants** showing
+their name and access. Tap a row to switch them between **Edit** and **View and Download Only**, or to
+remove them. That list is also the quickest way to confirm an invitation landed. Check it before
+assuming something is wrong with the app.
 
 ### What each role can do
 
@@ -1452,7 +1585,8 @@ make somebody a secretary.
 | Capability | Secretary (Owner) | Can make changes | View only |
 |---|---|---|---|
 | View scores and reports | ✓ | ✓ | ✓ |
-| Claim identity / view scorekeeper banner | ✓ | ✓ | ✓ (cannot be confirmed) |
+| Claim identity / view scorekeeper banner | ✓ | ✓ | — |
+| See members' email, phone and fees | ✓ | ✓ (if backup secretary; a captain for their own team) | — |
 | Submit scorekeeper sheet | ✓ | ✓ (if captain) | — |
 | Submit roster change for approval | ✓ | ✓ (if captain) | — |
 | Edit member fields (direct) | ✓ | ✓ (if backup secretary) | — |
@@ -1469,8 +1603,9 @@ requests for their own team, but cannot edit directly or approve anything. One w
 **non-captain** identity, or claims none at all, ends up effectively view-only. To give someone full
 secretary powers, add them to **"…" → League Settings → Backup Secretaries** as well.
 
-A **View only** device can pick a name, but its request cannot reach you, so it can never be
-confirmed in **Who Has Joined**. Copying and exporting a league are secretary actions — see
+A **View only** device has no **My Identity**: it never acts as anybody. If a captain's device ends
+up view only — removed from the share and back in by the member link, say — it drops the name and
+says so. Copying and exporting a league are secretary actions — see
 [Exporting and importing data](#exporting-and-importing-data).
 
 ### Accepting a share
@@ -1489,7 +1624,7 @@ You cannot currently leave a shared league from inside Pull!. **Hide** (swipe le
 Leagues list) takes it off your list on this device, but you stay on the share and keep receiving its
 notifications.
 
-To be removed, ask the secretary: they open **"…" → Share**, tap your row in the participant list,
+To be removed, ask the secretary: they open **"…" → Sharing → Share**, tap your row in the participant list,
 and remove you. If you were a captain, mention it, so they can reassign your scorekeeping duties.
 
 ### Using more than one secretary device
@@ -1668,7 +1803,7 @@ Sync**, then **Sync Now**. (Backgrounding the app and reopening it also triggers
 Still nothing? Tap **Re-read Everything from iCloud** on that same screen. A share that arrived while
 the app could not yet make sense of it is precisely the case Sync Now cannot recover on its own.
 
-If it still doesn't appear, have the secretary re-open **"…" → Share** and check the participant list
+If it still doesn't appear, have the secretary re-open **"…" → Sharing → Share** and check the participant list
 at the top of that screen. If your name isn't listed, the invitation was never accepted under the
 Apple ID you're signed into — the link has to be opened by the account it was sent to.
 
@@ -1677,13 +1812,14 @@ Apple ID you're signed into — the link has to be opened by the account it was 
 Almost always one of three things, in order of likelihood:
 
 1. **They were shared as "View only".** iCloud blocks the write itself, so no amount of in-app
-   permission fixes it. The secretary opens **"…" → Share**, taps their row in the participant list,
+   permission fixes it. The secretary opens **"…" → Sharing → Share**, taps their row in the participant list,
    and switches them to **Can make changes**.
 2. **They haven't claimed their identity.** "…" → My Identity → their name. Without this the app
    doesn't know who they are and the scorekeeper banner never appears.
 3. **The week's scores are already in.** Once that team has any score for the week, or a sheet has
-   been submitted, the assignment closes and the banner goes away. If the secretary entered the week
-   by hand, there is nothing left to submit.
+   been submitted, the assignment closes and the banner goes away — unless this device holds a sheet
+   for it with something entered, which keeps its banner. If the secretary entered the week by hand,
+   there is nothing left to submit.
 
 ### "View-Only Access" alert on open
 
