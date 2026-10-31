@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on October 30, 2026_
+_Updated on October 31, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -108,6 +108,18 @@ the Leagues screen says *All Leagues Hidden* with a link straight to that list �
 still there.
 
 Anyone can hide a league on their own device; unlike deleting, it is not restricted to the secretary.
+
+To narrow the list without hiding anything, tap the **filter** button at the top of the Leagues
+list. It has three choices, and they combine:
+
+- **All Leagues / My Leagues / Joined Leagues.** **My Leagues** are the ones you created or
+  imported, where you are the secretary. **Joined Leagues** are the ones somebody else shared with
+  you, including any where they made you a backup secretary.
+- **Trap & Skeet / Trap / Skeet.**
+- **All Formats / Seasons / Tournaments.**
+
+The button fills in while a filter is on, so a short list never looks like missing leagues.
+**Show All** clears it.
 
 ### Trying the app without touching your data
 
@@ -264,7 +276,11 @@ league on 8 sites with 2 flights fills exactly, with nobody sitting out.
 ### Access
 
 **Backup Secretaries** — owner-only. Members promoted here get full secretary editing power on a
-shared league. See [Section 14](#what-each-role-can-do).
+shared league. See [Section 14](#what-each-role-can-do). The list shows captains first, then the rest
+of the rosters, then substitutes. To make somebody who is not on a team a backup secretary (a club
+officer who helps run the league, say), add them as a substitute first, then switch them on here.
+Moving a backup secretary to the substitutes keeps them on the list; only switching them off, or
+deleting them, takes them off.
 
 ### What locks when scores exist
 
@@ -567,10 +583,12 @@ edit.
 **Only captains and backup secretaries pick a name.** Those are the only roles a name gives you
 anything for — scorekeeping, score sheets, edit requests, the secretary's tools — so the picker lists
 only them. Everyone else reads the league without picking one, and the secretary has sixteen
-confirmations to make in a sixteen-team league rather than eighty. Substitutes are never listed.
+confirmations to make in a sixteen-team league rather than eighty. A substitute is listed only if
+they are a backup secretary.
 
 **A name is only kept while you hold the role.** If you stop being a captain or a backup secretary —
-replaced as captain, taken off the backup-secretary list, or moved to the substitutes — the
+replaced as captain, taken off the backup-secretary list, or (as a captain who is not a backup
+secretary) moved to the substitutes — the
 secretary's next save unlinks your devices, and yours shows an **Identity Changed** alert. Made
 captain later, you pick your name and the secretary confirms it, like any captain.
 
