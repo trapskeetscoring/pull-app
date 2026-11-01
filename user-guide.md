@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on October 31, 2026_
+_Updated on November 1, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -92,6 +92,13 @@ raise **Number of Teams** before adding more (see [General](#general)).
 Every one of these is editable afterwards — see the next section — but Trap counting all five
 scores while Skeet counts the best four of six is a real difference in how the game is scored, and
 it is worth confirming it matches your club before week 1.
+
+### Reading the Leagues list
+
+Each league's row starts with an icon for what it is — a scope for trap, a target for skeet, a
+trophy for a tournament — inside a ring that fills as the season's weeks are shot and turns green
+when the last one is. Beside the name is the date of the next shoot. A cancelled week does not
+count toward the ring.
 
 ### Tidying the Leagues list
 
@@ -278,7 +285,8 @@ league on 8 sites with 2 flights fills exactly, with nobody sitting out.
 **Backup Secretaries** — owner-only. Members promoted here get full secretary editing power on a
 shared league. See [Section 14](#what-each-role-can-do). The list shows captains first, then the rest
 of the rosters, then substitutes. To make somebody who is not on a team a backup secretary (a club
-officer who helps run the league, say), add them as a substitute first, then switch them on here.
+officer who helps run the league, say), add them with **Substitutes → Add Substitute** first, then
+switch them on here.
 Moving a backup secretary to the substitutes keeps them on the list; only switching them off, or
 deleting them, takes them off.
 
@@ -308,6 +316,11 @@ In **League Info** on the league's main screen, tap **Add First Team** (later, *
 what appears on reports as "Team 3". You can type the roster in on the same screen — a name per
 **Member** slot, with **Captain** and **Club Member** switches — then tap **Add**.
 
+**Each team has a colour**: a dot beside its name on the schedule, the standings and the team's own
+screen, and a stripe down its card on the Results tab. Pull! hands them out in team-number order. To
+choose one, open the team, tap **Edit**, and pick a **Colour**; **Automatic** goes back to the one
+Pull! chose. The colour syncs with the league, so everyone sees the same one.
+
 ### Add members and build rosters
 
 1. In **League Info**, tap **Rosters** (it shows how many teams you have, e.g. *Rosters (8/10)*).
@@ -331,6 +344,18 @@ one; make someone else captain instead. Captains are the only members who can su
 sheets, and they are the only ones who see the scorekeeper banner. The captain is kept at the top of
 their team's roster automatically.
 
+**A member's screen** — tap them on a roster — shows their scores and season figures. Once they have
+shot two nights it also draws an **Average Trend**: their raw average after each night, with the
+change since the first night beside it. **Highlights** collects their straights, their best night,
+and their longest run of rounds within two targets of a straight. A sub's screen shows the same. A
+tournament shows neither, since each shooter has only one event.
+
+**Team Scores**, on a team's screen, shows the team one week at a time; **Previous** and **Next**
+page through the season. Tap a shooter to open their screen — on a slot a sub covered, the sub's,
+since those are the scores shown. Under the shooters, **Points** is what the team took from the
+week, the same figure as the standings' weekly points; tap it to open that week on the **Results**
+tab.
+
 ### Substitutes
 
 Members who are not on any team live in the league's **Substitutes** pool. Open **Substitutes** from
@@ -341,13 +366,19 @@ shows the whole pool, including names carried over from an earlier season who ha
 Before the first night it simply lists everyone. Tap a sub for their scores, season stats, and the
 weeks they filled in.
 
+**Adding a sub** (secretary only): tap **Add Substitute** at the top of the list. It takes the same
+details as a new team member, without Captain, and puts them in the pool on no team and in no lineup.
+The secretary sees **Substitutes** on the league screen even before the pool has anyone in it, so the
+first sub can be added there. A sub can also be added on the night, with **New Sub** in a lineup slot.
+
 A substitute:
 
 - can shoot for any team, in any week, in place of an absent rostered member;
 - keeps their own scoring record, and their rounds count toward their own average;
 - **cannot use a bank score** — a bank stands in for a rostered member's missed week, and a sub is
   the stand-in, so **Bank** is unavailable for a slot with a sub in it;
-- **cannot claim an identity** and so cannot be a captain or a backup secretary.
+- cannot be a captain, and **cannot claim an identity** unless the owner makes them a backup
+  secretary in [Settings → Access](#access).
 
 Promoting a sub onto a team roster is simply adding them to the team — their history stays with them.
 
@@ -869,6 +900,9 @@ another. **Approving is different:** it writes the scores into the league, so on
 sheets to approve, approve them all on **one** secretary device (see *Using more than one secretary
 device* in Section 14).
 
+**The captain whose sheet was approved** sees a green **Score sheet approved** row at the top of the
+league screen for three days afterwards, naming the team and the week. Tap the **×** to hide it until you next open the league.
+
 ### Direct entry by the secretary
 
 The secretary can enter or edit scores directly without going through the captain submission flow.
@@ -897,6 +931,11 @@ it, then type; **Back** and **Next** sit beside the digits, so moving down a rou
 shooters never means looking away from the keys. The first digit you type replaces what is there, so
 correcting a score is retype rather than delete-then-type, and a number too large for the round
 starts again rather than being trimmed to something nobody shot.
+
+**A straight shows.** A box holding a perfect round turns gold with a star, and the phone gives a
+small tap as it goes in — here, on a team's own score screen, and on the captain's scorekeeper sheet.
+Once every team has scores for the week, a green **Every team has scores** row appears at the top of
+Match Data. Teams on a bye do not need any.
 
 **To match the order on the paper, tap Reorder.** Round 1's rows grow drag handles; move a shooter and
 every round follows, because a squad shoots one order for the whole night. Tap **Done** to go back to
@@ -1179,6 +1218,10 @@ Tap **Reports** from the league screen to see the full report suite. All reports
 on-screen view and as a shareable PDF. Pick the week at the top; the choice carries between report
 tabs.
 
+Above the standings, four tiles give the league's season so far, through the week selected:
+**Rounds Shot**, the **League Average**, **Straights**, and **Shooters**. They follow the averages'
+rules, so banks, cancelled weeks and unfinished rounds are left out.
+
 **Standings** — season point totals and rankings for every team, plus what the selected week paid and
 the team's handicap-adjusted score for it. A team that did not play shows **BYE**. Both scoring modes
 use the same table; only the source of the points differs.
@@ -1219,6 +1262,14 @@ the substitutes who have shot.
 **Leaders** — top individual performances by category.
 
 **Schedule** — the full season with dates, sites and flights, and the scorekeeper grid.
+
+**Participation**, in the league screen's **Scoring Data** section beside Reports, shows who shot.
+**Week** lists everyone who shot the selected week, with their scores. **Season** is a grid with
+members down the side and weeks across, one square per night: green for shot, orange **B** for a
+bank, purple **S** where a sub covered them, and red **–** for absent. A square is left blank for a
+week the member was not on the team. Type in the **Name** box at the top to show only the members
+you want — a first name, a last name, or the start of either — in both views. Tap a name to open
+that member's screen.
 
 ### Exporting
 
@@ -1346,10 +1397,12 @@ from a clean slate. A **Copy** preserves who had paid, because it is the same se
 
 ### The Finance screen
 
-From the league screen, tap **League Info → Finances**. Each team shows:
+From the league screen, tap **League Info → Finances**. At the top, a ring shows how much of the
+league's fees has been collected so far. Each team then shows:
 
 - how its roster splits between club members and guests,
-- **collected / billed** — how much of that team's season fees have come in,
+- **collected / billed** — how much of that team's season fees have come in, with a bar that fills
+  as the team pays,
 - and what is still **due**, or *Paid in full* once it all has.
 
 Underneath, **League Totals** sums Billed, Collected and Due across every team, and **Shooters**
