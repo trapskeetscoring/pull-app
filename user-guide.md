@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on November 1, 2026_
+_Updated on November 2, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -32,7 +32,8 @@ season from a league you already ran, jump to [Section 5 — Starting a New Seas
 13. [League Fees](#13-league-fees)
 14. [Sharing a League Across Devices](#14-sharing-a-league-across-devices)
 15. [Notifications](#15-notifications)
-16. [Troubleshooting](#16-troubleshooting)
+16. [Tournaments](#16-tournaments)
+17. [Troubleshooting](#17-troubleshooting)
 
 ---
 
@@ -150,8 +151,9 @@ Pull! is **not designed for VoiceOver**, and VoiceOver is not supported.
 
 ## 2. Settings Reference
 
-All settings live under **"…" → League Settings**, grouped into six screens — **General**,
-**Scoring**, **Handicap**, **Schedule**, **Banks & Substitutes** and **Fees & Display** — plus
+All settings live under **"…" → League Settings**, grouped into seven screens — **General**,
+**Scoring**, **Handicap**, **Schedule**, **Banks & Substitutes**, **Fees & Display** and
+**Classifications** — plus
 **Backup Secretaries** for the owner. Everything here is secretary-only; captains and view-only
 participants do not see the menu item.
 
@@ -184,6 +186,7 @@ close that sheet without generating, the setting reverts — the schedule and th
 | Setting | What it does |
 |---|---|
 | **Rounds Per Match** | Rounds each shooter shoots per week. Default 2. |
+| **Target Format** | What the league throws: **Singles** or **Doubles**, plus **Handicap (yardage)** for trap and **International (ISSF)** for skeet. Sets Max Round Score to the format's targets per round (50 for doubles). Fixed once scores are recorded. |
 | **Max Round Score** | Perfect round. 25 for both trap and skeet. Also the handicap target and the cap ceiling. |
 | **Valid Scores** | How many of a team's shooters count toward the team total **each round**. The highest N are kept; the rest are dropped. Can never exceed Roster Size. |
 | **Tiebreakers** | How many of the *dropped* shooters are compared to break a tie. Can never exceed Roster Size − Valid Scores, or 5. |
@@ -279,6 +282,22 @@ league on 8 sites with 2 flights fills exactly, with nobody sitting out.
 | **Member Fee** / **Guest Fee** | Season fee for club members and for everyone else. |
 | **Show Roster Categories** | Splits the targets figures into **Club Members** and **Guests** — on the Results tab and at the end of the Roster PDF. |
 | **Improvement Rounds** | How many opening rounds **Most Improved** and **Biggest Slump** measure a shooter's finishing average against. Default 4. |
+
+### Classifications
+
+The list offered beside each shooter, with **None**: Youth, Senior and Super Senior to start with.
+Each league keeps its own, and **Start Next Season** and **Copy** carry it to the new one.
+
+- **Add** — type a name under the list and tap **Add**.
+- **Rename** — edit the name in place. Everyone who holds it keeps it under the new name.
+- **Reorder** — drag the handle; pickers list them in this order.
+- **Delete** — tap the red minus. If anyone holds it, you choose another classification to move them
+  to, or None. The number beside a name is how many shooters hold it.
+- **Restore Youth, Senior, Super Senior** puts the starting list back; anyone holding one you added is
+  set to None.
+
+A shooter added from another league keeps their classification only if this league has the same
+one, which a copied or next season does. Otherwise they start at None.
 
 ### Access
 
@@ -524,8 +543,8 @@ Most clubs run the same league again with mostly the same people. **Start Next S
 in one step, and keeps each shooter's history linked from one season to the next.
 
 From the league's **"…"** menu, tap **Season → Start Next Season** (it is there only in Secretary mode, and
-not for a tournament). The name pre-fills with the year moved on — *Fall WNT 2026* becomes
-*Fall WNT 2027*.
+not for a tournament). The name pre-fills with the year moved on — *Fall League 2026* becomes
+*Fall League 2027*.
 
 ### Choosing who comes back
 
@@ -869,6 +888,18 @@ wants it kept.
 record whether the shot hit or missed: once for a hit, twice for a miss, a third time to clear it. The
 large number at the right of each shooter's row is their hits **at this station** — the number to call
 out as the squad rotates, so nobody has to count ticks — and **Rd** beneath it is their round so far.
+On a skeet sheet each box names its house — **H** or **L** — and a pair's two boxes sit together, first
+target first.
+
+**The option (skeet singles).** The 25th target is recorded in the last box at station 8, labelled
+**Option**. A shooter fires it straight after their first miss, so every other station shows an
+**Option** row across the top with a box for each shooter: record it there without leaving the station.
+A shooter's box is ringed in orange once they have missed and their option is still to come. It is the
+same box as station 8's, so it shows in both places; a shooter still straight takes it at low 8 as
+usual. If a miss is later ruled a dead target and changed, and the shooter has no other miss, the app
+clears their option (and station 8's confirmation): they shoot it again at low 8, and the sheet waits for
+it. Skeet doubles and International have no option.
+
 You do not have to fill every station before moving on; the app saves your progress as you go and
 will let you go back. **Review and Submit** becomes available once every shot in every round has
 been recorded (a shooter marked **DNF** is exempt). If you switch the sheet to **Totals
@@ -1313,7 +1344,7 @@ kept.
 Every exported report is named for the league, the report and **the week it covers**:
 
 ```
-Fall_WNT_2026_Standings_Through_Week_3.pdf
+Fall_League_2026_Standings_Through_Week_3.pdf
 ```
 
 The week is the one printed inside, counted the way the app displays it, so a file cannot disagree
@@ -1322,7 +1353,7 @@ the suffix too even though it is a whole-season sheet — the files of one expor
 sent on as a set, and one of them not sorting with the others is the confusion this avoids.
 
 **Once the season's last night has been shot**, the reports covering it say so: the files end in
-`_Final` (`Fall_WNT_2026_Standings_Final.pdf`) and the sheets are titled **Final Standings**,
+`_Final` (`Fall_League_2026_Standings_Final.pdf`) and the sheets are titled **Final Standings**,
 **Final Rosters** and so on, even when the last night was a week moved to the end of the schedule.
 A results sheet keeps its week, since it covers one night.
 
@@ -1806,7 +1837,115 @@ changes that occur after you've joined are surfaced.
 
 ---
 
-## 16. Troubleshooting
+## 16. Tournaments
+
+A tournament is a one-day shoot or a weekend of events, not a season. It ranks on **targets
+broken alone**: no handicap, no points, no banks and no substitutes.
+
+### Creating one
+
+Tap **New League** (**+**) on the league list, set **Format** to **Tournament**, then choose **Competitors**:
+
+- **Individuals** — every shooter is ranked on their own. Squads are only who shoots together.
+- **Teams** — squads are ranked on their total, every shooter on the squad counting.
+
+**Club Members & Guests** decides whether shooters are marked club member or guest, with two fees.
+With it off, everyone pays one entry fee. You can change it later in **Fees & Display**.
+
+A tournament's screens say **Squad** where a season says Team, **Event** where it says Week, and
+**Fields** and **Start Times** where it says Sites and Flights.
+
+### Settings that apply
+
+- **General → Events** — how many events (1–12). **High Over All** — award an overall champion
+  across every event (see below).
+- **General → Squads**, **Squad Size**, and **Schedule → Fields** and **Start Times**.
+- **Fees & Display** and **Classifications**.
+
+**Scoring**, **Handicap** and **Banks & Substitutes** are not offered: each event's format and rounds
+are set in **Set Up Events**, and a tournament has no handicap.
+
+### Signing shooters in (individual tournaments)
+
+Open **Entrants** on the tournament's screen. Type a first and last name and tap **Add Entrant**.
+Somebody already in another league or tournament on this device appears as you type: choose them to
+keep their history together, or tap **Add as Someone New**.
+
+When everyone is in, tap **Make Squads**. Shooters waiting for a squad are split into squads of up
+to Squad Size, as evenly as possible (11 shooters in squads of 5 shoot as 4, 4 and 3), in the order
+they signed in, so people who arrive together shoot together. The first shooter in each squad leads
+it. Squads already made are left alone. If the events are already set up, set them up again
+afterwards so the new squads get a field and a start time.
+
+In a team tournament, add squads with **Add Squad** as you would a team.
+
+### Setting up the events
+
+Tap **Set Up Events**. Choose the **First Day**. Each event has:
+
+- a **name** (blank reads "Event 1", "Event 2" and so on);
+- **Starts**, its date and time. The default is two events a day, with the second starting once the
+  first has started every squad. Changing the first day spaces them again;
+- **Format**: Singles, Doubles, Handicap (yardage) for trap, or International (ISSF) for skeet;
+- **Rounds**. Changing the format sets the usual count: 4 for singles and handicap, 2 for doubles
+  (50 targets a round), 5 for international.
+
+Every squad gets its own field and start time. If there are more squads than fields × start times,
+add fields or start times first. Set Up Events is not available once scores exist.
+
+**Handicap (yardage)** is trap handicap, the distance each shooter stands back (18–27 yd). Set it
+under **Handicap Yardage** on the shooter. It changes where they stand, not their score.
+
+Scorekeeping works as in a season: assign scorekeepers, and captains enter and submit their squads'
+sheets for approval.
+
+### Results, Standings and Awards
+
+**Results** shows one event:
+
+- **Individuals:** every shooter ranked by targets broken, with their squad and, where there is
+  room, each round's score. Below it, a table for **Ladies** and one for each classification
+  (Youth, Senior, Super Senior, or the league's own list) that someone in the event holds, each
+  ranked within itself.
+- **Teams:** the squads ranked by total, then each squad's shooters.
+
+**Standings** show the top 10 over all events when the tournament awards High Over All, otherwise
+each event's top 5.
+
+**Awards** show each event's **top 3**, and High Over All's top 3 first when it is awarded. It reads
+**Tournament Awards** once the last event is shot.
+
+**Leaders** lists the raw averages, straights and near-straights as in a season, but not Most
+Improved: improvement is measured across a season's weeks.
+
+**High Over All** adds up every event's targets. Only shooters (or squads) who shot **every** event
+held so far are placed: missing one takes them out of the running.
+
+### Ties and shoot-offs
+
+Equal totals share a place ("T-2nd"), and tied shooters are listed by name until a shoot-off
+settles it. Under each Results, Standings or Awards table with a tie still standing, the secretary
+sees **Record Shoot-Off for T-2nd**. Enter the targets each tied shooter broke in that shoot-off
+round and tap **Save**. Anyone still level afterwards gets **Record Shoot-Off** again for the next
+round. **Clear Shoot-Off** starts the tie over. A shoot-off shows beside the shooter as "S/O 24, 25"
+on screen and in the PDF.
+
+- A round only counts when **everyone** in the tie shot it.
+- A High Over All tie is shot off from the Standings or Awards table, after the last event. An
+  event's tie is shot off from that event's Results table. The two are kept separate.
+- A tie inside a category table (Ladies, Senior…) is settled by the event's shoot-off, so record it
+  on the event's table.
+- Record shoot-offs on the device that is entering the event. Two secretary devices recording at the
+  same moment keep only the later save.
+
+### Exports
+
+Export works as for a season. Titles name the event ("Standings Through Singles"), and the Awards
+PDF is the tournament's placings.
+
+---
+
+## 17. Troubleshooting
 
 ### Red cloud icon / sync not working
 
