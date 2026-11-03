@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on November 2, 2026_
+_Updated on November 3, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -367,7 +367,8 @@ their team's roster automatically.
 shot two nights it also draws an **Average Trend**: their raw average after each night, with the
 change since the first night beside it. **Highlights** collects their straights, their best night,
 and their longest run of rounds within two targets of a straight. A sub's screen shows the same. A
-tournament shows neither, since each shooter has only one event.
+tournament shows Highlights but no Average Trend, and counts each event against its own format: a
+straight in Doubles is a 50.
 
 **Team Scores**, on a team's screen, shows the team one week at a time; **Previous** and **Next**
 page through the season. Tap a shooter to open their screen — on a slot a sub covered, the sub's,
@@ -433,7 +434,59 @@ to use — weeks, teams, flights, sites, starting site, match type — so you ca
 
 Generation is deterministic: the same settings and start date always produce the same season. The
 scheduler balances each team's use of sites and flights as evenly as the arithmetic allows, and in
-Team vs Team mode pairs opponents with a circle-method round-robin.
+Team vs Team mode pairs opponents with a round-robin. How it does each of those is below.
+
+### How a generated schedule is built
+
+The schedule is built one week at a time, each week one week after the last, starting on the date you
+enter. Each week is decided in three steps.
+
+**1. Who sits out.** If **Use Bye Weeks** is on and the teams don't divide evenly into the week's
+shooting slots, some teams sit out — see *Bye weeks, ghosts, and delegates* below. Byes are worked out
+for the whole season before any week is built, so every team gets the same number.
+
+**2. Who plays whom** *(Team vs Team only)*. Opponents come from a round-robin: one team stays put and
+the rest move round one place a week, so in a season without byes every team meets every other
+once before anyone meets the same opponent twice. A season longer than that starts the cycle again.
+If a team's opponent that week is on a bye, the teams left without a partner are paired with each
+other, which can bring a repeat round sooner. A League Ranking
+season skips this step — every team is ranked against the whole league, so there are no opponents.
+
+**3. Where each team shoots.** Every playing team gets its **own** site and flight for the night. The
+app spreads each team across the sites and flights over the season: a team that has already shot a
+site or a flight is steered elsewhere, and the more often it has been somewhere, the harder it is
+steered away. Opponents are not placed together — a matchup records who plays whom, not where, so two
+opponents may shoot on different sites or in different flights.
+
+The app tries many seasons this way and keeps the most even one, judged first by the **worst-served
+team** — a season where one team keeps returning to the same site is worse than one where everybody
+is slightly uneven. A 16-team league on 8 sites with 2 flights over 12 weeks comes out with every
+team in each flight exactly six times, and on no site more than once more than any other.
+
+**Short weeks.** When fewer teams play than there are slots, the empty slots are taken as **whole
+sites** before any site is left half used. Scorekeeping pairs the two teams on a site — one in each
+flight, each keeping score for the other — so a half-used site leaves a team with nobody to keep its
+score. Which sites stand empty moves from week to week, so the idle fields are not always the same
+ones.
+
+**A worked example: 13 teams, 8 sites, 2 flights, 11 weeks.** There are 16 slots, so three are always
+spare.
+
+- **Use Bye Weeks on:** one team sits out each week, leaving 12 to play — six full sites, two sites
+  empty, nobody alone on a site, and in Team vs Team six matchups with nobody left over. Eleven weeks
+  of one bye would give 11 byes for 13 teams, which can't be shared evenly, so one week sits out three
+  teams instead: 13 byes, **exactly one per team**. That week 10 play on five full sites.
+- **Use Bye Weeks off:** all 13 play every week. One site stands empty and one site has a team in only
+  one flight, so that team needs a **delegate** scorer, marked **X** on the grid. In Team vs Team the
+  odd team out also plays a **ghost** each week. Who lends their scores to the ghost rotates, going to
+  whichever team has done it least.
+
+If the teams don't fit at all — more teams than sites × flights with byes off — the app says so
+instead of building a season, and asks you to turn on Use Bye Weeks or add sites or flights.
+
+**Changing the settings later.** Regenerating builds a whole new season from the current teams and
+settings and replaces every week. It isn't available once any score is recorded — see
+*Regenerating the schedule* in section 11.
 
 ### Option B — Import a schedule
 
@@ -1931,7 +1984,9 @@ each event's top 5.
 **Tournament Awards** once the last event is shot.
 
 **Leaders** lists the raw averages, straights and near-straights as in a season, but not Most
-Improved: improvement is measured across a season's weeks.
+Improved: improvement is measured across a season's weeks. When the events throw more than one
+format, each format gets its own lists, named for it: **Straights — Doubles** counts 50s, and
+**49s Shot — Doubles** and **48s Shot — Doubles** follow it.
 
 **High Over All** adds up every event's targets. Only shooters (or squads) who shot **every** event
 held so far are placed: missing one takes them out of the running.
