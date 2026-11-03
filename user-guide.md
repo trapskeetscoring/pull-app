@@ -532,7 +532,10 @@ Assigning is unavailable on a cancelled week or one that already has scores.
 
 Once saved, each named captain gets a notification and sees a **"You're scorekeeping"** banner on
 their league screen (in Captain mode). While some teams still have no scorekeeper the menu offers **Assign Remaining
-Scorekeepers**; once anyone is assigned it also offers **Remove Scorers**, which clears that week's
+Scorekeepers**, and once every team has one it offers **Edit Scorekeepers**, to swap a captain without
+clearing the week; a newly named captain is notified. A replaced captain loses the week from their
+league screen, but a sheet they already started stays on their phone under **Sheets on This Device**.
+Once anyone is assigned the menu also offers **Remove Scorers**, which clears that week's
 assignments and nothing else — it works on a week that already has scores, too.
 
 ---
@@ -888,17 +891,29 @@ wants it kept.
 record whether the shot hit or missed: once for a hit, twice for a miss, a third time to clear it. The
 large number at the right of each shooter's row is their hits **at this station** — the number to call
 out as the squad rotates, so nobody has to count ticks — and **Rd** beneath it is their round so far.
+The next shot to record is ringed in **yellow** — both boxes of a pair in doubles — and that shooter's
+name is in **bold**, so you can find your place at a glance. On trap, the lead shooter's last box at each post
+reads **Ready**: once it is shot, call Ready for the move to the next post.
+At skeet station 8 the sheet takes either order: the whole squad's high house first and then each
+shooter's low house, as the NSSA rules have it, or each shooter's high and low in turn, as many clubs
+shoot it casually. The yellow ring starts on the NSSA order and follows yours as soon as you mark a
+shooter's low house before the next shooter's high house.
 On a skeet sheet each box names its house — **H** or **L** — and a pair's two boxes sit together, first
 target first.
 
 **The option (skeet singles).** The 25th target is recorded in the last box at station 8, labelled
-**Option**. A shooter fires it straight after their first miss, so every other station shows an
-**Option** row across the top with a box for each shooter: record it there without leaving the station.
-A shooter's box is ringed in orange once they have missed and their option is still to come. It is the
+**Option**. A shooter fires it straight after their first miss, so at every other station each shooter's
+row ends with their own **Option** box: record it there without leaving the station. The box is ringed in
+orange once they have missed and their option is still to come. The box cannot be tapped before their first miss, and
+once their option is recorded you can still change it until you tap **Confirm Station**; after that it is
+locked. When the option is the next shot, its ring is orange rather than yellow. **Until an owed option
+is recorded, no other box can be marked** — for that shooter or the next — since the option is shot
+immediately; boxes already marked can still be changed. It is the
 same box as station 8's, so it shows in both places; a shooter still straight takes it at low 8 as
 usual. If a miss is later ruled a dead target and changed, and the shooter has no other miss, the app
 clears their option (and station 8's confirmation): they shoot it again at low 8, and the sheet waits for
-it. Skeet doubles and International have no option.
+it. Tapping that box on round to a miss again puts the option back, so one tap too many does not
+lose it. Skeet doubles and International have no option.
 
 You do not have to fill every station before moving on; the app saves your progress as you go and
 will let you go back. **Review and Submit** becomes available once every shot in every round has
@@ -1146,8 +1161,8 @@ optional note to send it back.
 Everything in this section is secretary-only. The actions live in the **"…"** menu at the top right
 of the schedule view, and what it offers depends on the week on screen:
 
-- **Assign Scorekeepers** — while the week has teams without one; it reads **Assign Remaining
-  Scorekeepers** when some are already assigned. Not on a cancelled week or one with scores.
+- **Assign Scorekeepers** — it reads **Assign Remaining Scorekeepers** when some are already
+  assigned, and **Edit Scorekeepers** once every team has one. Not on a cancelled week or one with scores.
 - **Remove Scorers** — whenever the week has assignments, including scored and cancelled weeks.
 - **Cancel Week** — or **Uncancel Week** on a cancelled week. Not available while the week on screen
   has scores.
