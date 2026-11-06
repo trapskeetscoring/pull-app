@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on November 5, 2026_
+_Updated on November 6, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -22,7 +22,7 @@ season from a league you already ran, jump to [Section 5 — Starting a New Seas
 3. [Teams, Members and Substitutes](#3-teams-members-and-substitutes)
 4. [Building the Schedule](#4-building-the-schedule)
 5. [Starting a New Season](#5-starting-a-new-season)
-6. [Identity — Claiming Your Role](#6-identity--claiming-your-role)
+6. [Identity — Linking Your Device](#6-identity--linking-your-device)
 7. [How Scoring Works](#7-how-scoring-works)
 8. [Running a Match Week](#8-running-a-match-week)
 9. [Corrections and Fixing Mistakes](#9-corrections-and-fixing-mistakes)
@@ -397,7 +397,7 @@ A substitute:
 - keeps their own scoring record, and their rounds count toward their own average;
 - **cannot use a bank score** — a bank stands in for a rostered member's missed week, and a sub is
   the stand-in, so **Bank** is unavailable for a slot with a sub in it;
-- cannot be a captain, and **cannot claim an identity** unless the owner makes them a backup
+- cannot be a captain, and **cannot hold an identity** unless the owner makes them a backup
   secretary in [Settings → Access](#access).
 
 Promoting a sub onto a team roster is simply adding them to the team — their history stays with them.
@@ -654,11 +654,11 @@ real season; use Start Next Season for a new season.
 
 ---
 
-## 6. Identity — Claiming Your Role
+## 6. Identity — Linking Your Device
 
 "Identity" is the way each device knows who is using it. It is a per-device, per-league setting.
 
-### Claiming your identity
+### Linking your device
 
 **A captain's device takes a name only when the secretary links it, in person.** Bring your phone
 to the kickoff meeting or the first night:
@@ -977,7 +977,7 @@ Only**, each shooter's round total is typed on the app's own number pad, which c
 **Next** beside the digits.
 
 **Review** — a summary grid showing all shots for all shooters. Check the totals, then tap
-**Submit to Secretary**. The sheet is sent to the secretary under the identity this device has claimed.
+**Submit to Secretary**. The sheet is sent to the secretary under the name linked to this device.
 
 If you need to stop mid-sheet, tap **Close** — the draft is saved and will be waiting the next time
 you open the assignment.
@@ -1611,15 +1611,16 @@ Your **own** other devices can pick your name either way — every device that o
 
 Once linked:
 
-- their device claims that identity by itself, the next time it syncs;
-- **no other device can claim that member**, and no captain's device can claim *any* name you have not
+- their device takes that name by itself, the next time it syncs;
+- **no other device can take that member**, and no captain's device can take *any* name you have not
   linked to it, which is what stops somebody taking a captain's powers by tapping a name;
 - the **Linked** list on the same screen shows each member's devices, with **Unlink** for each.
   **Unlinking stops that device acting as the member** — on its next sync it drops the identity and
   shows an alert saying so. Unlinking does not remove their access to the league; that is
-  **Tools → Share League → their row → Remove Participant**.
-- **Removing one person from the share does not unlink them.** The link is kept in the league, so unlink
-  them here too if they have left.
+  **Tools → Share League → their row → Remove Participant** (**Remove Access** on some versions of iOS).
+- **Removing one person from the share does not unlink them,** as long as others remain. The link is kept
+  in the league, so unlink them here too if they have left. **Removing the last person ends the share,**
+  which clears the links as **Stop Sharing** does.
 - **Stop Sharing does clear the links**, all but your own. See
   [What each action removes](#what-each-action-removes).
 
@@ -1692,7 +1693,7 @@ with a co-owner, and a backup secretary is the way to share the running of a lea
 | What you do | Who loses the league | Captains' device links |
 |---|---|---|
 | **Linked Devices → Unlink** | Nobody | That one device's link |
-| **Share League → their row → Remove Participant** | That Apple ID | **Kept.** Unlink them too |
+| **Share League → their row → Remove Participant** or **Remove Access** | That Apple ID | **Kept** while others remain, so unlink them too. **Removing the last person ends the share,** and the links go as they do for Stop Sharing |
 | **Share League → Stop Sharing** | **Everyone but you**, captains included | **Cleared** |
 
 Your own league and scores stay on your devices in every case, and these are not affected: **your own
@@ -1722,13 +1723,13 @@ to confirm an invitation landed. Check it before assuming something is wrong wit
 ### What each role can do
 
 Share permission decides whether a device can write at all. What it may write is then decided by the
-identity the user claims and by your Backup Secretaries list — "Can Edit" on its own does not
+identity linked to the device and by your Backup Secretaries list — "Can Edit" on its own does not
 make somebody a secretary.
 
 | Capability | Secretary (Owner) | Can Edit | View only |
 |---|---|---|---|
 | View scores and reports | ✓ | ✓ | ✓ |
-| Claim identity / view scorekeeper banner | ✓ | ✓ | — |
+| Hold a linked name / view scorekeeper banner | ✓ | ✓ | — |
 | See members' email, phone and fees | ✓ | ✓ (if backup secretary; a captain for their own team) | — |
 | Submit scorekeeper sheet | ✓ | ✓ (if captain) | — |
 | Submit roster change for approval | ✓ | ✓ (if captain) | — |
@@ -1741,9 +1742,9 @@ make somebody a secretary.
 | Copy or export the league | ✓ | ✓ (if backup secretary) | — |
 | Delete the league or re-share it | ✓ | — | — |
 
-A "Can Edit" collaborator who claims a **captain** identity can submit sheets and roster
-requests for their own team, but cannot edit directly or approve anything. One who claims a
-**non-captain** identity, or claims none at all, ends up effectively view-only. To give someone full
+A "Can Edit" collaborator linked as a **captain** can submit sheets and roster
+requests for their own team, but cannot edit directly or approve anything. One linked to no
+captain ends up effectively view-only. To give someone full
 secretary powers, add them to **League Info → League Settings → Backup Secretaries** as well.
 
 A **View only** device has no **My Identity**: it never acts as anybody. If a captain's device ends
@@ -1948,17 +1949,17 @@ sheets for approval.
   ranked within itself.
 - **Teams:** the squads ranked by total, then each squad's shooters.
 
-**Standings** show the top 10 over all events when the tournament awards High Over All, otherwise
-each event's top 5.
+**Standings** show the event selected at the bottom of the screen: its top 5, under the top 10 of
+High Over All when the tournament awards it. High Over All adds up every event shot so far, whichever
+event is selected. **Results** and **Roster** also follow the selector. **Leaders** and **Awards** cover
+every event shot, so they have no selector.
 
 **Awards** show each event's **top 3**, and High Over All's **top 4** first when it is awarded. It reads
 **Tournament Awards** once the last event is shot.
 
-**Leaders** lists the raw averages, straights and near-straights as in a season, but not Most
-Improved: improvement is measured across a season's weeks. When the events throw more than one
-format, each format gets its own lists, named for it: **Raw Average — Doubles** averages the doubles
-rounds, **Straights — Doubles** counts 50s, and
-**49s Shot — Doubles** and **48s Shot — Doubles** follow it.
+**Leaders** lists the raw averages and straights, without a season's near-straights or Most Improved.
+When the events throw more than one format, each format gets its own lists, named for it: **Raw Average
+— Doubles** averages the doubles rounds, and **Straights — Doubles** counts 50s.
 
 **Roster** shows each shooter's **Raw Avg** for the event on screen alone, with a dash if they did not
 shoot it. A squad has no average.

@@ -5,7 +5,7 @@ title: Pull! Privacy Policy
 
 # Privacy Policy for Pull!
 
-_Updated on October 10, 2026_
+_Updated on November 6, 2026_
 
 ## Overview
 
@@ -61,12 +61,12 @@ Two consequences follow:
 - **If you are a secretary entering other people's contact details, you are responsible for having
   their agreement to do so**, and for who you then invite to the league. Only enter what your league
   actually needs — email and phone are optional fields.
-- **The address your invitation was sent to becomes part of that shared copy** once you choose
-  which member you are, because that is how the secretary tells who has joined. Once the secretary
-  confirms you, your device's random token is stored on your member record in the shared league,
-  where everyone in the league can see it; it identifies nothing outside Pull!. Nothing else about
-  your Apple ID is shared: the app is never told your name or your account identifier, and does not
-  ask for them.
+- **A linked device leaves a random token in that shared copy.** When the secretary links your
+  device to your member record, by scanning a code your device shows, a token your device made is
+  stored on that record, where everyone in the league can see it; it identifies nothing outside
+  Pull!. Pull! adds nothing else about your Apple ID to the league: the app is never told your name
+  or your account identifier, and does not ask for them. Apple's sharing screen shows the secretary
+  who was invited.
 
 Only the person who created a league can invite others or stop sharing it.
 
@@ -76,7 +76,7 @@ Pull! registers with Apple's push notification service so CloudKit can wake the 
 sync. This uses silent notifications and involves a device token held by Apple; it carries none of
 your league data.
 
-If you own a league or claim a captain identity in one, the app asks permission to send
+If you own a league or are linked as a captain in one, the app asks permission to send
 notifications, and then sends **local** notifications on your device for league events — a
 scorekeeping assignment, a score sheet or roster change awaiting approval, its approval or rejection,
 and messages from the league secretary. A notification shows the league name (and, for a
@@ -92,9 +92,12 @@ yourself, for example to support. Deleting the app deletes it.
 
 ## Camera and Photos
 
-Pull! includes a score-sheet scanning feature that is **disabled in this release** and cannot be
-reached. Because the code is present, iOS may show camera and photo-library permission descriptions
-for the app; no image is captured, read, or transmitted while the feature is off.
+Pull! uses the camera to read a QR code, such as when a secretary links a captain's device. iOS asks
+your permission first. The code is read on your device, and no picture is kept or sent anywhere.
+
+Pull! also includes a score-sheet scanning feature that is **disabled in this release** and cannot be
+reached. Because the code is present, iOS may show a photo-library permission description for the
+app; no photo is read or transmitted while the feature is off.
 
 If a future release enables it, it will work by sending a photograph of a score sheet to Anthropic's
 API using an API key you supply and store yourself. That would be the app's only transmission of
@@ -103,8 +106,8 @@ data to a third party, it would be entirely opt-in, and this policy will be upda
 ## Exporting and Sharing Files
 
 Anyone on a league can save or send its reports as PDF files, which carry members' names and scores.
-Exporting the whole league as CSV or JSON — which includes members' email addresses, phone numbers,
-fee status, and the invitation address of each confirmed member — and copying a league are available only to the league's secretary and backup
+Exporting the whole league as CSV or JSON — which includes members' email addresses, phone numbers
+and fee status — and copying a league are available only to the league's secretary and backup
 secretaries. A JSON export does not include the links between members and their devices. Once a file
 leaves the app, it is governed by whatever service you send it through, not by this policy.
 
