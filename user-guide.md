@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on November 6, 2026_
+_Updated on November 9, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -128,6 +128,24 @@ list. It has three choices, and they combine:
 
 The button fills in while a filter is on, so a short list never looks like missing leagues.
 **Show All** clears it.
+
+### The league screen at a glance
+
+Open a league and a summary sits above the buttons: what is next, who is leading, and where your team stands, or, in a tournament, your own place or your squad's. It reads the same figures as Reports. Your place shows once this device is linked to your name, and the summary appears once the league has a schedule.
+
+Below it are the buttons, two to a row:
+- **Your Team: <name>** comes first once this device is linked to a member of a team. It opens
+  your own team.
+- **Scores & Reports** and **League Info** are for everyone. **My Identity** is the first group in
+  League Info, and **Find a Member** there searches everyone in the league, substitutes included.
+- **Tools** is for the secretary and the captains. Everyone there gets **Messages**, the inbox of
+  what the secretary has sent, and **Notes**. The secretary also gets **Message Captains**, export,
+  copy, next season and sharing. A new message also shows as a banner at the top of the league screen.
+
+**Notes** are your own notebook for a league: a machine that jammed, a ruling, who still owes a fee.
+Tap **New Note**, and choose which week it is about or leave it about the league as a whole. A note
+stays on the device it was written on. It is not shared, synced or exported, and it goes if the
+league is deleted from this device. Swipe a note to delete it.
 
 ### Trying the app without touching your data
 
@@ -282,6 +300,7 @@ league on 8 sites with 2 flights fills exactly, with nobody sitting out.
 | **Member Fee** / **Guest Fee** | Season fee for club members and for everyone else. |
 | **Show Roster Categories** | Splits the targets figures into **Club Members** and **Guests** — on the Results tab and at the end of the Roster PDF. |
 | **Improvement Rounds** | How many opening rounds **Most Improved** and **Biggest Slump** measure a shooter's finishing average against. Default 4. |
+| **One Award per Shooter** | Off, as it starts, a shooter wins every award they lead. On, a shooter can win only one. The awards are settled in the order the Awards report lists them: a shooter takes the first they lead, and each later award goes to the next in line. Each award still lists the shooter who leads it, with the award they already won, and then the winner (gold) and the next in line (silver). Seasons only. |
 
 ### Classifications
 
@@ -321,7 +340,7 @@ Once **any** score is recorded in the league, these become read-only:
 
 All of these are locked for the same reason: scores are stored against a week number and a roster slot,
 so changing any of them would silently re-interpret weeks that have already been played and
-published. **Clear Scores** under **Scoring Data** is the deliberate way to unlock them, and
+published. **Clear Scores** under **Scores & Reports** is the deliberate way to unlock them, and
 it does exactly what it says.
 
 ---
@@ -344,8 +363,8 @@ Pull! chose. The colour syncs with the league, so everyone sees the same one.
 
 1. In **League Info**, tap **Rosters** (it shows how many teams you have, e.g. *Rosters (8/10)*).
    It opens the first team; **Previous** / **Next** page through the others.
-   Captains and backup secretaries who have picked their name also get **Your Team: <name>** just
-   above it, which opens their own team.
+   Captains and backup secretaries who have picked their name also get a **Your Team: <name>**
+   button at the top of the league screen, which opens their own team.
 2. While the team has an open slot, tap **Add Member**, then either pick someone from **Available
    Substitutes** or tap **Create New Member**.
 3. Repeat for each team.
@@ -406,6 +425,21 @@ Promoting a sub onto a team roster is simply adding them to the team — their h
 (secretary only). It is offered only for somebody the season has no record of — no scores, no week
 covered, not in a played week's lineup, not on a score sheet — so nothing already printed changes.
 To delete someone on a team, remove them from the team first; they move to the pool.
+
+**Merging a sub entered twice.** A sub typed in under two spellings ends up with their scores split
+across two people, and both averages are wrong. Open the misspelled one, tap **Merge Into…**
+(secretary only) and pick who they really are. The closest names are listed first, but nothing is
+merged until you choose and confirm. Their scores, the weeks they covered and any linked device move
+to the person you picked, whose name and details are kept, and the misspelled sub is removed.
+A merge can't be undone, and it is refused, with the reason shown, when:
+
+- both of them are recorded in the same week, so one of them is wrong about that night. Clear the
+  wrong week first;
+- a score sheet naming the misspelled sub hasn't been approved yet;
+- a roster change for them is waiting for review.
+
+With more than one secretary device, merge on one of them while nobody is entering scores on another.
+If this device has changes iCloud hasn't taken yet, **Merge Into…** asks you to tap **Sync Now** first.
 
 ### Removing someone mid-season
 
@@ -724,9 +758,10 @@ to see the app exactly as your captains see it — useful for confirming the gat
 correctly.
 
 Switching to Captain mode does not reduce what your device is allowed to *sync*; it changes what the
-app shows you. In Captain mode the secretary's tools are hidden — **Clear Scores** and the whole **Tools** button
-among them — so switch back to
-Secretary to use them. The scorekeeper banner, by contrast, shows only in Captain mode.
+app shows you. In Captain mode the secretary's tools are hidden — **Clear Scores**, and everything under **Tools**
+but **Messages** and **Notes**, among them — so switch back to
+Secretary to use them. The scorekeeper banner, by contrast, shows only in Captain mode. Deleting a league
+you created works in either mode: swipe it on the league list.
 
 ---
 
@@ -917,7 +952,7 @@ scores, so your work is never stranded; the banner says the secretary has scores
 submit, approving your sheet replaces their scores for the shooters and rounds it holds.
 
 **Sheets on This Device.** Every sheet you start stays on this device until you submit it. To see
-them, open **Sheets on This Device** under **Scoring Data** (it shows only when there is one). Tap one to
+them, open **Sheets on This Device** under **Scores & Reports** (it shows only when there is one). Tap one to
 carry on with it, or swipe left and tap **Delete** to throw it away. Nobody else ever sees these, and
 a sheet sent back to you by the secretary is not listed: it has its banner.
 
@@ -989,7 +1024,7 @@ target is different: record the misses, and a real zero is stored.
 
 ### What happens after you submit
 
-The secretary sees a count on the **Scoring Data** button, and on the **Pending Score Sheets** row inside it, in the league's Scoring Data
+The secretary sees a count on the **Scores & Reports** button, and on the **Pending Score Sheets** row inside it, in the league's Scores & Reports
 section. They open it, review the sheet, and either:
 
 - **Approve** — round totals are posted to each member's scoring record.
@@ -1007,7 +1042,7 @@ league screen for three days afterwards, naming the team and the week. Tap the *
 ### Direct entry by the secretary
 
 The secretary can enter or edit scores directly without going through the captain submission flow.
-From the league screen, tap **Scoring Data**, then **View / Edit**. The screen
+From the league screen, tap **Scores & Reports**, then **View / Edit**. The screen
 it opens is called **Match Data**.
 
 > **Enter a night's scores on one device.** If you have Pull! on more than one secretary device — your
@@ -1104,7 +1139,7 @@ Two consequences:
 
 ### Fixing a score
 
-Open **Scoring Data → View / Edit** (the Match Data screen), pick the week, and retype the round. The change saves immediately
+Open **Scores & Reports → View / Edit** (the Match Data screen), pick the week, and retype the round. The change saves immediately
 and every report recalculates.
 
 ### A substitute was recorded as the rostered member
@@ -1112,7 +1147,7 @@ and every report recalculates.
 This is the common one: the scores went in under the rostered member's name, but a substitute
 actually shot.
 
-Open the week in **Scoring Data → View / Edit**, find the slot, and select the substitute in the
+Open the week in **Scores & Reports → View / Edit**, find the slot, and select the substitute in the
 **Sub** picker. The rostered member's score for that week is removed and the boxes empty — the
 numbers already typed do not move across. Retype the rounds and they are credited to the substitute;
 the team total, the standings and both shooters' averages all follow.
@@ -1126,7 +1161,7 @@ Approving a sheet posts its scores. To give the scorekeeper their sheet back, us
 Scorekeeper** — retyping the week yourself or clearing it would not.
 
 An approved sheet is no longer in **Pending Score Sheets** — that list holds only sheets waiting for
-you. Reach it through the scores instead: **Scoring Data** → **View / Edit** → that week → page to the
+you. Reach it through the scores instead: **Scores & Reports** → **View / Edit** → that week → page to the
 team → **Shot-by-Shot Detail**, then scroll down and tap **Return to Scorekeeper**. The screen that
 opens is titled **Reject Sheet**; add a note and tap **Reject** — that is the return. Three things
 happen together:
@@ -1149,7 +1184,7 @@ consumed is released, so it can be banked again for a different week.
 
 ### A whole week needs redoing
 
-**Clear Scores** at the end of the **Scoring Data** screen, then **Clear Week**, then pick the week.
+**Clear Scores** at the end of the **Scores & Reports** screen, then **Clear Week**, then pick the week.
 Only weeks with something to clear are listed, and a cancelled week is not — uncancel it first if
 you need to clear its scores.
 That week goes back to un-played: every shooter's scores for it, its substitute records, any
@@ -1262,7 +1297,7 @@ every week of the current schedule.
 
 **Regenerate is unavailable once any score has been recorded.** Scores are stored against a week
 number, so a new schedule would leave each one attached to a different week's matchups and byes. If
-you genuinely need to start the season over, use **Scoring Data → Clear Scores** first;
+you genuinely need to start the season over, use **Scores & Reports → Clear Scores** first;
 then Regenerate becomes available again.
 
 ### Moving the season start date
@@ -1306,7 +1341,7 @@ reason Regenerate is barred.
 
 ## 12. Reports and Export
 
-Tap **Scoring Data → Reports** from the league screen to see the full report suite. All reports are available as an
+Tap **Scores & Reports → Reports** from the league screen to see the full report suite. All reports are available as an
 on-screen view and as a shareable PDF. Pick the week at the top; the choice carries between report
 tabs.
 
@@ -1342,6 +1377,12 @@ beside them are what the row is there to show.
 
 On a phone this card scrolls sideways as one piece, names and all.
 
+**Share Results Image**, at the top of the Results tab, makes a picture of the week for your club's
+group text: who won each match (or each team's place and points), everyone who shot a straight, the
+night's high gun, and the top three in the standings. A tournament's picture shows the top five for
+the event instead. It is drawn the same way whoever shares it, at a standard text size in light
+mode, so it reads the same on everyone's phone.
+
 **Roster / Member Stats** — per-member averages, handicaps, rounds shot, bank usage, and improvement
 scores. The PDF ends each week with a **Targets** summary: clays thrown, clays broken and accuracy
 for that week and for the season to date, plus how many bank scores the league has used. Turn on
@@ -1351,12 +1392,33 @@ so you can print team sheets as soon as the rosters are entered; a member with n
 shows a dash rather than a zero. Before the season every substitute is listed too; after that, only
 the substitutes who have shot.
 
-**Leaders** — top individual performances by category, among rostered members unless **Substitutes in
-Leaders** is on under **Banks & Substitutes**.
+**Leaders** — the top 15 in each category, among rostered members unless **Substitutes in
+Leaders** is on under **Banks & Substitutes**. Each list says what it ranks under its title:
+- **Raw Average** — the average of every round shot, before handicap.
+- **Straights** — rounds of 25, every target broken. **24s Shot** and **23s Shot** count rounds one
+  and two targets short.
+- **Most Improved** — the rise from a shooter's first rounds (Improvement Rounds) to their season
+  average.
+- **Consistency** — the steadiest shooters: the spread of their round scores once their best and worst
+  rounds are dropped, lowest first. Its leader is the **Most Consistent** award's winner.
+
+Most Improved and Consistency are seasons only, use the Awards' rules on how many rounds a shooter
+needs, and list rostered members only.
+
+**Awards** — the season's awards: High Average for men and for women, Most Straights, Most
+Consistent, Most Improved, Biggest Slump, and the top three teams. Each award prints the exact rule
+under its title, with this season's round counts filled in, for example *"The highest raw average
+among men with at least 9 rounds (half of those held)."* Substitutes, bank scores, unfinished
+rounds and cancelled weeks count toward none of them. A tie names everyone on the same figure. The
+secretary sees the tab all season, headed *standings so far*; everyone sees it from the last night.
+With **One Award per Shooter** on (Settings → Fees & Display), nobody wins twice. Each award still
+lists the shooter who leads it if they already won an earlier award, with no medal and the award they
+took (*Won High Average — Men*); then the winner with a gold medal and the next in line with a silver
+one. The PDF has no medals, so it says *(won …)* and *Alternate:* in words.
 
 **Schedule** — the full season with dates, sites and flights, and the scorekeeper grid.
 
-**Participation**, on the **Scoring Data** screen beside Reports, shows who shot.
+**Participation**, on the **Scores & Reports** screen beside Reports, shows who shot.
 **Week** lists everyone who shot the selected week, with their scores. **Season** is a grid with
 members down the side and weeks across, one square per night: green for shot, orange **B** for a
 bank, purple **S** where a sub covered them, and red **–** for absent. A square is left blank for a
@@ -1949,6 +2011,8 @@ sheets for approval.
   ranked within itself.
 - **Teams:** the squads ranked by total, then each squad's shooters.
 
+**Entrants** lists everyone: **Waiting for a Squad** in the order they signed in, then **Signed In**, everyone on a squad, alphabetically by last name with their squad under their name. Tap a name to open the shooter. Swipe left to remove someone, who leaves their squad too. If they lead it, the next shooter takes over. A shooter with a score, a linked device or a scorekeeping job can't be removed.
+
 **Standings** show the event selected at the bottom of the screen: its top 5, under the top 10 of
 High Over All when the tournament awards it. High Over All adds up every event shot so far, whichever
 event is selected. **Results** and **Roster** also follow the selector. **Leaders** and **Awards** cover
@@ -2162,7 +2226,7 @@ secretary.
 
 Both lock as soon as any score exists in the league, along with the other items under
 [What locks when scores exist](#what-locks-when-scores-exist), because changing them would
-re-interpret weeks already played. **Clear Scores** under **Scoring Data** unlocks them, at the cost of the
+re-interpret weeks already played. **Clear Scores** under **Scores & Reports** unlocks them, at the cost of the
 season's scoring.
 
 ### The scorekeeper banner isn't showing
