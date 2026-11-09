@@ -66,7 +66,8 @@ It also says that a league somebody has **shared** with you appears here on its 
 accepted the invitation and are signed in to iCloud — there is nothing to tap for that one.
 
 The same actions are always in the gear menu at the top right, as **New League**, **Import League**
-and **Try Demo Mode** — the only way to them once you have a league.
+and **Try Demo Mode** — the only way to them once you have a league. The gear menu also holds
+**iCloud Sync**, **Help** (this guide), **Report a Problem** and **About**.
 
 To create:
 
@@ -2056,6 +2057,12 @@ PDF is the tournament's placings.
 ---
 
 ## 17. Troubleshooting
+
+**Report a Problem**, in the gear menu on the Leagues list, emails support with your app version and
+device filled in, and attaches the app's event log: times and sync statuses only, never names or
+scores. Describe what happened above the line, and send it soon after the problem, while the log
+still covers it. On a device with no Mail account it opens your mail app without the log; you can
+attach it yourself from **iCloud Sync → Export Event Log**.
 
 ### Red cloud icon / sync not working
 
