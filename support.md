@@ -5,7 +5,7 @@ title: Pull! Support
 
 # Pull! Support
 
-_Updated on November 5, 2026_
+_Updated on November 9, 2026_
 
 Thanks for using Pull!.
 
@@ -14,6 +14,10 @@ Thanks for using Pull!.
 For bug reports, feature requests, or general questions, please email:
 
 **trapskeetscoring@gmail.com**
+
+Or, in the app, tap the gear on the Leagues list and choose **Report a Problem**. It opens an email
+to that address with the app version and your device filled in, and attaches the app's event log:
+times and sync statuses only, never names or scores. Describe what happened above the line.
 
 We typically respond within 1–2 business days.
 
@@ -48,9 +52,9 @@ JSON is the complete one — every team, member, score, week and setting, and th
 
 ### How are scores corrected after submission?
 
-The league secretary can edit any approved score directly, from **Scoring Data → View / Edit** on the league screen. Captains submit score sheets that the secretary reviews and approves, and an approved sheet keeps the scorekeeper's original entries.
+The league secretary can edit any approved score directly, from **Scores & Reports → View / Edit** on the league screen. Captains submit score sheets that the secretary reviews and approves, and an approved sheet keeps the scorekeeper's original entries.
 
-If a sheet was approved too early, the secretary opens that week under **Scoring Data → View / Edit**, pages to the team, taps **Shot-by-Shot Detail**, and chooses **Return to Scorekeeper**. That removes the week's scores for that team and gives the sheet back to the person who kept score, with their grid as they left it, so the fix is an edit rather than a re-entry.
+If a sheet was approved too early, the secretary opens that week under **Scores & Reports → View / Edit**, pages to the team, taps **Shot-by-Shot Detail**, and chooses **Return to Scorekeeper**. That removes the week's scores for that team and gives the sheet back to the person who kept score, with their grid as they left it, so the fix is an edit rather than a re-entry.
 
 ### My league isn't showing on my other device — what's wrong?
 
