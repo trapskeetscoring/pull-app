@@ -97,6 +97,8 @@ it is worth confirming it matches your club before week 1.
 
 ### Reading the Leagues list
 
+<p><img src="images/guide/league-list.png" alt="The Leagues list with one season" width="260"></p>
+
 Each league's row starts with an icon for what it is — a scope for trap, a target for skeet, a
 trophy for a tournament — inside a ring that fills as the season's weeks are shot and turns green
 when the last one is. Beside the name is the date of the next shoot. A cancelled week does not
@@ -132,11 +134,13 @@ The button fills in while a filter is on, so a short list never looks like missi
 
 ### The league screen at a glance
 
+<p><img src="images/guide/league-screen.png" alt="The league screen: summary, then Your Team, Scores & Reports, League Info and Tools" width="260"> <img src="images/guide/tools.png" alt="Tools: Messages, Message Captains, Notes, export, copy, next season and sharing" width="260"></p>
+
 Open a league and a summary sits above the buttons: what is next, who is leading, and where your team stands, or, in a tournament, your own place or your squad's. It reads the same figures as Reports. Your place shows once this device is linked to your name, and the summary appears once the league has a schedule.
 
 Below it are the buttons, two to a row:
-- **Your Team: <name>** comes first once this device is linked to a member of a team. It opens
-  your own team.
+- **Your Team**, with your team's name, comes first once this device is linked to a member of a
+  team. It opens your own team.
 - **Scores & Reports** and **League Info** are for everyone. **My Identity** is the first group in
   League Info, and **Find a Member** there searches everyone in the league, substitutes included.
 - **Tools** is for the secretary and the captains. Everyone there gets **Messages**, the inbox of
@@ -147,6 +151,8 @@ Below it are the buttons, two to a row:
 Tap **New Note**, and choose which week it is about or leave it about the league as a whole. A note
 stays on the device it was written on. It is not shared, synced or exported, and it goes if the
 league is deleted from this device. Swipe a note to delete it.
+
+<p><img src="images/guide/notes.png" alt="Notes, with one note about week 8" width="260"> <img src="images/guide/league-info.png" alt="League Info: My Identity, Rosters, Substitutes, Find a Member, Schedule, Settings and Finances" width="260"></p>
 
 ### Trying the app without touching your data
 
@@ -169,6 +175,8 @@ Pull! is **not designed for VoiceOver**, and VoiceOver is not supported.
 ---
 
 ## 2. Settings Reference
+
+<p><img src="images/guide/league-settings.png" alt="League Settings, grouped into seven screens" width="260"></p>
 
 All settings live under **League Info → League Settings** on the league screen, grouped into seven screens — **General**,
 **Scoring**, **Handicap**, **Schedule**, **Banks & Substitutes**, **Fees & Display** and
@@ -364,7 +372,7 @@ Pull! chose. The colour syncs with the league, so everyone sees the same one.
 
 1. In **League Info**, tap **Rosters** (it shows how many teams you have, e.g. *Rosters (8/10)*).
    It opens the first team; **Previous** / **Next** page through the others.
-   Captains and backup secretaries who have picked their name also get a **Your Team: <name>**
+   Captains and backup secretaries who have picked their name also get a **Your Team**
    button at the top of the league screen, which opens their own team.
 2. While the team has an open slot, tap **Add Member**, then either pick someone from **Available
    Substitutes** or tap **Create New Member**.
@@ -1042,6 +1050,8 @@ league screen for three days afterwards, naming the team and the week. Tap the *
 
 ### Direct entry by the secretary
 
+<p><img src="images/guide/scores-and-reports.png" alt="Scores & Reports: View / Edit, Reports, Participation and Clear Scores" width="260"> <img src="images/guide/match-data.png" alt="Match Data: a team's shooters, round by round" width="260"></p>
+
 The secretary can enter or edit scores directly without going through the captain submission flow.
 From the league screen, tap **Scores & Reports**, then **View / Edit**. The screen
 it opens is called **Match Data**.
@@ -1350,6 +1360,8 @@ Above the standings, four tiles give the league's season so far, through the wee
 **Rounds Shot**, the **League Average**, **Straights**, and **Shooters**. They follow the averages'
 rules, so banks, cancelled weeks and unfinished rounds are left out.
 
+<p><img src="images/guide/report-standings.png" alt="The Standings report" width="260"> <img src="images/guide/report-results.png" alt="The Results report" width="260"></p>
+
 **Standings** — season point totals and rankings for every team, plus what the selected week paid and
 the team's handicap-adjusted score for it. A team that did not play shows **BYE**. Both scoring modes
 use the same table; only the source of the points differs.
@@ -1392,6 +1404,8 @@ numbers appear on screen at the foot of the **Results** tab. Every rostered memb
 so you can print team sheets as soon as the rosters are entered; a member with nothing shot yet
 shows a dash rather than a zero. Before the season every substitute is listed too; after that, only
 the substitutes who have shot.
+
+<p><img src="images/guide/report-leaders.png" alt="The Leaders report" width="260"> <img src="images/guide/report-awards.png" alt="The Awards report, each award with its criteria" width="260"></p>
 
 **Leaders** — the top 15 in each category, among rostered members unless **Substitutes in
 Leaders** is on under **Banks & Substitutes**. Each list says what it ranks under its title:
