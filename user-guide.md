@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on November 9, 2026_
+_Updated on November 10, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -398,6 +398,11 @@ and their longest run of rounds within two targets of a straight. A sub's screen
 tournament shows Highlights but no Average Trend, and counts each event against its own format: a
 straight in Doubles is a 50.
 
+Below the figures, **Details** says who the member is: classification, sex, captain, club member,
+and their starting average if they have one. The secretary, and the captain of the member's team,
+also see their email and phone (tap either to write or call), and the secretary sees **Fee Paid**
+and the ATA / NSSA number. To change any of it, tap **Edit**.
+
 **Team Scores**, on a team's screen, shows the team one week at a time; **Previous** and **Next**
 page through the season. Tap a shooter to open their screen — on a slot a sub covered, the sub's,
 since those are the scores shown. Under the shooters, **Points** is what the team took from the
@@ -594,6 +599,19 @@ With **Use Bye Weeks off**, everybody plays every week, and the leftovers have t
 
 Turning byes on removes both. Turning them off is what brings them back.
 
+### Adding the schedule to your calendar
+
+Anyone with the league, captains included, can put its nights in the phone's Calendar: open the
+schedule (**League Info → Schedule**) and tap the **calendar** button at the top right. The first
+time, iOS asks whether Pull! may add to your calendar. Pull! only adds; it never reads your calendar.
+
+Every night still to come is added, at the league's start time and blocked out for two hours,
+named for the league and the week. Past and cancelled nights are left out.
+
+**Calendar does not follow later changes.** A night moved or cancelled afterwards stays as it was
+in Calendar, so edit or delete it there. Tapping the button again adds a second copy of every
+night, so Pull! asks first if this device has added the schedule before.
+
 ### Reading the schedule grid
 
 Every week opens with a table: one row per site, one column per flight. In a Team vs Team league a
@@ -658,6 +676,14 @@ season keeps what it recorded.
 **Start From This Season's Averages** (on by default) gives everyone coming back who shot at least
 four rounds this season's average as their starting average, and turns on Use Starting Average, so
 their handicap has something to work from on the first night.
+
+**Four rounds means four they actually shot.** Bank scores, rounds they did not finish (DNF) and
+cancelled weeks do not count, the same as for any average. In a two-round league that is two nights.
+**Anyone with fewer gets no starting average**, most often a substitute who filled in once: one
+night is too little to set a handicap on. Until they have shot rounds of their own in the new
+season, their first night is handicapped like any new member's (see
+[Two things to know before week 1](#handicap)). If you know what they shoot, give them one yourself:
+open the member → **Edit** → turn on **Has Starting Average** and enter the figure.
 
 ### What carries over, and what does not
 
@@ -1441,6 +1467,19 @@ week the member was not on the team. Type in the **Name** box at the top to show
 you want — a first name, a last name, or the start of either — in both views. Tap a name to open
 that member's screen.
 
+### Printing
+
+Tap the **printer** at the top of Reports, beside the share button, to print the report on screen
+for the week on screen: one week of Standings, Results or Roster, the way you would hand it out
+tonight, rather than the whole season an export carries. Leaders and Awards print through the week
+on screen, and Schedule prints the whole schedule.
+
+On the **Roster** tab the printer asks which: **Print Roster**, or **Print All Members** for the
+all-members grid, which has no tab of its own. It prints landscape.
+
+Before the first night only the Roster and Schedule have anything to print. The pages are the
+same ones an export makes, so what prints is exactly what you would have exported.
+
 ### Exporting
 
 Tap the **share button** at the top of Reports to open **Export Reports**: a list of every report
@@ -1547,7 +1586,7 @@ every member, team, score and week.
 
 ## 13. League Fees
 
-Everything in this section is secretary-only. The **Finances & Demographics** row does not appear at all for
+Everything in this section is secretary-only. The **Finances & Member Breakdown** row does not appear at all for
 captains or view-only participants.
 
 ### Setting the rates
@@ -1567,8 +1606,8 @@ from a clean slate. A **Copy** preserves who had paid, because it is the same se
 
 ### The Finance screen
 
-From the league screen, tap **League Info → Finances & Demographics**, which opens on **Finances** (the
-**Demographics** tab counts who shoots in the league). At the top, a ring shows how much of the
+From the league screen, tap **League Info → Finances & Member Breakdown**, which opens on **Finances** (the
+**Member Breakdown** tab counts who shoots in the league). At the top, a ring shows how much of the
 league's fees has been collected so far. Each team then shows:
 
 - how its roster splits between club members and guests,
@@ -1842,12 +1881,18 @@ banner or receive scorekeeping assignments.
 
 ### Leaving a league someone shared with you
 
-You cannot currently leave a shared league from inside Pull!. **Hide** (swipe left on it in the
-Leagues list) takes it off your list on this device, but you stay on the share and keep receiving its
-notifications.
+Swipe left on the league in the Leagues list and tap **Leave**, or press and hold it and choose
+**Leave League**, then **Leave** to confirm. The league goes from this device and your other
+devices, its updates and notifications stop, and it carries on for everyone else. To come back, the
+secretary has to invite you again. If you were a captain, tell the secretary, so they can reassign
+your scorekeeping duties.
 
-To be removed, ask the secretary: they open **Tools → Share League**, tap your row in the participant list,
-and remove you. If you were a captain, mention it, so they can reassign your scorekeeping duties.
+**Leave is not Hide.** **Hide** only takes a league off your list on this device: you stay on the
+share, it keeps syncing, and its notifications keep coming. Only the people a league was shared with
+see **Leave**; the secretary who owns it sees **Delete**.
+
+The secretary can still remove you from their side: **Tools → Share League**, tap your row in the
+participant list, and remove you.
 
 ### Using more than one secretary device
 

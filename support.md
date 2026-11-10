@@ -5,7 +5,7 @@ title: Pull! Support
 
 # Pull! Support
 
-_Updated on November 9, 2026_
+_Updated on November 10, 2026_
 
 Thanks for using Pull!.
 
@@ -55,6 +55,17 @@ JSON is the complete one — every team, member, score, week and setting, and th
 The league secretary can edit any approved score directly, from **Scores & Reports → View / Edit** on the league screen. Captains submit score sheets that the secretary reviews and approves, and an approved sheet keeps the scorekeeper's original entries.
 
 If a sheet was approved too early, the secretary opens that week under **Scores & Reports → View / Edit**, pages to the team, taps **Shot-by-Shot Detail**, and chooses **Return to Scorekeeper**. That removes the week's scores for that team and gives the sheet back to the person who kept score, with their grid as they left it, so the fix is an edit rather than a re-entry.
+
+### Can I print reports?
+
+Yes. In **Reports**, tap the printer at the top to print the report on screen for the week on
+screen. On the **Roster** tab you can also print the all-members grid.
+
+### How do I leave a league someone shared with me?
+
+On the Leagues list, swipe left on the league and tap **Leave** (or press and hold it and choose
+**Leave League**). The league carries on for everyone else; to come back, the secretary invites you
+again.
 
 ### My league isn't showing on my other device — what's wrong?
 

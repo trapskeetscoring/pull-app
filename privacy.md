@@ -5,7 +5,7 @@ title: Pull! Privacy Policy
 
 # Privacy Policy for Pull!
 
-_Updated on November 6, 2026_
+_Updated on November 10, 2026_
 
 ## Overview
 
@@ -102,6 +102,13 @@ app; no photo is read or transmitted while the feature is off.
 If a future release enables it, it will work by sending a photograph of a score sheet to Anthropic's
 API using an API key you supply and store yourself. That would be the app's only transmission of
 data to a third party, it would be entirely opt-in, and this policy will be updated before it ships.
+
+## Calendar
+
+If you tap **Add to Calendar** on a league's schedule, Pull! asks permission to add events to your
+calendar, and adds the league's coming nights. It asks for add-only access: it cannot read, change
+or delete anything in your calendar, including the events it added. Nothing about your calendar
+leaves your device.
 
 ## Exporting and Sharing Files
 
