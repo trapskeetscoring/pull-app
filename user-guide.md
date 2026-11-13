@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on November 10, 2026_
+_Updated on November 13, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -100,9 +100,12 @@ it is worth confirming it matches your club before week 1.
 <p><img src="images/guide/league-list.png" alt="The Leagues list with one season" width="260"></p>
 
 Each league's row starts with an icon for what it is — a scope for trap, a target for skeet, a
-trophy for a tournament — inside a ring that fills as the season's weeks are shot and turns green
-when the last one is. Beside the name is the date of the next shoot. A cancelled week does not
-count toward the ring.
+trophy for a tournament — inside a ring that fills as the season's weeks are shot: orange for trap,
+blue for skeet, purple for a tournament, and green once the last week is shot. Beside the name is
+the date of the next shoot. A cancelled week does not count toward the ring.
+
+**On an iPad**, tapping a league closes the Leagues list so the league has the whole screen. The
+sidebar button at the top left brings the list back.
 
 ### Tidying the Leagues list
 
@@ -134,25 +137,39 @@ The button fills in while a filter is on, so a short list never looks like missi
 
 ### The league screen at a glance
 
-<p><img src="images/guide/league-screen.png" alt="The league screen: summary, then Your Team, Scores & Reports, League Info and Tools" width="260"> <img src="images/guide/tools.png" alt="Tools: Messages, Message Captains, Notes, export, copy, next season and sharing" width="260"></p>
+<p><img src="images/guide/league-screen.png" alt="The league screen: summary, then Scoring, Approvals, Schedule, Standings & Reports, Rosters, Messages & Notes, My Identity and Settings & More" width="260"> <img src="images/guide/more.png" alt="Settings & More: Settings and Finances, then League Tools (export, copy, next season) and Sharing" width="260"></p>
 
-Open a league and a summary sits above the buttons: what is next, who is leading, and where your team stands, or, in a tournament, your own place or your squad's. It reads the same figures as Reports. Your place shows once this device is linked to your name, and the summary appears once the league has a schedule.
+Open a league and a summary sits above the buttons: what is next, and once this device is linked to your name, where your team or squad shoots and when (*Week 5 · Wed, Nov 18 · Site 3 · 6:00 PM*). It appears once the league has a schedule. Tap it to open the schedule at that week. Who is leading is on Reports.
 
-Below it are the buttons, two to a row:
-- **Your Team**, with your team's name, comes first once this device is linked to a member of a
-  team. It opens your own team.
-- **Scores & Reports** and **League Info** are for everyone. **My Identity** is the first group in
-  League Info, and **Find a Member** there searches everyone in the league, substitutes included.
-- **Tools** is for the secretary and the captains. Everyone there gets **Messages**, the inbox of
-  what the secretary has sent, and **Notes**. The secretary also gets **Message Captains**, export,
-  copy, next season and sharing. A new message also shows as a banner at the top of the league screen.
+Below it are the buttons, two to a row, each named for a job. You see only the ones you can use:
+
+| Button | Who sees it | What it opens |
+|---|---|---|
+| **Your Team** | anyone linked to a member of a team | your own team; it leads the tiles |
+| **My Identity** | every device that can do more than view | beside Your Team: where you pick your own name |
+| **Scoring** | the secretary | the Match Data screen, to type or correct scores |
+| **Approvals** | the secretary | score sheets and roster changes captains have sent, with a count |
+| **Sheets on This Device** | anyone with a sheet not yet sent | the sheets this device has started |
+| **Schedule** (**Events**) | everyone | the schedule. Before there is one, the secretary sets it up here |
+| **Standings & Reports** | everyone, once there is a schedule | Standings, Results, Leaders and Awards |
+| **Rosters** (**Squads**) | everyone | the teams, substitutes, **Participation**, and **Find a Member**, which searches everyone in the league |
+| **Messages & Notes** | the secretary and the captains | the inbox of what the secretary has sent (the secretary writes from here too), and, switched at the top, your **Notes**. Anyone else who can do more than view gets **Notes** on its own |
+| **Settings & More** | the secretary | Settings and Finances under **Manage**; **League Tools** (export, copy, next season); and **Sharing** for the owner |
+
+A new message also shows as a banner at the top of the league screen.
+
+Every tile's icon sits on its own colour, and a tile keeps that colour wherever it appears: Scoring is
+orange, Schedule blue, Rosters purple, and **Your Team** wears your team's colour. On a shoot night
+the **Next** tile turns orange and says **Tonight** (**Today** for a daytime start or a tournament). A member's
+initials sit on their team's colour beside their name on rosters and the people lists, and a thin
+strip of the team's colour runs under the top bar on a team's or a member's screen.
 
 **Notes** are your own notebook for a league: a machine that jammed, a ruling, who still owes a fee.
 Tap **New Note**, and choose which week it is about or leave it about the league as a whole. A note
 stays on the device it was written on. It is not shared, synced or exported, and it goes if the
 league is deleted from this device. Swipe a note to delete it.
 
-<p><img src="images/guide/notes.png" alt="Notes, with one note about week 8" width="260"> <img src="images/guide/league-info.png" alt="League Info: My Identity, Rosters, Substitutes, Find a Member, Schedule, Settings and Finances" width="260"></p>
+<p><img src="images/guide/notes.png" alt="Notes, with one note about week 8" width="260"> <img src="images/guide/rosters.png" alt="Rosters: the teams, Substitutes, Participation and Find a Member" width="260"></p>
 
 ### Trying the app without touching your data
 
@@ -178,7 +195,7 @@ Pull! is **not designed for VoiceOver**, and VoiceOver is not supported.
 
 <p><img src="images/guide/league-settings.png" alt="League Settings, grouped into seven screens" width="260"></p>
 
-All settings live under **League Info → League Settings** on the league screen, grouped into seven screens — **General**,
+All settings live under **Settings & More → League Settings** on the league screen, grouped into seven screens — **General**,
 **Scoring**, **Handicap**, **Schedule**, **Banks & Substitutes**, **Fees & Display** and
 **Classifications** — plus
 **Backup Secretaries** for the owner. Everything here is secretary-only; captains and view-only
@@ -309,7 +326,7 @@ league on 8 sites with 2 flights fills exactly, with nobody sitting out.
 | **Member Fee** / **Guest Fee** | Season fee for club members and for everyone else. |
 | **Show Roster Categories** | Splits the targets figures into **Club Members** and **Guests** — on the Results tab and at the end of the Roster PDF. |
 | **Improvement Rounds** | How many opening rounds **Most Improved** and **Biggest Slump** measure a shooter's finishing average against. Default 4. |
-| **One Award per Shooter** | Off, as it starts, a shooter wins every award they lead. On, a shooter can win only one. The awards are settled in the order the Awards report lists them: a shooter takes the first they lead, and each later award goes to the next in line. Each award still lists the shooter who leads it, with the award they already won, and then the winner (gold) and the next in line (silver). Seasons only. |
+| **One Award per Shooter** | Off, as it starts, a shooter wins every award they lead. On, a shooter can win only one. The awards are settled in the order the Awards report lists them: a shooter takes the first they lead, and each later award goes to the next in line. Each award still lists the shooter who leads it, with the award they already won, and then the top three of those still eligible: 1st wins, 2nd is next in line. Seasons only. |
 
 ### Classifications
 
@@ -330,12 +347,13 @@ one, which a copied or next season does. Otherwise they start at None.
 ### Access
 
 **Backup Secretaries** — owner-only. Members promoted here get full secretary editing power on a
-shared league. See [Section 14](#what-each-role-can-do). The list shows captains first, then the rest
-of the rosters, then substitutes. To make somebody who is not on a team a backup secretary (a club
-officer who helps run the league, say), add them with **Substitutes → Add Substitute** first, then
-switch them on here.
-Moving a backup secretary to the substitutes keeps them on the list; only switching them off, or
-deleting them, takes them off.
+shared league. See [Section 14](#what-each-role-can-do). The screen lists only the people you have
+chosen. Tap **Add Backup Secretary** to pick someone: captains are listed first, then the rest of the
+rosters, then substitutes, and you can search by name. To take someone off, swipe left on their name
+(or tap **Edit**). To make somebody who is not on a team a backup secretary (a club officer who helps
+run the league, say), add them with **Substitutes → Add Substitute** first, then pick them here.
+Moving a backup secretary to the substitutes keeps them on the list; only taking them off, or
+deleting them, removes them.
 
 ### What locks when scores exist
 
@@ -349,7 +367,7 @@ Once **any** score is recorded in the league, these become read-only:
 
 All of these are locked for the same reason: scores are stored against a week number and a roster slot,
 so changing any of them would silently re-interpret weeks that have already been played and
-published. **Clear Scores** under **Scores & Reports** is the deliberate way to unlock them, and
+published. **Clear Scores**, in **Scoring**'s **⋯** menu, is the deliberate way to unlock them, and
 it does exactly what it says.
 
 ---
@@ -358,7 +376,7 @@ it does exactly what it says.
 
 ### Add teams
 
-On the league screen, tap **League Info**, then **Add First Team** (later, **Add Team**). On the
+On the league screen, tap **Rosters**, then **Add First Team** (later, **Add Team**). On the
 **New Team** screen, enter the team name. **Display Number** defaults to the next free number and is
 what appears on reports as "Team 3". You can type the roster in on the same screen — a name per
 **Member** slot, with **Captain** and **Club Member** switches — then tap **Add**.
@@ -370,7 +388,7 @@ Pull! chose. The colour syncs with the league, so everyone sees the same one.
 
 ### Add members and build rosters
 
-1. In **League Info**, tap **Rosters** (it shows how many teams you have, e.g. *Rosters (8/10)*).
+1. In **Rosters**, tap the **Rosters** row (it shows how many teams you have, e.g. *Rosters (8/10)*).
    It opens the first team; **Previous** / **Next** page through the others.
    Captains and backup secretaries who have picked their name also get a **Your Team**
    button at the top of the league screen, which opens their own team.
@@ -398,6 +416,11 @@ and their longest run of rounds within two targets of a straight. A sub's screen
 tournament shows Highlights but no Average Trend, and counts each event against its own format: a
 straight in Doubles is a 50.
 
+**A straight gets a gold burst** wherever its score is shown: beside the round on **Results** and
+**Team Scores**, as a gold bar on a member's score chart, in **Highlights**, which also names the
+week of their first, and in the score box the moment it is typed. A bank score is a copy and never
+gets one. In score entry a banked shooter's row is tinted orange.
+
 Below the figures, **Details** says who the member is: classification, sex, captain, club member,
 and their starting average if they have one. The secretary, and the captain of the member's team,
 also see their email and phone (tap either to write or call), and the secretary sees **Fee Paid**
@@ -421,7 +444,7 @@ weeks they filled in.
 
 **Adding a sub** (secretary only): tap **Add Substitute** at the top of the list. It takes the same
 details as a new team member, without Captain, and puts them in the pool on no team and in no lineup.
-The secretary sees **Substitutes** under **League Info** even before the pool has anyone in it, so the
+The secretary sees **Substitutes** under **Rosters** even before the pool has anyone in it, so the
 first sub can be added there. A sub can also be added on the night, with **New Sub** in a lineup slot.
 
 A substitute:
@@ -476,7 +499,7 @@ You have two ways to get a season into the app: let it build one, or import one 
 
 ### Option A — Generate a schedule
 
-From the league screen, tap **League Info → Generate Schedule**. Enter a start date, choose
+From the league screen, tap **Schedule → Generate Schedule**. Enter a start date, choose
 whether to **Use Bye Weeks**, and tap **Generate**. The sheet shows the league settings it is about
 to use — weeks, teams, flights, sites, starting site, match type — so you can check them first.
 
@@ -541,7 +564,7 @@ settings and replaces every week. It isn't available once any score is recorded 
 If your season was built elsewhere and already handed out to members, generating a new one is not
 equivalent — it produces a *different* season from the one people are holding. Import it instead.
 
-With no schedule yet, tap **Import Schedule** under **Generate Schedule** in League Info. To replace
+With no schedule yet, tap **Import Schedule** under **Generate Schedule** on the Schedule screen. To replace
 an existing schedule, use **Import Schedule** in the Schedule screen's **"…"** menu. Tap **Choose
 File…** and pick a CSV file with one row per team per week:
 
@@ -602,7 +625,7 @@ Turning byes on removes both. Turning them off is what brings them back.
 ### Adding the schedule to your calendar
 
 Anyone with the league, captains included, can put its nights in the phone's Calendar: open the
-schedule (**League Info → Schedule**) and tap the **calendar** button at the top right. The first
+schedule (**Schedule** on the league screen) and tap the **calendar** button at the top right. The first
 time, iOS asks whether Pull! may add to your calendar. Pull! only adds; it never reads your calendar.
 
 Every night still to come is added, at the league's start time and blocked out for two hours,
@@ -659,7 +682,7 @@ assignments and nothing else — it works on a week that already has scores, too
 Most clubs run the same league again with mostly the same people. **Start Next Season** does that
 in one step, and keeps each shooter's history linked from one season to the next.
 
-On the league screen, tap **Tools → Start Next Season** (it is there only in Secretary mode, and not
+On the league screen, tap **Settings & More → Start Next Season** (it is there only in Secretary mode, and not
 for a tournament). The name pre-fills with the year moved on — *Fall League 2026* becomes
 *Fall League 2027*.
 
@@ -708,7 +731,7 @@ open the member → **Edit** → turn on **Has Starting Average** and enter the 
 
 ### Copy is for an exact duplicate
 
-**Copy League**, also under **Tools**, makes an exact duplicate of the league — scores, schedule, fees paid and
+**Copy League**, also under **Settings & More**, makes an exact duplicate of the league — scores, schedule, fees paid and
 all — named with `-COPY`. Use it for a backup, or a copy to try something on without touching the
 real season; use Start Next Season for a new season.
 
@@ -733,7 +756,7 @@ real season; use Start Next Season for a new season.
 to the kickoff meeting or the first night:
 
 1. Accept the league invitation, if you have not yet (Section 14).
-2. On the league screen, tap **League Info → My Identity**, and tap your name. Your device
+2. On the league screen, tap **My Identity**, and tap your name. Your device
    shows a code under **Link This Device**.
 3. Show the code to the secretary. They scan it in Pull! (**Linked Devices** → **Link a Device**).
 4. Your device takes the name the next time it syncs. **Check Now** on the code screen syncs at once.
@@ -793,8 +816,8 @@ to see the app exactly as your captains see it — useful for confirming the gat
 correctly.
 
 Switching to Captain mode does not reduce what your device is allowed to *sync*; it changes what the
-app shows you. In Captain mode the secretary's tools are hidden — **Clear Scores**, and everything under **Tools**
-but **Messages** and **Notes**, among them — so switch back to
+app shows you. In Captain mode the secretary's tools are hidden — **Scoring** (with **Clear Scores**) and **Settings & More**
+among them, though **Messages & Notes** stays — so switch back to
 Secretary to use them. The scorekeeper banner, by contrast, shows only in Captain mode. Deleting a league
 you created works in either mode: swipe it on the league list.
 
@@ -869,7 +892,8 @@ and used banks appear on their member card and in the Member Stats report.
 more shooters are out than there are subs to cover them. Tick who isn't coming and set how many
 subs are available. The shooters whose bank plus that week's handicap scores highest are told to
 **use bank**, and the rest **sub**. If the team's bank limits leave anyone with neither, they're
-shown as **not covered**. When there are enough subs for everyone, nobody needs a bank. The screen
+shown as **not covered**. When there are enough subs for everyone, nobody needs a bank. It opens on
+the next week to shoot; the week bar at the top picks a later one. The screen
 saves nothing: you still switch the banks on when scores are entered. It only appears in leagues
 with banking on.
 
@@ -975,7 +999,7 @@ Step 3 is the one that matters most and is invisible while it happens. See
 ### The scorekeeper banner
 
 A captain who has been assigned to keep score will see a banner on the league screen titled
-**"You're scorekeeping"** with the team name and week — one for each assignment whose team has no
+**"You're scorekeeping"** with the team name, the week, and the site and start time to go to — one for each assignment whose team has no
 scores and no submitted sheet yet. It shows only in Captain mode, so a secretary who is also a
 captain must switch to Captain to see it. The team named is the one
 you are keeping score **for** — never your own. Tap it to open the scorekeeper sheet.
@@ -987,7 +1011,7 @@ scores, so your work is never stranded; the banner says the secretary has scores
 submit, approving your sheet replaces their scores for the shooters and rounds it holds.
 
 **Sheets on This Device.** Every sheet you start stays on this device until you submit it. To see
-them, open **Sheets on This Device** under **Scores & Reports** (it shows only when there is one). Tap one to
+them, open **Sheets on This Device** on the league screen (it shows only when there is one). Tap one to
 carry on with it, or swipe left and tap **Delete** to throw it away. Nobody else ever sees these, and
 a sheet sent back to you by the secretary is not listed: it has its banner.
 
@@ -1059,8 +1083,8 @@ target is different: record the misses, and a real zero is stored.
 
 ### What happens after you submit
 
-The secretary sees a count on the **Scores & Reports** button, and on the **Pending Score Sheets** row inside it, in the league's Scores & Reports
-section. They open it, review the sheet, and either:
+The secretary sees a count on the **Approvals** button on the league screen, and beside **Score Sheets**
+inside it. Each sheet waiting is marked with a blue **Waiting** tag. They open it, review the sheet, and either:
 
 - **Approve** — round totals are posted to each member's scoring record.
 - **Reject** — the sheet is sent back with an optional note. A rejected sheet re-opens in the
@@ -1076,11 +1100,10 @@ league screen for three days afterwards, naming the team and the week. Tap the *
 
 ### Direct entry by the secretary
 
-<p><img src="images/guide/scores-and-reports.png" alt="Scores & Reports: View / Edit, Reports, Participation and Clear Scores" width="260"> <img src="images/guide/match-data.png" alt="Match Data: a team's shooters, round by round" width="260"></p>
+<p><img src="images/guide/match-data.png" alt="Match Data: a team's shooters, round by round" width="260"></p>
 
 The secretary can enter or edit scores directly without going through the captain submission flow.
-From the league screen, tap **Scores & Reports**, then **View / Edit**. The screen
-it opens is called **Match Data**.
+From the league screen, tap **Scoring**. The screen it opens is called **Match Data**.
 
 > **Enter a night's scores on one device.** If you have Pull! on more than one secretary device — your
 > iPhone and an iPad, or a backup secretary's phone — type and approve that night's scores on one of
@@ -1095,10 +1118,13 @@ rest of the season. A team with a forfeit marked that week counts too. **A team 
 and has nothing marked keeps the screen on that week**, so forfeit its rounds if that is what
 happened. Use the week selector to go anywhere else.
 
-The screen is laid out **a section per round** — every shooter's round 1, then every shooter's round
-2 — because that is the order a paper scoresheet reads in. For each shooter you can type the round
-scores, switch in a substitute, or toggle **Bank**; the substitute picker and the bank switch appear
-under the name in round 1 only, since both belong to the shooter's whole night rather than to one
+On a phone the screen is laid out **a section per round** — every shooter's round 1, then every
+shooter's round 2 — because that is the order a paper scoresheet reads in. **On an iPad the rounds sit
+side by side**, under **Round 1** and **Round 2** headings, one line per shooter; if the screen is too
+narrow for them (Split View, or a very large text size) it goes back to a section per round. Either
+way, **Next** on the number pad walks down round 1 before starting round 2. For each shooter you can
+type the round scores, switch in a substitute, or toggle **Bank**; the substitute picker and the bank
+switch appear under the name once, since both belong to the shooter's whole night rather than to one
 round.
 
 **Scores are typed on the app's own number pad**, not the system keyboard. Tap a score box to select
@@ -1176,7 +1202,7 @@ Two consequences:
 
 ### Fixing a score
 
-Open **Scores & Reports → View / Edit** (the Match Data screen), pick the week, and retype the round. The change saves immediately
+Open **Scoring** (the Match Data screen), pick the week, and retype the round. The change saves immediately
 and every report recalculates.
 
 ### A substitute was recorded as the rostered member
@@ -1184,7 +1210,7 @@ and every report recalculates.
 This is the common one: the scores went in under the rostered member's name, but a substitute
 actually shot.
 
-Open the week in **Scores & Reports → View / Edit**, find the slot, and select the substitute in the
+Open the week in **Scoring**, find the slot, and select the substitute in the
 **Sub** picker. The rostered member's score for that week is removed and the boxes empty — the
 numbers already typed do not move across. Retype the rounds and they are credited to the substitute;
 the team total, the standings and both shooters' averages all follow.
@@ -1197,8 +1223,8 @@ member's score was removed when you made the correction. Retype it.
 Approving a sheet posts its scores. To give the scorekeeper their sheet back, use **Return to
 Scorekeeper** — retyping the week yourself or clearing it would not.
 
-An approved sheet is no longer in **Pending Score Sheets** — that list holds only sheets waiting for
-you. Reach it through the scores instead: **Scores & Reports** → **View / Edit** → that week → page to the
+An approved sheet is no longer under **Approvals → Score Sheets** — that list holds only sheets waiting for
+you. Reach it through the scores instead: **Scoring** → that week → page to the
 team → **Shot-by-Shot Detail**, then scroll down and tap **Return to Scorekeeper**. The screen that
 opens is titled **Reject Sheet**; add a note and tap **Reject** — that is the return. Three things
 happen together:
@@ -1221,7 +1247,7 @@ consumed is released, so it can be banked again for a different week.
 
 ### A whole week needs redoing
 
-**Clear Scores** at the end of the **Scores & Reports** screen, then **Clear Week**, then pick the week.
+Open **Scoring**, tap **⋯ → Clear Scores**, then **Clear Week**, then pick the week.
 Only weeks with something to clear are listed, and a cancelled week is not — uncancel it first if
 you need to clear its scores.
 That week goes back to un-played: every shooter's scores for it, its substitute records, any
@@ -1278,8 +1304,8 @@ acts. Re-submitting a change replaces the previous pending request.
 
 ### Secretary — approving or rejecting roster changes
 
-A count appears on the **League Info** button, and on the **Pending Roster Changes** row inside it, on the
-league screen. Tap it to see the inbox. Each entry shows the current value vs. the proposed value for
+A count appears on the **Approvals** button on the league screen, and beside **Roster Changes** inside
+it. Tap it to see the inbox. Each entry shows the current value vs. the proposed value for
 every changed field. Tap **Approve** to write the changes to the member record, or **Reject** with an
 optional note to send it back.
 
@@ -1334,12 +1360,12 @@ every week of the current schedule.
 
 **Regenerate is unavailable once any score has been recorded.** Scores are stored against a week
 number, so a new schedule would leave each one attached to a different week's matchups and byes. If
-you genuinely need to start the season over, use **Scores & Reports → Clear Scores** first;
+you genuinely need to start the season over, use **Scoring → ⋯ → Clear Scores** first;
 then Regenerate becomes available again.
 
 ### Moving the season start date
 
-**League Info → League Settings → Schedule → Season Start → First Match** (shown once a schedule exists).
+**Settings & More → League Settings → Schedule → Season Start → First Match** (shown once a schedule exists).
 Changing it moves every week by the same amount,
 keeping the gaps between them and their week numbers — so a week you had already pushed to the end
 stays at the end.
@@ -1378,9 +1404,21 @@ reason Regenerate is barred.
 
 ## 12. Reports and Export
 
-Tap **Scores & Reports → Reports** from the league screen to see the full report suite. All reports are available as an
+Tap **Standings & Reports** from the league screen to see the full report suite. All reports are available as an
 on-screen view and as a shareable PDF. Pick the week at the top; the choice carries between report
 tabs.
+
+**A shooter's name opens their screen.** Tap a name in Results, Roster, Leaders, Awards
+or a tournament's placings, on a score sheet under review, on a substitute's screen or in the
+scorekeeper list, to see that shooter's scores, average trend and details; a substitute opens their
+own screen. Names on the score-entry screens and in pickers don't open anything, since tapping
+them there already picks, ticks or marks someone.
+
+**A team's name opens its roster.** Tap a team in the Standings, a team's heading on
+Results or Roster, anywhere on the Schedule tab (the site grid, a matchup or the bye line), or on
+the Schedule screen, to open that team's screen; **Previous** and **Next** page on through the
+other teams from there. Lists work the same way: a name on a team's roster, Substitutes,
+Find a Member, Entrants, Participation or a team's row on Finances opens it.
 
 Above the standings, four tiles give the league's season so far, through the week selected:
 **Rounds Shot**, the **League Average**, **Straights**, and **Shooters**. They follow the averages'
@@ -1450,16 +1488,18 @@ needs, and list rostered members only.
 Consistent, Most Improved, Biggest Slump, and the top three teams. Each award prints the exact rule
 under its title, with this season's round counts filled in, for example *"The highest raw average
 among men with at least 9 rounds (half of those held)."* Substitutes, bank scores, unfinished
-rounds and cancelled weeks count toward none of them. A tie names everyone on the same figure. The
+rounds and cancelled weeks count toward none of them. Each award lists its top three places, 1st,
+2nd and 3rd, with gold, silver and bronze medals on screen. A tie shares a place and names everyone
+on the same figure (two tied for 1st are both *T-1st*, and the next is 3rd). The
 secretary sees the tab all season, headed *standings so far*; everyone sees it from the last night.
 With **One Award per Shooter** on (Settings → Fees & Display), nobody wins twice. Each award still
 lists the shooter who leads it if they already won an earlier award, with no medal and the award they
-took (*Won High Average — Men*); then the winner with a gold medal and the next in line with a silver
-one. The PDF has no medals, so it says *(won …)* and *Alternate:* in words.
+took (*Won High Average — Men*); then the top three of those still eligible, where 1st wins and 2nd is
+next in line. The PDF prints the places and *(won …)* in words.
 
 **Schedule** — the full season with dates, sites and flights, and the scorekeeper grid.
 
-**Participation**, on the **Scores & Reports** screen beside Reports, shows who shot.
+**Participation**, on the **Rosters** screen, shows who shot.
 **Week** lists everyone who shot the selected week, with their scores. **Season** is a grid with
 members down the side and weeks across, one square per night: green for shot, orange **B** for a
 bank, purple **S** where a sub covered them, and red **–** for absent. A square is left blank for a
@@ -1479,6 +1519,23 @@ all-members grid, which has no tab of its own. It prints landscape.
 
 Before the first night only the Roster and Schedule have anything to print. The pages are the
 same ones an export makes, so what prints is exactly what you would have exported.
+
+### Blank score sheets
+
+Tap the **printer** at the top of the **Schedule** (a tournament's **Events**) to print a paper score
+sheet for every team shooting the week on screen, each team on its own landscape page. Anyone in the
+league can print them.
+
+- **At the top:** the league name, the team or squad, and the week or event, its date, the site or field, the
+  flight and the start time. A tournament event also shows its target format.
+- **One table per round,** with a box for every target. A skeet sheet marks each box **H** or **L**,
+  and doubles keep each pair's boxes together.
+- **The shooters** in shooting order, with any substitute already recorded for the week in the slot
+  they fill and two blank rows for a walk-in. A handicap event prints each shooter's yardage.
+- **Raw, HDCP and Total columns,** with HDCP filled in from the nights before. A tournament has no
+  handicap, so its sheet has no HDCP column.
+
+Rounds that don't fit on one page continue on the next.
 
 ### Exporting
 
@@ -1541,7 +1598,9 @@ shared folder or attach to an email without being renamed on the way.
 
 ### Exporting and importing data
 
-On the league screen, tap **Tools → Export League**. You can export as JSON or CSV.
+On the league screen, tap **Settings & More → Export League**, then **JSON — for a Backup** or
+**CSV — for a Spreadsheet**; the window says what each is for. The share sheet opens straight away,
+for AirDrop, **Save to Files**, Mail and the rest.
 Both carry the whole league — rules, schedule, teams, rosters, members and every score. Only the JSON
 carries the requests as well: captains' score sheets and member edits. Use JSON
 for a backup, and CSV when you want to open the season in a spreadsheet.
@@ -1591,7 +1650,7 @@ captains or view-only participants.
 
 ### Setting the rates
 
-Two rates live in **League Info → League Settings → Fees & Display**: **Member Fee** for club members and
+Two rates live in **Settings & More → League Settings → Fees & Display**: **Member Fee** for club members and
 **Guest Fee** for everyone else. Each member's **Club Member** toggle, on their Status section,
 decides which of the two rates applies to them.
 
@@ -1606,7 +1665,7 @@ from a clean slate. A **Copy** preserves who had paid, because it is the same se
 
 ### The Finance screen
 
-From the league screen, tap **League Info → Finances & Member Breakdown**, which opens on **Finances** (the
+From the league screen, tap **Settings & More → Finances & Member Breakdown**, which opens on **Finances** (the
 **Member Breakdown** tab counts who shoots in the league). At the top, a ring shows how much of the
 league's fees has been collected so far. Each team then shows:
 
@@ -1676,9 +1735,9 @@ still be unable to do anything.
 
 | | The question it answers | What it belongs to | Where it is set |
 |---|---|---|---|
-| **Access** | Can they see the league, and may they send anything? | An Apple ID, so every device signed in to it | **Tools → Share League** (Apple's screen) |
-| **Device link** | Which member is this phone? | One device | **Tools → Linked Devices**, by your scan |
-| **Role** | What does that member get to do? | A member of the league | The team's captain, and **League Info → League Settings → Backup Secretaries** |
+| **Access** | Can they see the league, and may they send anything? | An Apple ID, so every device signed in to it | **Settings & More → Share League** (Apple's screen) |
+| **Device link** | Which member is this phone? | One device | **Settings & More → Linked Devices**, by your scan |
+| **Role** | What does that member get to do? | A member of the league | The team's captain, and **Settings & More → League Settings → Backup Secretaries** |
 
 What that means in practice:
 
@@ -1694,17 +1753,17 @@ and never need a scan.
 
 **Captains and backup secretaries** need all three, so they must be in the league as a member before
 you link them. There is nothing to hand out: they accept the invitation, pick their own name under
-**My Identity**, and you scan the code their device shows.
+**My Identity** on the league screen, and you scan the code their device shows.
 
 ### Linked Devices — linking captains in person
 
-The **Linked Devices** row appears under **Sharing** on the **Tools** screen for the league's owner, while acting as
+The **Linked Devices** row appears under **Sharing** on the **Settings & More** screen for the league's owner, while acting as
 Secretary. It is where you link each captain's and backup secretary's device to their name, and
 unlink it later.
 
 **Link with the person in front of you.** At the kickoff meeting or on the first night:
 
-1. The captain opens the league on their device, taps **My Identity** and taps their name.
+1. The captain opens the league on their device, taps **My Identity** on the league screen and taps their name.
    Their device shows a code.
 2. You tap **Linked Devices** → **Link a Device** and point your camera at the code.
 3. Pull! asks **Link This Device to Dave Ellis?** Tap **Link**.
@@ -1733,7 +1792,7 @@ Once linked:
 - the **Linked** list on the same screen shows each member's devices, with **Unlink** for each.
   **Unlinking stops that device acting as the member** — on its next sync it drops the identity and
   shows an alert saying so. Unlinking does not remove their access to the league; that is
-  **Tools → Share League → their row → Remove Participant** (**Remove Access** on some versions of iOS).
+  **Settings & More → Share League → their row → Remove Participant** (**Remove Access** on some versions of iOS).
 - **Removing one person from the share does not unlink them,** as long as others remain. The link is kept
   in the league, so unlink them here too if they have left. **Removing the last person ends the share,**
   which clears the links as **Stop Sharing** does.
@@ -1756,7 +1815,7 @@ a new device**: scan it, then unlink the old one, which no device holds any more
 
 ### Sharing as the secretary
 
-**Share League is owner-only.** It appears under **Sharing** on the **Tools** screen only while you are acting as owner.
+**Share League is owner-only.** It appears under **Sharing** on the **Settings & More** screen only while you are acting as owner.
 If you have switched to Captain mode with the role picker, switch back first or you will not see it.
 
 Everybody joins the same way, by a personal invitation to their Apple ID's email or phone. What you
@@ -1775,7 +1834,7 @@ For a whole club, sending reports is usually easier than inviting everybody: see
 #### Do it in this order
 
 1. **Put them in the league.** Make the person a captain on their team, or a backup secretary, first.
-2. **Invite them.** Tap **Tools → Share League**. Apple's sharing screen opens.
+2. **Invite them.** Tap **Settings & More → Share League**. Apple's sharing screen opens.
    1. Tap **Add Participant** (iOS 27) or **Share with More People** (iOS 26), and enter their Apple ID
       email or phone number.
    2. Before sending, make sure they will get **Can Edit**. iOS keeps this under **Share Options**, or
@@ -1799,7 +1858,7 @@ with a co-owner, and a backup secretary is the way to share the running of a lea
 1. Installs Pull!, then opens the invitation on the iPhone or iPad signed into the Apple ID it was
    sent to, and accepts it.
 2. Waits for the league to appear in their Leagues list, usually 10–30 seconds.
-3. Opens the league, taps **My Identity**, and taps their own name. Only captains and backup
+3. Opens the league, taps **My Identity** on the league screen, and taps their own name. Only captains and backup
    secretaries are listed, so put them on a team as captain before inviting them.
 4. Shows you the code on their device, and you scan it on **Linked Devices**. Until you do, their
    device acts as nobody in the league.
@@ -1832,7 +1891,7 @@ when they should not have it.
 
 #### Changing someone's access later
 
-Re-open **Tools → Share League**. Each invited person has a row under **Participants** showing their
+Re-open **Settings & More → Share League**. Each invited person has a row under **Participants** showing their
 name and access. Tap a row to change their access or to remove them. That list is also the quickest way
 to confirm an invitation landed. Check it before assuming something is wrong with the app.
 
@@ -1861,7 +1920,7 @@ make somebody a secretary.
 A "Can Edit" collaborator linked as a **captain** can submit sheets and roster
 requests for their own team, but cannot edit directly or approve anything. One linked to no
 captain ends up effectively view-only. To give someone full
-secretary powers, add them to **League Info → League Settings → Backup Secretaries** as well.
+secretary powers, add them to **Settings & More → League Settings → Backup Secretaries** as well.
 
 A **View only** device has no **My Identity**: it never acts as anybody. If a captain's device ends
 up view only — its access changed on Apple's sharing screen, say — it drops the name and
@@ -1873,7 +1932,7 @@ says so, and takes it back with no new scan once it has Can Edit again and is st
 1. Tap the invitation link on your iPhone and accept it. It must be opened by the Apple ID it was
    sent to.
 2. The league appears in your Leagues list after the next sync — usually 10–30 seconds.
-3. Open the league, tap **My Identity**, and tap your own name. Show the code to the
+3. Open the league, tap **My Identity** on the league screen, and tap your own name. Show the code to the
    secretary to scan; your device takes the name on its next sync.
 
 Until step 3 is done the app does not know who you are, so a captain will not see the scorekeeper
@@ -1891,7 +1950,7 @@ your scorekeeping duties.
 share, it keeps syncing, and its notifications keep coming. Only the people a league was shared with
 see **Leave**; the secretary who owns it sees **Delete**.
 
-The secretary can still remove you from their side: **Tools → Share League**, tap your row in the
+The secretary can still remove you from their side: **Settings & More → Share League**, tap your row in the
 participant list, and remove you.
 
 ### Using more than one secretary device
@@ -2009,7 +2068,12 @@ broken alone**: no handicap, no points, no banks and no substitutes.
 Tap **New League** (**+**) on the league list, set **Format** to **Tournament**, then choose **Competitors**:
 
 - **Individuals** — every shooter is ranked on their own. Squads are only who shoots together.
-- **Teams** — squads are ranked on their total, every shooter on the squad counting.
+- **Teams** — squads are ranked on their total. By default every shooter on the squad counts;
+  **Shooters Counted** (in **General**, under **Squad Size**) can instead count each squad's
+  **best** few shooters over the event. With **Best 4** in squads of five, each shooter's event
+  total is added up and the lowest is dropped; their scores still show, struck through in red. A
+  squad with fewer shooters than that counts everyone it has. Like Squad Size, it is fixed once
+  scores have been entered.
 
 **Club Members & Guests** decides whether shooters are marked club member or guest, with two fees.
 With it off, everyone pays one entry fee. You can change it later in **Fees & Display**.
@@ -2035,8 +2099,8 @@ keep their history together, or tap **Add as Someone New**.
 
 When everyone is in, tap **Make Squads**. Shooters waiting for a squad are split into squads of up
 to Squad Size, as evenly as possible (11 shooters in squads of 5 shoot as 4, 4 and 3), in the order
-they signed in, so people who arrive together shoot together. The first shooter in each squad leads
-it. Squads already made are left alone. If the events are already set up, set them up again
+they signed in, so people who arrive together shoot together. A squad has no leader: it shoots in
+sign-in order until you drag it into another order on the squad's screen. Squads already made are left alone. If the events are already set up, set them up again
 afterwards so the new squads get a field and a start time.
 
 In a team tournament, add squads with **Add Squad** as you would a team.
@@ -2058,8 +2122,31 @@ add fields or start times first. Set Up Events is not available once scores exis
 **Handicap (yardage)** is trap handicap, the distance each shooter stands back (18–27 yd). Set it
 under **Handicap Yardage** on the shooter. It changes where they stand, not their score.
 
-Scorekeeping works as in a season: assign scorekeepers, and captains enter and submit their squads'
-sheets for approval.
+### Scorekeepers
+
+A tournament has no captains or squad leaders. Instead, you choose **scorekeepers** and assign one to
+each squad for each event.
+
+**Squads → Scorekeepers** lists them:
+
+- **Add an Entrant** makes someone who is shooting a scorekeeper too. They keep shooting.
+- **Add Someone Not Shooting** adds a person who only keeps score. They are on no squad and in no
+  results, Leaders list or count of shooters.
+- Swipe left to **Remove** a scorekeeper. Their open jobs go back to unassigned, and a linked phone is
+  unlinked. An entrant keeps shooting.
+
+A scorekeeper's phone is linked the way a season links a captain's: they open the tournament, choose
+**My Identity** and tap their name, and you scan the code from **Linked Devices**.
+
+To assign them, open **Events**, pick the event, then **"…"** → **Assign Scorekeepers**. Each squad
+offers the scorekeepers and backup secretaries. Nobody is offered their own squad, or a squad starting
+at the same time as one they shoot in or already keep score for. Nothing is filled in for you. You
+don't need to assign yourself: the secretary enters scores from **Scoring**.
+
+An assigned scorekeeper sees **You're scorekeeping** on the tournament screen, with the squad, the
+field and the start time. They tap it to keep score on the sheet and submit it for your approval, as a
+captain does in a season. **Messages & Notes** → the pencil button sends them a message. Scorekeepers on paper are
+fine too: enter their sheet from **Scoring**, which closes their job.
 
 ### Results, Standings and Awards
 
@@ -2069,16 +2156,20 @@ sheets for approval.
   room, each round's score. Below it, a table for **Ladies** and one for each classification
   (Youth, Senior, Super Senior, or the league's own list) that someone in the event holds, each
   ranked within itself.
-- **Teams:** the squads ranked by total, then each squad's shooters.
+- **Teams:** the squads ranked by total, then every shooter ranked on their own (**Individual
+  Event 1**), then the Ladies and classification tables, then each squad's shooters. A shooter's own
+  total counts here even when **Shooters Counted** left it out of their squad's.
 
-**Entrants** lists everyone: **Waiting for a Squad** in the order they signed in, then **Signed In**, everyone on a squad, alphabetically by last name with their squad under their name. Tap a name to open the shooter. Swipe left to remove someone, who leaves their squad too. If they lead it, the next shooter takes over. A shooter with a score, a linked device or a scorekeeping job can't be removed.
+**Entrants** lists everyone: **Waiting for a Squad** in the order they signed in, then **Signed In**, everyone on a squad, alphabetically by last name with their squad under their name. Tap a name to open the shooter. Swipe left to remove someone, who leaves their squad too. A shooter with a score, a linked device, a scorekeeping job or the scorekeeper role can't be removed.
 
 **Standings** show the event selected at the bottom of the screen: its top 5, under the top 10 of
-High Over All when the tournament awards it. High Over All adds up every event shot so far, whichever
+High Over All when the tournament awards it. A team tournament shows the squads' tables, then the
+same two for shooters (**Individual High Over All**, **Individual Event 1**). High Over All adds up every event shot so far, whichever
 event is selected. **Results** and **Roster** also follow the selector. **Leaders** and **Awards** cover
 every event shot, so they have no selector.
 
-**Awards** show each event's **top 3**, and High Over All's **top 4** first when it is awarded. It reads
+**Awards** show each event's **top 3**, and High Over All's **top 4** first when it is awarded. A team
+tournament awards its squads first, then its shooters the same way. It reads
 **Tournament Awards** once the last event is shot.
 
 **Leaders** lists the raw averages and straights, without a season's near-straights or Most Improved.
@@ -2105,6 +2196,8 @@ on screen and in the PDF.
   event's tie is shot off from that event's Results table. The two are kept separate.
 - A tie inside a category table (Ladies, Senior…) is settled by the event's shoot-off, so record it
   on the event's table.
+- In a team tournament, a squad tie and a shooter tie are shot off from their own tables and
+  don't affect each other.
 - Record shoot-offs on the device that is entering the event. Two secretary devices recording at the
   same moment keep only the later save.
 
@@ -2189,7 +2282,7 @@ Sync**, then **Sync Now**. (Backgrounding the app and reopening it also triggers
 Still nothing? Tap **Re-read Everything from iCloud** on that same screen. A share that arrived while
 the app could not yet make sense of it is precisely the case Sync Now cannot recover on its own.
 
-If it still doesn't appear, have the secretary re-open **Tools → Share League** and check the participant list
+If it still doesn't appear, have the secretary re-open **Settings & More → Share League** and check the participant list
 at the top of that screen. If your name isn't listed, the invitation was never accepted under the
 Apple ID you're signed into — the link has to be opened by the account it was sent to.
 
@@ -2197,7 +2290,7 @@ Apple ID you're signed into — the link has to be opened by the account it was 
 
 1. **They have not been linked yet.** They pick their name under My Identity and the secretary scans the
    code. This is every captain's starting point, and it applies again after **Stop Sharing**.
-2. **Their access changed.** The secretary opens **Tools → Share League** and looks at their row. If it
+2. **Their access changed.** The secretary opens **Settings & More → Share League** and looks at their row. If it
    is view only, the secretary changes it to **Can Edit**. Their name returns with no new scan, as long as
    their device is still linked.
 3. **It has not synced.** On the captain's phone, tap the **gear → iCloud Sync → Sync Now**.
@@ -2217,7 +2310,7 @@ needed.
 Almost always one of three things, in order of likelihood:
 
 1. **They were shared as "View only".** iCloud blocks the write itself, so no amount of in-app
-   permission fixes it. The secretary opens **Tools → Share League**, taps their row in the participant list,
+   permission fixes it. The secretary opens **Settings & More → Share League**, taps their row in the participant list,
    and switches them to **Can Edit**.
 2. **Their device has not been linked.** They pick their name under My Identity, and the
    secretary scans the code it shows. Until then the app doesn't know who they are and the
@@ -2292,7 +2385,7 @@ secretary.
 
 Both lock as soon as any score exists in the league, along with the other items under
 [What locks when scores exist](#what-locks-when-scores-exist), because changing them would
-re-interpret weeks already played. **Clear Scores** under **Scores & Reports** unlocks them, at the cost of the
+re-interpret weeks already played. **Clear Scores** (**Scoring → ⋯**) unlocks them, at the cost of the
 season's scoring.
 
 ### The scorekeeper banner isn't showing
