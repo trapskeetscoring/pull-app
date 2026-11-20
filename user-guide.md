@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on November 13, 2026_
+_Updated on November 19, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -421,10 +421,11 @@ straight in Doubles is a 50.
 week of their first, and in the score box the moment it is typed. A bank score is a copy and never
 gets one. In score entry a banked shooter's row is tinted orange.
 
-Below the figures, **Details** says who the member is: classification, sex, captain, club member,
-and their starting average if they have one. The secretary, and the captain of the member's team,
-also see their email and phone (tap either to write or call), and the secretary sees **Fee Paid**
-and the ATA / NSSA number. To change any of it, tap **Edit**.
+Below the figures, **Details** says who the member is, in the same order as **Edit**:
+classification and sex; their email and phone (tap either to write or call) for the secretary and
+the captain of the member's team, and the ATA / NSSA number for the secretary; their **Handicap
+Yardage** when the league throws handicap; then captain, club member, **Fee Paid** (secretary
+only), and their starting average if they have one. To change any of it, tap **Edit**.
 
 **Team Scores**, on a team's screen, shows the team one week at a time; **Previous** and **Next**
 page through the season. Tap a shooter to open their screen — on a slot a sub covered, the sub's,
@@ -1476,6 +1477,8 @@ Leaders** is on under **Banks & Substitutes**. Each list says what it ranks unde
 - **Raw Average** — the average of every round shot, before handicap.
 - **Straights** — rounds of 25, every target broken. **24s Shot** and **23s Shot** count rounds one
   and two targets short.
+- **Most Caps** — rounds whose score with handicap reaches 25. Only in a league with handicap;
+  without it, every cap is a straight.
 - **Most Improved** — the rise from a shooter's first rounds (Improvement Rounds) to their season
   average.
 - **Consistency** — the steadiest shooters: the spread of their round scores once their best and worst
@@ -1484,8 +1487,8 @@ Leaders** is on under **Banks & Substitutes**. Each list says what it ranks unde
 Most Improved and Consistency are seasons only, use the Awards' rules on how many rounds a shooter
 needs, and list rostered members only.
 
-**Awards** — the season's awards: High Average for men and for women, Most Straights, Most
-Consistent, Most Improved, Biggest Slump, and the top three teams. Each award prints the exact rule
+**Awards** — the season's awards: High Average for men and for women, Most Straights, Most Caps
+(with handicap only), Most Consistent, Most Improved, Biggest Slump, and the top three teams. Each award prints the exact rule
 under its title, with this season's round counts filled in, for example *"The highest raw average
 among men with at least 9 rounds (half of those held)."* Substitutes, bank scores, unfinished
 rounds and cancelled weeks count toward none of them. Each award lists its top three places, 1st,
