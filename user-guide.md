@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on November 23, 2026_
+_Updated on November 24, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -122,6 +122,11 @@ the Leagues screen says *All Leagues Hidden* with a link straight to that list �
 still there.
 
 Anyone can hide a league on their own device; unlike deleting, it is not restricted to the secretary.
+
+**To put the leagues in your own order,** tap the gear and choose **Arrange Leagues** (shown once
+you have two or more). Drag a league by its handle to where you want it, then tap **Done**. Like
+hiding, the order is **per device**. A hidden league keeps its place, so it comes back where it was
+when you unhide it, and a league you add later goes at the bottom until you arrange it.
 
 To narrow the list without hiding anything, tap the **filter** button at the top of the Leagues
 list. It has three choices, and they combine:
@@ -396,7 +401,8 @@ Pull! chose. The colour syncs with the league, so everyone sees the same one.
    Captains and backup secretaries who have picked their name also get a **Your Team**
    button at the top of the league screen, which opens their own team.
 2. While the team has an open slot, tap **Add Member**, then either pick someone from **Available
-   Substitutes** or tap **Create New Member**.
+   Substitutes** or tap **Create New Member**. In a long list, type part of a first or last name in
+   the search field at the top; capitals and accents do not matter.
 3. Repeat for each team.
 
 **Edit** on a team lets you rename it, change its display number, drag the shooting order (the
@@ -785,8 +791,8 @@ real season; use Start Next Season for a new season.
 to the kickoff meeting or the first night:
 
 1. Accept the league invitation, if you have not yet (Section 14).
-2. On the league screen, tap **My Identity**, and tap your name. Your device
-   shows a code under **Link This Device**.
+2. On the league screen, tap **My Identity**, and tap your name (type part of it in the search
+   field at the top to find it quickly). Your device shows a code under **Link This Device**.
 3. Show the code to the secretary. They scan it in Pull! (**Linked Devices** → **Link a Device**).
 4. Your device takes the name the next time it syncs. **Check Now** on the code screen syncs at once.
 
