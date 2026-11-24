@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on November 19, 2026_
+_Updated on November 23, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -141,12 +141,15 @@ The button fills in while a filter is on, so a short list never looks like missi
 
 Open a league and a summary sits above the buttons: what is next, and once this device is linked to your name, where your team or squad shoots and when (*Week 5 · Wed, Nov 18 · Site 3 · 6:00 PM*). It appears once the league has a schedule. Tap it to open the schedule at that week. Who is leading is on Reports.
 
+The **person** button at the top right says who this device is in the league (or **No name picked**)
+and holds **Change My Identity…** and the **User Guide**. A view-only device has the guide alone.
+
 Below it are the buttons, two to a row, each named for a job. You see only the ones you can use:
 
 | Button | Who sees it | What it opens |
 |---|---|---|
 | **Your Team** | anyone linked to a member of a team | your own team; it leads the tiles |
-| **My Identity** | every device that can do more than view | beside Your Team: where you pick your own name |
+| **My Identity** | a device that can do more than view, until it has picked a name | where you pick your own name. After that, change it from the **person** button at the top right |
 | **Scoring** | the secretary | the Match Data screen, to type or correct scores |
 | **Approvals** | the secretary | score sheets and roster changes captains have sent, with a count |
 | **Sheets on This Device** | anyone with a sheet not yet sent | the sheets this device has started |
@@ -432,6 +435,31 @@ page through the season. Tap a shooter to open their screen — on a slot a sub 
 since those are the scores shown. Under the shooters, **Points** is what the team took from the
 week, the same figure as the standings' weekly points; tap it to open that week on the **Results**
 tab.
+
+### One shooter across leagues and tournaments
+
+Pull! knows when somebody in one league is the same person as somebody in another on your device:
+last season and this one, the trap league and the skeet league, or a tournament.
+
+**Adding someone you already have.** **Add Member**, **Add Substitute** and a tournament's
+**Entrants** list everyone from your other leagues and tournaments under **Known People**: search by
+name or ATA / NSSA number and choose them. Their details from their most recent league fill in, and
+you can change them before adding, a classification above all, since a shooter can turn Senior
+between seasons. **New Sub** in **Match Data** lists anyone known whose name matches what you type.
+If you type a new person whose full name or number matches somebody known, Pull! asks whether it is
+them.
+
+**Linking two records** (secretary): a member's screen has **Other Leagues**, saying where else they
+shoot. If they were typed in separately, **Same person as …?** suggests a likely match, and **Same
+Person As…** lets you search. **Not the Same Person** undoes a wrong link. Only this league's record
+changes; its details stay as they are.
+
+**Career.** Once a shooter is in more than one league or tournament on your device, their screen
+shows their career: a group for each kind of target (trap singles, skeet doubles and so on, never
+averaged together), one row per league with its dates, the classification they had there, rounds,
+average, high round and straights, and a total. **Share Career PDF** prints or sends it. A career is
+built from the leagues on your device, so hide an old season rather than deleting it, or its history
+goes with it.
 
 ### Substitutes
 
@@ -880,9 +908,11 @@ A **bank** lets a shooter who misses a week reuse one of their **earlier** weeks
   handicap — it is a copy of a round already counted once.
 - Switching a bank back off releases the source score, so it becomes available again.
 
-The **Bank** toggle sits next to each shooter on the score-entry screen. It is disabled when the
-shooter has no earlier score left to bank, when the team has reached its weekly or season bank
-limit, or for a substitute, and a short reason is shown beside it — **none** (**none available** on
+On a phone's Match Data screen, **Bank This Week** is in each shooter's **⋯** menu in Round 1, and
+a banked row shows **Banked** under the name; on an iPad and on a team's week editor it is a **Bank**
+switch beside the name. It is unavailable when the shooter has no earlier score left to bank, when
+the team has reached its weekly or season bank limit, or for a substitute, and a short reason is
+shown with it — **none** (**none available** on
 a team's week editor), **weekly limit**, **season limit** or **sub**. Substitutes cannot bank, and a
 slot with a substitute in it cannot also be banked. Once a shooter is banked,
 their rounds show the copied score in an orange dashed box marked **Bank**, which cannot be typed in —
@@ -934,8 +964,10 @@ come back — they were deleted — so you retype them.
 
 ### A shooter who does not finish
 
-If someone starts a round and leaves part-way through, mark the round **DNF** — beside the score on
-the entry screens, or beside the shooter's name on the captain's shot sheet. It turns orange when on.
+If someone starts a round and leaves part-way through, mark the round **DNF**. On a phone's Match
+Data screen it is in the **⋯** menu beside the score box (**Did Not Finish**), and the row then shows
+**DNF** under the name; on an iPad and on a team's week editor it is the **DNF** button beside the
+score, which turns orange when on; on the captain's shot sheet it is beside the shooter's name.
 
 - The targets they **did** break still count toward the team's total for that round. They were
   broken.
@@ -1211,8 +1243,8 @@ and every report recalculates.
 This is the common one: the scores went in under the rostered member's name, but a substitute
 actually shot.
 
-Open the week in **Scoring**, find the slot, and select the substitute in the
-**Sub** picker. The rostered member's score for that week is removed and the boxes empty — the
+Open the week in **Scoring**, find the slot, and choose the substitute: on a phone tap **⋯** beside
+the slot in Round 1, then **Substitute**; on an iPad use the **Sub** picker. The rostered member's score for that week is removed and the boxes empty — the
 numbers already typed do not move across. Retype the rounds and they are credited to the substitute;
 the team total, the standings and both shooters' averages all follow.
 
@@ -1287,7 +1319,7 @@ handicap builds from their own rounds, and they inherit nothing from the person 
 
 ### Secretary — direct edits
 
-As the secretary, tap **Rosters** and page to the team. **Add Member** is shown while a slot is open.
+As the secretary, tap **Rosters** and tap the team in the list. **Add Member** is shown while a slot is open.
 Tap **Edit** to rename the team, change its display number, reorder shooters (the captain stays
 first), **Remove Member**, or **Delete Team** (only before any scores exist). To change the captain,
 open a member, tap **Edit** and turn on **Captain**. All changes take effect immediately.
@@ -1421,7 +1453,7 @@ the Schedule screen, to open that team's screen; **Previous** and **Next** page 
 other teams from there. Lists work the same way: a name on a team's roster, Substitutes,
 Find a Member, Entrants, Participation or a team's row on Finances opens it.
 
-Above the standings, four tiles give the league's season so far, through the week selected:
+Below the standings, four tiles give the league's season so far, through the week selected:
 **Rounds Shot**, the **League Average**, **Straights**, and **Shooters**. They follow the averages'
 rules, so banks, cancelled weeks and unfinished rounds are left out.
 
@@ -1435,9 +1467,9 @@ Rank is its own column and is written as a place — **1st**, **2nd**, **3rd**. 
 points share the higher place and are marked **T-**, so two teams tied for second both read
 **T-2nd** and the next team is **4th**.
 
-On a phone the table **scrolls sideways** and the rank column stays put, so a row is still
-identifiable once the team name has scrolled away. Nothing is left out: the week's points, the
-season total and the weekly score are all there, a swipe to the left.
+On a phone each team is one row: the rank, the team's name with **This week** — the week's points
+and handicap score — under it, and the season total on the right in bold. Nothing scrolls sideways,
+and a long team name takes two lines rather than being cut off.
 
 **Results** — the selected week in detail. In Team vs Team mode, one block per pairing with the
 match points each round was worth. In League Ranking mode, one block per team with its rank points.
@@ -1453,9 +1485,25 @@ handicaps differ is not the same as the highest raw scores on the team. In Team 
 points take the raw column instead, since a match is settled on the adjusted figures and the points
 beside them are what the row is there to show.
 
-On a phone this card scrolls sideways as one piece, names and all.
+On a phone each score shows the handicap figure in bold with the raw score small beneath it, so both
+rounds fit across the screen. At a large text size the card can still scroll sideways, as one piece.
 
-**Share Results Image**, at the top of the Results tab, makes a picture of the week for your club's
+**Did handicap decide it?** In a league that uses handicap, Results says what handicap did. In
+League Ranking mode every team's block has a line: what handicap was worth and where the team would
+have placed on scratch (*Handicap +6.0 pts · 8th on scratch*), or, in grey, that its points were the
+same either way (*Handicap: same points · T-12th on scratch*, or *no change · 7th on scratch too*). A
+team outside the places that pay points still sees where scratch would have put it. In Team vs Team
+mode, a line above a pairing whose winner handicap decided says who would have won on scratch and by
+how much. "Scratch" is
+the night scored again with no handicap under the same rules — each team's best scores as shot,
+the same tiebreakers — not just the raw totals on the card, which can count different shooters.
+Under Standings, **Handicap Effect** lists the teams handicap has moved this season, biggest first,
+with the points it gained or cost them and how many nights it helped and hurt. The exported and
+printed reports carry the same: each line in grey italic under its team or pairing on the Results
+PDF, and the Handicap Effect table after the Standings PDF's table. A scratch league and
+a tournament show none of this.
+
+**Share Results Image**, in the share button's menu at the top right of the Results tab, makes a picture of the week for your club's
 group text: who won each match (or each team's place and points), everyone who shot a straight, the
 night's high gun, and the top three in the standings. A tournament's picture shows the top five for
 the event instead. It is drawn the same way whoever shares it, at a standard text size in light
@@ -1643,6 +1691,60 @@ skipped:
 
 A JSON export carries no credentials of any kind — there are none in the app to carry. It restores
 every member, team, score and week.
+
+### Importing an old season
+
+A season your club ran before Pull!, on paper or in a spreadsheet, can be brought in so that each
+shooter's **Career** includes it. Put it in a simple CSV file in either of two layouts, whichever your
+records hold. Tap the gear icon on the Leagues screen → **Import Old Season**; **Template: Nights**
+and **Template: Season Totals** share a sample of each with the headings filled in.
+
+**One row per shooter per night**, when you have each night's scores:
+
+```
+Date,First,Last,Team,Round 1,Round 2,ATA/NSSA,Class
+2019-09-04,Jane,Doe,Aces,23,24,12345,Senior
+2019-09-04,Bob,Lee,Aces,21,,,
+```
+
+- **Required:** Date, First and Last (or one **Name** column), and a column per round.
+- **Optional:** Team, ATA/NSSA and Class. Without a Team column everyone shoots as one group.
+- A blank round is a round not shot, never a zero. Leave out a night somebody did not shoot.
+- Dates may be written 2019-09-04, 9/4/2019 or 9/4/19.
+
+The season comes in with a week per date and every score, so its reports work as well as the career.
+
+**One row per shooter for the season**, when only totals survive:
+
+```
+First,Last,Rounds,Targets,Average,High,Straights,ATA/NSSA,Class
+Jane,Doe,24,551,22.96,25,2,12345,Senior
+Bob,Lee,20,,21.40,,,,
+```
+
+- **Required:** First and Last, **Rounds**, and **Targets** (targets broken) or **Average**.
+- **Optional:** High, Straights, ATA/NSSA and Class. What the file leaves out stays unknown: the
+  career shows no high or straights for that season rather than a guess, and a total including it
+  says nothing about straights.
+- Turn on **Season Dates** to give the season its first and last nights, for the career's dates.
+
+Each shooter comes in as a substitute holding their totals. There are no nights, so the season's
+reports have nothing to show; only the career reads it.
+
+**Before importing**, say what the season threw (**Discipline**, **Format**, **Targets per Round**)
+and give it a name. The screen reads the whole file and lists what it found, then every problem by
+line, such as *Line 14: round 2 is "27", which is not a score from 0 to 25.* Nothing is imported
+until the file is clean: fix it, choose it again, and check the list. Warnings, in orange, do not
+stop the import.
+
+**Shooters Already Known** lists anyone in the file who is almost certainly somebody already in your
+leagues: the same ATA/NSSA number, or the only person with that full name. Each is ticked; untick
+anyone who is a different person with the same name. Their careers then include the old season. To
+link somebody later, use **Same Person As…** on their screen.
+
+The imported season is a league like any other, private and unshared, with no handicap, fees or
+banks. Hide it if you would rather not see it in the list; deleting it takes it out of every
+shooter's career.
 
 ---
 
@@ -2132,9 +2234,9 @@ each squad for each event.
 
 **Squads → Scorekeepers** lists them:
 
+- **Add Someone Not Shooting** is at the top, since most scorekeepers do not shoot. It adds a person
+  who only keeps score. They are on no squad and in no results, Leaders list or count of shooters.
 - **Add an Entrant** makes someone who is shooting a scorekeeper too. They keep shooting.
-- **Add Someone Not Shooting** adds a person who only keeps score. They are on no squad and in no
-  results, Leaders list or count of shooters.
 - Swipe left to **Remove** a scorekeeper. Their open jobs go back to unassigned, and a linked phone is
   unlinked. An entrant keeps shooting.
 
