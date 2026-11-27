@@ -5,7 +5,7 @@ title: Pull! User Guide
 
 # Pull! — User Guide
 
-_Updated on November 24, 2026_
+_Updated on November 27, 2026_
 
 This guide is for league secretaries and captains. It covers every workflow in the app, from
 creating a league on an empty screen through to the last week of a season and on into the next one.
@@ -146,7 +146,7 @@ The button fills in while a filter is on, so a short list never looks like missi
 
 Open a league and a summary sits above the buttons: what is next, and once this device is linked to your name, where your team or squad shoots and when (*Week 5 · Wed, Nov 18 · Site 3 · 6:00 PM*). It appears once the league has a schedule. Tap it to open the schedule at that week. Who is leading is on Reports.
 
-The **person** button at the top right says who this device is in the league (or **No name picked**)
+The **person** button at the top right opens a menu headed by who this device is in the league (or **No name picked**)
 and holds **Change My Identity…** and the **User Guide**. A view-only device has the guide alone.
 
 Below it are the buttons, two to a row, each named for a job. You see only the ones you can use:
@@ -971,7 +971,7 @@ come back — they were deleted — so you retype them.
 ### A shooter who does not finish
 
 If someone starts a round and leaves part-way through, mark the round **DNF**. On a phone's Match
-Data screen it is in the **⋯** menu beside the score box (**Did Not Finish**), and the row then shows
+Data screen it is in the **⋯** menu beside the score box (**Did Not Finish (Round 1)**, and so on), and the row then shows
 **DNF** under the name; on an iPad and on a team's week editor it is the **DNF** button beside the
 score, which turns orange when on; on the captain's shot sheet it is beside the shooter's name.
 
@@ -1691,6 +1691,9 @@ members, teams, rosters, schedule, and scoring history are carried over.
 skipped:
 
 - *"a league of that name is already here"* — rename it in the file, or rename the one on the device.
+- *"Not imported, saved by a newer version of Pull! or damaged"* — each league named there could not
+  be read, with where the problem is. The other leagues in the file still import. Update Pull! and
+  import the file again for the rest.
 - *"already on this device under a different name"* — the file is a copy of a league you already
   have, and the two are the same league as far as the app is concerned. Delete the copy on the device
   first, or import into a fresh install.
@@ -2378,6 +2381,23 @@ What to do, in order:
 2. If they do not return, contact support and quote the filename from the alert. That file is the
    season, and it is recoverable by hand.
 3. Either way, avoid entering new scores until the leagues reappear.
+
+### A league shows "Couldn't read: update Pull!"
+
+Below your leagues, a row with an orange warning triangle and **Couldn't read: update Pull!** is a
+league this copy of the app could not open. Usually a newer version of Pull! saved it on this
+device, before you went back to an older TestFlight build; now and then the saved copy is damaged.
+Your other leagues open as normal.
+
+**Nothing has been deleted.** The league stays in the app's file exactly as it was, and is written
+back untouched every time the app saves.
+
+1. **Update Pull!** from TestFlight or the App Store. The league opens on the next launch.
+2. If it is in iCloud, the app reads everything from iCloud again once, so a good copy replaces the
+   unreadable one on its own.
+3. If you no longer want it, swipe the row left and tap **Remove**. The app keeps a copy of it on the
+   device, beside its own file. You cannot open that copy yourself, so if you might want the league
+   back, contact support before you delete Pull!.
 
 A related alert, **"League Data Could Not Be Read"**, means something different: the file could not be
 opened at all, which is usually the device being locked at an awkward moment. The app refuses to save
